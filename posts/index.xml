@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on BLOG</title><link>https://Jimall.github.io/posts/</link><description>Recent content in Posts on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>.gitignore 的写法</title><link>https://Jimall.github.io/posts/03.gitignore/</link><pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/03.gitignore/</guid><description>在一个项目中，并不是所有的文件都需要使用 Git 进行版本管理，比如一些自动生成的文件，这时候可以在项目中添加 .gitignore 文件来忽略一些不需要进行版本管理的文件。
+.gitignore 有一套语法，下面介绍一下：
+.gitignore 文件语法 首先 .gitignore 文件每一行定义一条规则，从上到下进行解释的。
+注释 使用 # 行注释
+通配符匹配 .gitignore 可以使用通配符匹配，并且常常用到（* 用的比较多）
+* 表示一个或多个字符
+[] 表示范围
+? 表示单个字符
+忽略文件和否定忽略文件 每一行，写路径即可忽略掉相应的内容，在路径前使用 ! 即可取消忽略相应路径，比如：
+# 忽略 .exe 文件 *.exe # 否定忽略 main.exe，由于文件是从上到下进行解释的，所以上下两条规则的意思是忽略除了 main.exe 的所有 .exe 文件 !main.exe # 忽略 build 文件夹 build/ 防止递归 直接制定文件名，实际上是递归的忽略，也就是说 *.exe 会忽略目录下的所有 .exe 文件。
+使用 / 防止递归：
+# 仅在当前目录下忽略 temp 文件， 但不包括子目录下的 subdir/temp /temp # 忽略 build/ 文件夹下的所有文件 build/ # 忽略 doc/notes.</description></item><item><title>一些有用的命令行工具</title><link>https://Jimall.github.io/posts/articleshare/commandline/</link><pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/articleshare/commandline/</guid><description>看到一篇文章，介绍了一些有用的命令行工具，挺有意思的
+https://zhuanlan.zhihu.com/p/373633350
+个人感觉比较有用的：
+httpie：sudo apt install httpie
+感觉命令格式比 CUrl 友好
+bat: sudo apt install bat
+可以完全替代 cat
+gpustat: sudo apt install gpustat
+查询 GPU 状态，GPU 版本的 top
+ohmyzsh:
+这个自然不用多说了，就是牛</description></item><item><title>Anki 的配置</title><link>https://Jimall.github.io/posts/usefultools/anki/</link><pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/usefultools/anki/</guid><description>Anki 在安装和下载上没有很大的难度，电脑端直接安装，Android 端 Google Play 直接下载。
+但是在同步方面有一定的问题，因为同步使用 Ankiweb 服务，这是个国外的服务，需要挂梯子。
+需要注意的事情是 PC 端直接挂梯子会发现登录报错，这个时候需要配置 HTTP_PROXY 环境变量：每次打开anki都提示发生网络错误 ? - 劳模盐的回答 - 知乎
+配置完之后就能愉快的挂梯子同步了。</description></item><item><title>Leetcode-082-删除链表中的重复元素II</title><link>https://Jimall.github.io/posts/leetcode/problem/leetcode-082-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0ii/</link><pubDate>Thu, 13 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-082-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0ii/</guid><description>/** * Definition for singly-linked list. * public class ListNode { * int val; * ListNode next; * ListNode() {} * ListNode(int val) { this.val = val; } * ListNode(int val, ListNode next) { this.val = val; this.next = next; } * } */ class Solution { public ListNode deleteDuplicates(ListNode head) { ListNode dummy = new ListNode(); dummy.next = head; ListNode cur = dummy; while (cur.next != null &amp;amp;&amp;amp; cur.next.next !</description></item><item><title>Leetcode-083-删除排序链表中的重复元素</title><link>https://Jimall.github.io/posts/leetcode/problem/leetcode-083-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/</link><pubDate>Thu, 13 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-083-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/</guid><description>https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/
+简单，不需要很多技巧，判断后面的节点是否与当前节点值相等，如果相等就删除，遍历一遍即可。
+/** * Definition for singly-linked list. * public class ListNode { * int val; * ListNode next; * ListNode() {} * ListNode(int val) { this.val = val; } * ListNode(int val, ListNode next) { this.val = val; this.next = next; } * } */ class Solution { public ListNode deleteDuplicates(ListNode head) { ListNode cur = head; while (cur != null) { // 如果下一个节点与当前节点值相等，则删除 if (cur.next != null &amp;amp;&amp;amp; cur.</description></item><item><title>Kotlin Learning Snippets</title><link>https://Jimall.github.io/posts/01.kotlin-learning-snippets/</link><pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/01.kotlin-learning-snippets/</guid><description>最近看到 Kotlin 可以做桌面应用甚至 Multiplatform 应用，感觉后面能用上，于是学一波！下面记录一些有意义的 Snippets。
+学习材料 Idea Edu Plugin 课程 Kotlin Koan
+Kotlin 官网文档
+JetBrains 的社区建设做得很好，文档写的很好，把 Kotlin Koan 过一遍基本就没啥问题了。
+这种看文档去解决练习的方式个人认为是最利于有一定经验的编程者上手一个技术的方法。
+函数声明 fun sum(a: Int, b: Int): Int { return a + b } fun sum(a: Int = 1, b: Int = 2): Int = a + b</description></item><item><title>Leetcode-21-合并两个有序链表</title><link>https://Jimall.github.io/posts/leetcode/problem/leetcode-021-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/</link><pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-021-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/</guid><description>tag：归并排序、虚拟头
+链表和数组是类似的，所以合并两个有序链表可以借鉴合并两个有序数组的方法，不难想到使用归并排序的策略。
+同时做链表题是时刻考虑判空，考虑到传入的 ListNode 可能为 null，即头可能为 null，使用虚拟头解决来避免麻烦的判空。
+/** * Definition for singly-linked list. * public class ListNode { * int val; * ListNode next; * ListNode() {} * ListNode(int val) { this.val = val; } * ListNode(int val, ListNode next) { this.val = val; this.next = next; } * } */ class Solution { public ListNode mergeTwoLists(ListNode l1, ListNode l2) { // 虚拟头 ListNode result = new ListNode(); ListNode current = result; // 以下就是归并操作 ListNode left = l1; ListNode right = l2; while (left !</description></item><item><title>LinkedList</title><link>https://Jimall.github.io/posts/leetcode/datastructure/01.%E9%93%BE%E8%A1%A8%E4%B8%93%E9%A2%98/</link><pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/datastructure/01.%E9%93%BE%E8%A1%A8%E4%B8%93%E9%A2%98/</guid><description>链表结构 public class ListNode { int val; ListNode next; } 链表的基本操作 要熟悉链表的各种基本操作和复杂度。
+插入操作 解题注意事项 解相关题心中默念的事情
+先画图，再解题 时刻考虑判空 解题技巧 虚拟头 虚拟头在头结点可能为 null 的时候可以用上。
+Leetcode-082
+记录前驱节点 题目推荐 由易到难
+21.合并两个有序链表——题解✅Leetcode✅ 82.删除排序链表中的重复元素II——题解✅Leetcode✅ 83.删除排序链表中的重复元素——题解✅Leetcode✅ 86.分隔链表 92.反转链表 II 138.复制带随机指针的链表 141.环形链表 142.环形链表 II 143.重排链表 148.排序链表 206.反转链表 234.回文链表</description></item></channel></rss>
