@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on BLOG</title><link>https://Jimall.github.io/posts/</link><description>Recent content in Posts on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>使用 Github actions 自动发布 Hugo 博客</title><link>https://Jimall.github.io/posts/04.hugoactions/</link><pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/04.hugoactions/</guid><description>使用 hugo 写博客的时候，每次增加文章，需要本地构建之后发布到 github 上通过 github pages 服务展示页面，不难想到可以使用 CI 的方法，将构建的过程自动化，实现写博文 push 到 github 即可自动构建并发布到 github pages。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on BLOG</title><link>https://Jimall.github.io/posts/</link><description>Recent content in Posts on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>git submodule 的使用</title><link>https://Jimall.github.io/posts/05.gitsubmodule/</link><pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/05.gitsubmodule/</guid><description>在 Git 项目中，需要包含别的 Git 项目，我们希望能够独立的使用这两个项目。比如我们的博客是一个 Git 项目，而我们需要在博客中包含别人的项目作为博客主题，我们希望能够在自己写博文后 push 不影响博客主题仓库，同时希望能够独立使用主题仓库，这样我们就可以获取最新的主题。
+这个时候需要用到 git submodule。在使用 submodule 之后，两个项目便相对独立（或者多个 submodule，那么就是多个项目相对独立）。下面介绍子模块常用的用法：
+使用子模块 添加子模块 在 Git 项目中包含别的 Git 项目，不能够直接到相应文件夹 clone，而需要使用 git add submodule 命令，可以将这个命令视为子模块版本的 git clone。
+git add submodule git@github.com/example/example.git submodule 上面的命令将项目克隆到 submodule 目录。会发现根目录生成了一个 .gitmodule 文件，这个文件用于保存子模块信息。
+查看子模块 使用 git submodule 命令查看当前项目的子模块。
+更新子模块 在项目中使用 git update 父模块并不会更新子模块。（别的操作同理，我们在项目中使用的各种以前使用的 git 操作都只会对父模块产生作用）
+使用 git submodule add 添加子项目。
+操作子模块 在子模块的文件夹内部，我们的各种操作都是对子模块的项目产生作用，比如 push 就是将子模块 push 到子模块的 remote repository。
+所以需要单独修改子模块，只需要 cd 到子模块内，把子模块当成一个普通的 git 项目即可。
+克隆含有子模块的项目 克隆包含子模块的项目有两种方法：</description></item><item><title>使用 Github actions 自动发布 Hugo 博客</title><link>https://Jimall.github.io/posts/04.hugoactions/</link><pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/04.hugoactions/</guid><description>使用 hugo 写博客的时候，每次增加文章，需要本地构建之后发布到 github 上通过 github pages 服务展示页面，不难想到可以使用 CI 的方法，将构建的过程自动化，实现写博文 push 到 github 即可自动构建并发布到 github pages。
 搞的过程中坑比较多，记录为一个教程，供各位参考。
 我折腾过程中的参考：https://tianhui.xin/blog/2019/11/17/hugousegithubactionstopages/
 创建代码仓库和 github pages 仓库 构建过程中采用两个仓库：
