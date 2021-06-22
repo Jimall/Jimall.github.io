@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DataStructure on BLOG</title><link>https://Jimall.github.io/categories/datastructure/</link><description>Recent content in DataStructure on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 08 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/categories/datastructure/index.xml" rel="self" type="application/rss+xml"/><item><title>LinkedList</title><link>https://Jimall.github.io/posts/leetcode/datastructure/01.%E9%93%BE%E8%A1%A8%E4%B8%93%E9%A2%98/</link><pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/datastructure/01.%E9%93%BE%E8%A1%A8%E4%B8%93%E9%A2%98/</guid><description>链表结构 public class ListNode { int val; ListNode next; } 链表的基本操作 要熟悉链表的各种基本操作和复杂度。
-插入操作 解题注意事项 解相关题心中默念的事情
-先画图，再解题 时刻考虑判空 解题技巧 虚拟头 虚拟头在头结点可能为 null 的时候可以用上。
-Leetcode-082
-记录前驱节点 题目推荐 由易到难
-21.合并两个有序链表——题解✅Leetcode✅ 82.删除排序链表中的重复元素II——题解✅Leetcode✅ 83.删除排序链表中的重复元素——题解✅Leetcode✅ 86.分隔链表 92.反转链表 II 138.复制带随机指针的链表 141.环形链表 142.环形链表 II 143.重排链表 148.排序链表 206.反转链表 234.回文链表</description></item></channel></rss>
