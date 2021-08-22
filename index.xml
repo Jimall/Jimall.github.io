@@ -111,8 +111,33 @@ public class ListNode { int val; ListNode next; } 链表的基本操作 要熟�
 解题注意事项 解题时心中要时刻默念：
 先画图，再解题 时刻考虑判空 链表题只要能画出图，解题的方向基本不会出问题，容易出错的地方在判空上。
 解题技巧 链表常用的解题技巧：
-虚拟头 快慢指针 虚拟头 虚拟头在返回的链表头结点可能为 null 的时候可以用上，利用虚拟头可以避免对返回值判空。
+虚拟头 快慢指针 虚拟头 虚拟头在返回的链表头结点可能为 null 的时候可以用上，利用虚拟头可以避免对返回值判空，可以避免分类讨论，是链表题中很常见的一个技巧。
 虚拟头的常见模式如下，先创建一个链表，然后将链表头和输入链表连接：
 ListNode dummy = new ListNode(); // 将虚拟头和输入链表连接 dummy.next = input; 然后进行各种操作之后返回虚拟头的下一个节点，这样即使 input 全部删除了，即返回值为 null，也不用作判断。
-return dummy.next; Leetcode-082
-题目推荐 21.合并两个有序链表——题解✅Leetcode✅ 82.删除排序链表中的重复元素II——题解✅Leetcode✅ 83.删除排序链表中的重复元素——题解✅Leetcode✅ 86.分隔链表——题解✅Leetcode✅ 92.反转链表 II——题解✅Leetcode✅ 138.复制带随机指针的链表——题解Leetcode 141.环形链表——题解Leetcode 142.环形链表 II——题解Leetcode 143.重排链表——题解Leetcode 148.排序链表——题解Leetcode 206.反转链表——题解✅Leetcode✅ 234.回文链表——题解Leetcode</description></item><item><title/><link>https://Jimall.github.io/posts/leetcode/problem/leetcode-141-%E5%A4%8D%E5%88%B6%E5%B8%A6%E9%9A%8F%E6%9C%BA%E6%8C%87%E9%92%88%E7%9A%84%E9%93%BE%E8%A1%A8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-141-%E5%A4%8D%E5%88%B6%E5%B8%A6%E9%9A%8F%E6%9C%BA%E6%8C%87%E9%92%88%E7%9A%84%E9%93%BE%E8%A1%A8/</guid><description/></item><item><title/><link>https://Jimall.github.io/posts/leetcode/problem/leetcode-142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/</guid><description/></item></channel></rss>
+return dummy.next; 快慢指针 快慢指针的技巧用在一些特定的题目中，是一种固定的套路。
+主要用来判断链表成环：
+https://leetcode-cn.com/problems/linked-list-cycle/
+https://leetcode-cn.com/problems/reverse-linked-list-ii/
+同时也可以利用快慢指针找到链表中点：
+https://leetcode-cn.com/problems/middle-of-the-linked-list/
+题目推荐 21.合并两个有序链表——题解✅Leetcode✅ 82.删除排序链表中的重复元素II——题解✅Leetcode✅ 83.删除排序链表中的重复元素——题解✅Leetcode✅ 86.分隔链表——题解✅Leetcode✅ 92.反转链表 II——题解✅Leetcode✅ 138.复制带随机指针的链表——题解Leetcode 141.环形链表——题解✅Leetcode✅ 142.环形链表 II——题解✅Leetcode✅ 143.</description></item><item><title/><link>https://Jimall.github.io/posts/leetcode/problem/leetcode-143-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</link><pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-143-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</guid><description>题目链接：
+https://leetcode-cn.com/problems/reorder-list/
+tag：链表
+这题难度本身不大，但是涉及很多技巧，一方面是使用快慢指针寻找链表中点，一方面是反转链表，然后就是链表合并。
+找到链表中点，反转后半部分的链表然后进行链表合并即可。
+找链表中点可以使用快慢指针的方法，有一道 Leetcode 题：
+https://leetcode-cn.com/problems/middle-of-the-linked-list/
+注意找链表中点有讲究：
+如果条件为 fast != null &amp;amp;&amp;amp; fast.next != null，那么偶数长度的链表中点为中间两个的第二个，如果条件为 fast.next != null &amp;amp;&amp;amp; fast.next.next != null，那么偶数长度的链表中点为中间两个的第一个。
+那么代码如下：
+/** * Definition for singly-linked list. * public class ListNode { * int val; * ListNode next; * ListNode() {} * ListNode(int val) { this.val = val; } * ListNode(int val, ListNode next) { this.val = val; this.next = next; } * } */ class Solution { public void reorderList(ListNode head) { if (head == null) { return; } ListNode mid = findMiddle(head); ListNode head2 = mid.</description></item><item><title>Leetcode-141-环形链表</title><link>https://Jimall.github.io/posts/leetcode/problem/leetcode-141-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/</link><pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-141-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/</guid><description>题目链接：
+https://leetcode-cn.com/problems/linked-list-cycle/
+tag：链表 快慢指针
+使用快慢指针判断链表成环一个很常见的技巧，原理就是速度快的人在没成环的时候一定不可能被速度慢的人追上。需要注意的是，比较是否相等的时候，比较的是 node 是否相等，而不是 val 是否相等。
+注意，让两个指针初始值为 head，因为另一种形式的环形链表题一定要两个指针从 head 开始走，防止搞混所以这样操作。
+/** * Definition for singly-linked list. * class ListNode { * int val; * ListNode next; * ListNode(int x) { * val = x; * next = null; * } * } */ public class Solution { public boolean hasCycle(ListNode head) { if (head == null) { return false; } ListNode slow = head; ListNode fast = head; while (slow !</description></item><item><title>Leetcode-142-环形链表II</title><link>https://Jimall.github.io/posts/leetcode/problem/leetcode-142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8ii/</link><pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8ii/</guid><description>题目链接：
+https://leetcode-cn.com/problems/linked-list-cycle-ii/
+tag：链表 快慢指针
+判断链表成环我们已经会了，找到环形链表的开始节点需要通过数学推导发现规律得到：
+所以代码如下，值得注意的是 slow 和 fast 的开始节点一定要为 head，不然这种直接使用方法不成立：
+/** * Definition for singly-linked list. * class ListNode { * int val; * ListNode next; * ListNode(int x) { * val = x; * next = null; * } * } */ public class Solution { public ListNode detectCycle(ListNode head) { if (head == null) { return null; } ListNode slow = head; ListNode fast = head; // 可以简化掉 slow !</description></item><item><title/><link>https://Jimall.github.io/posts/leetcode/problem/leetcode-148-%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-148-%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8/</guid><description/></item></channel></rss>
