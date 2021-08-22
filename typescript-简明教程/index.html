@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>TypeScript 简明教程 - Jimall的博客</title><meta name="Description" content=""><meta property="og:title" content="TypeScript 简明教程" />
+<meta property="og:description" content="TypeScript 是 JavaScript 的超集，能够用类似写 Java 的体验（更准确说来更像 Kotlin）来写 JavaScript，很方便很快捷。
+TypeScript 类型 TypeScript 的数据类型分为 boolean, number, string, array, tuple, enum, object, null, undefined, any, void, never
+  布尔（boolean）类型
+1  let flag: boolean = false   有 true 和 false 两个值
+  数字（number）类型
+1 2 3  let num1: number = 1 let num2: number = 1.8 let num3: number = -1   各种数字都是 number 类型，并且支持二进制八进制和十六进制值
+  字符串（string）类型" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jimall.github.io/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-22T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-06-22T00:00:00&#43;00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="TypeScript 简明教程"/>
+<meta name="twitter:description" content="TypeScript 是 JavaScript 的超集，能够用类似写 Java 的体验（更准确说来更像 Kotlin）来写 JavaScript，很方便很快捷。
+TypeScript 类型 TypeScript 的数据类型分为 boolean, number, string, array, tuple, enum, object, null, undefined, any, void, never
+  布尔（boolean）类型
+1  let flag: boolean = false   有 true 和 false 两个值
+  数字（number）类型
+1 2 3  let num1: number = 1 let num2: number = 1.8 let num3: number = -1   各种数字都是 number 类型，并且支持二进制八进制和十六进制值
+  字符串（string）类型"/>
+<meta name="application-name" content="Jimall的博客">
+<meta name="apple-mobile-web-app-title" content="Jimall的博客"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://jimall.github.io/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/" /><link rel="prev" href="https://jimall.github.io/06.encryption/" /><link rel="next" href="https://jimall.github.io/leetcode-206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "TypeScript 简明教程",
+        "inLanguage": "",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/jimall.github.io\/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B\/"
+        },"image": ["https:\/\/jimall.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  779 ,
+        "url": "https:\/\/jimall.github.io\/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B\/","datePublished": "2021-06-22T00:00:00+00:00","dateModified": "2021-06-22T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/jimall.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "xxxx"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Jimall的博客"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Jimall的博客"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">TypeScript 简明教程</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/programminglanguage/"><i class="far fa-folder fa-fw"></i>ProgrammingLanguage</a>&nbsp;<a href="/categories/typescript/"><i class="far fa-folder fa-fw"></i>TypeScript</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-22">2021-06-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 779 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 4 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#typescript-类型">TypeScript 类型</a></li>
+    <li><a href="#typescript-接口">TypeScript 接口</a></li>
+    <li><a href="#函数">函数</a></li>
+    <li><a href="#typescript-类">TypeScript 类</a></li>
+    <li><a href="#typescript-类型推论">TypeScript 类型推论</a></li>
+    <li><a href="#typescript-类型断言">TypeScript 类型断言</a></li>
+    <li><a href="#typescript-非空断言关键字">TypeScript 非空断言关键字</a></li>
+    <li><a href="#typescript-泛型">TypeScript 泛型</a></li>
+    <li><a href="#联合类型">联合类型</a></li>
+    <li><a href="#参考">参考</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>TypeScript 是 JavaScript 的超集，能够用类似写 Java 的体验（更准确说来更像 Kotlin）来写 JavaScript，很方便很快捷。</p>
+<h2 id="typescript-类型">TypeScript 类型</h2>
+<p>TypeScript 的数据类型分为 boolean, number, string, array, tuple, enum, object, null, undefined, any, void, never</p>
+<ol>
+<li>
+<p>布尔（boolean）类型</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kd">let</span> <span class="nx">flag</span>: <span class="kt">boolean</span> <span class="o">=</span> <span class="kc">false</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>有 true 和 false 两个值</p>
+</li>
+<li>
+<p>数字（number）类型</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kd">let</span> <span class="nx">num1</span>: <span class="kt">number</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="kd">let</span> <span class="nx">num2</span>: <span class="kt">number</span> <span class="o">=</span> <span class="mf">1.8</span>
+<span class="kd">let</span> <span class="nx">num3</span>: <span class="kt">number</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>各种数字都是 number 类型，并且支持二进制八进制和十六进制值</p>
+</li>
+<li>
+<p>字符串（string）类型</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kd">let</span> <span class="nx">name</span>: <span class="kt">string</span> <span class="o">=</span> <span class="s2">&#34;typescript&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>支持模板字符串，用反引号</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kd">let</span> <span class="nx">description</span>: <span class="kt">string</span> <span class="o">=</span> <span class="sb">`</span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb"> is good`</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>数组（array）类型</p>
+<p>和 JavaScript 数组一样，类似于 Python 里的链表</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kd">let</span> <span class="nx">list</span>: <span class="kt">number</span><span class="p">[]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="kd">let</span> <span class="nx">list</span>: <span class="kt">Array</span><span class="p">&lt;</span><span class="nt">number</span><span class="p">&gt;</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>元组（tuple）类型</p>
+<p>元组中可以存不同类型的值</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kd">let</span> <span class="nx">x</span><span class="o">:</span> <span class="p">[</span><span class="kt">string</span><span class="p">,</span> <span class="kt">number</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;hello&#34;</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>枚举（enum）类型</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kr">enum</span> <span class="nx">Color</span> <span class="p">{</span>
+    <span class="nx">Red</span><span class="p">,</span>
+    <span class="nx">Green</span><span class="p">,</span>
+    <span class="nx">Blue</span>
+<span class="p">}</span>
+<span class="kr">const</span> <span class="nx">c</span>: <span class="kt">Color</span> <span class="o">=</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">Green</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>对象（object）类型</p>
+<p>表示非原始类型，即除了 number、string、boolean，null，undefined 之外的类型</p>
+</li>
+<li>
+<p>null 和 undefined 类型</p>
+<p>类型本身作用不是很大，但是 null 和 undefined 类型是所有类型的子类型，所以任何变量的值都可以是 null 或者 undefined。</p>
+</li>
+<li>
+<p>any 类型</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kr">const</span> <span class="nx">list</span>: <span class="kt">any</span><span class="p">[]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="s2">&#34;string&#34;</span><span class="p">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>表示任意一个类型，当编译阶段不清楚类型的时候可以指定为 any 类型</p>
+</li>
+<li>
+<p>void 类型</p>
+<p>表示没有任何类型，没有返回值的函数为 void 类型</p>
+</li>
+<li>
+<p>never 类型</p>
+<p>never 表示用不存在的类型，总是会抛出异常或根本不会有返回值的函数表达式或箭头表达式的返回值类型可以为 never 类型。</p>
+</li>
+</ol>
+<h2 id="typescript-接口">TypeScript 接口</h2>
+<p>TypeScript 接口和 Java 稍有不同，它更多是定义对象的结构，比如指定有什么元素、有什么方法之类的。</p>
+<p>语法如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kr">interface</span> <span class="nx">Information</span> <span class="p">{</span>
+    <span class="nx">username</span>: <span class="kt">string</span>
+<span class="p">}</span>
+
+<span class="c1">// 如不符合 Information 接口定义，编译阶段报错
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">infor</span>: <span class="kt">Information</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">username</span><span class="o">:</span> <span class="s2">&#34;Zhang San&#34;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>接口中的属性默认情况下是必须的，不然编译阶段会报错，可以使用 <code>?</code> 定义可选属性：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kr">interface</span> <span class="nx">Information</span> <span class="p">{</span>
+    <span class="nx">username</span>: <span class="kt">string</span>
+    <span class="nx">nickName?</span>: <span class="kt">string</span>
+<span class="p">}</span>
+
+<span class="c1">// nickName 为可选属性，符合接口标准
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">infor</span>: <span class="kt">Information</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">username</span><span class="o">:</span> <span class="s2">&#34;Zhang San&#34;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>同时一些对象属性可以指定为只读，这样后续不能被修改值，这就类似于常量使用 const 声明，接口中的常量使用 readonly 声明：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kr">interface</span> <span class="nx">Information</span> <span class="p">{</span>
+    <span class="nx">username</span>: <span class="kt">string</span>
+    <span class="nx">nickName?</span>: <span class="kt">string</span>
+    <span class="kr">readonly</span> <span class="nx">id</span>: <span class="kt">string</span>
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">infor</span>: <span class="kt">Information</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">username</span><span class="o">:</span> <span class="s2">&#34;Zhang San&#34;</span>
+    <span class="nx">id</span><span class="o">:</span> <span class="s2">&#34;123456&#34;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="函数">函数</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">a</span>: <span class="kt">number</span><span class="p">,</span> <span class="nx">b</span>: <span class="kt">number</span><span class="p">)</span><span class="o">:</span> <span class="kt">number</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>函数可以使用 <code>?</code> 指定可选参数：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kd">function</span> <span class="nx">buildName</span><span class="p">(</span><span class="nx">firstName</span>: <span class="kt">string</span><span class="p">,</span> <span class="nx">lastName?</span>: <span class="kt">string</span><span class="p">)</span><span class="o">:</span> <span class="kt">string</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">lastName</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="sb">`</span><span class="si">${</span><span class="nx">firstName</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">lastName</span><span class="si">}</span><span class="sb">`</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">firstName</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>函数可以指定默认参数，默认参数本身就是可选的，不需要指定 <code>?</code>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kd">function</span> <span class="nx">buildName</span><span class="p">(</span><span class="nx">firstName</span>: <span class="kt">string</span><span class="p">,</span> <span class="nx">lastName?</span>: <span class="kt">string</span><span class="p">)</span><span class="o">:</span> <span class="kt">string</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">lastName</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="sb">`</span><span class="si">${</span><span class="nx">firstName</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">lastName</span><span class="si">}</span><span class="sb">`</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">firstName</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>可以指定剩余参数：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kd">function</span> <span class="nx">sum</span><span class="p">(</span><span class="nx">x</span>: <span class="kt">number</span><span class="p">,</span> <span class="nx">y</span>: <span class="kt">number</span><span class="p">,</span> <span class="p">...</span><span class="nx">rest</span>: <span class="kt">number</span><span class="p">[])</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span> <span class="o">+</span> <span class="nx">reduce</span><span class="p">((</span><span class="nx">acc</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">acc</span> <span class="o">+</span> <span class="nx">value</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="typescript-类">TypeScript 类</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kr">class</span> <span class="nx">Circle</span> <span class="p">{</span>
+    <span class="kr">private</span> <span class="nx">radius</span>: <span class="kt">number</span>
+    <span class="kr">private</span> <span class="nx">x</span>: <span class="kt">number</span>
+    <span class="kr">private</span> <span class="nx">y</span>: <span class="kt">number</span>
+    <span class="kr">readonly</span> <span class="nx">PI</span>: <span class="kt">number</span> <span class="o">=</span> <span class="mf">3.14</span>
+
+    <span class="kr">get</span> <span class="nx">radius</span><span class="p">()</span><span class="o">:</span> <span class="kt">number</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="kt">number</span>
+    <span class="p">}</span>
+
+    <span class="kr">get</span> <span class="nx">x</span><span class="p">()</span><span class="o">:</span> <span class="kt">number</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">x</span>
+    <span class="p">}</span>
+
+    <span class="kr">set</span> <span class="nx">x</span><span class="p">(</span><span class="nx">x</span>: <span class="kt">number</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="nx">x</span>
+    <span class="p">}</span>
+
+    <span class="kr">get</span> <span class="nx">y</span><span class="p">()</span><span class="o">:</span> <span class="kt">number</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">y</span>
+    <span class="p">}</span>
+
+    <span class="kr">set</span> <span class="nx">y</span><span class="p">(</span><span class="nx">y</span>: <span class="kt">number</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="nx">y</span>
+    <span class="p">}</span>
+
+    <span class="kr">constructor</span><span class="p">(</span><span class="nx">radius</span>: <span class="kt">number</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">x</span>: <span class="kt">number</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">y</span>: <span class="kt">number</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">radius</span> <span class="o">=</span> <span class="nx">radius</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="nx">x</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="nx">y</span>
+    <span class="p">}</span>
+
+    <span class="nx">getArea</span><span class="p">()</span><span class="o">:</span> <span class="kt">number</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">PI</span> <span class="o">*</span> <span class="nx">radius</span> <span class="o">*</span> <span class="nx">radius</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>默认为 public，同时也支持 private 和 protected，和 Java 写法极其类似，不过 getter 和 setter 的写法和构造器的写法有所不同。</p>
+<p>同时类还可以有静态属性：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kr">class</span> <span class="nx">Constants</span> <span class="p">{</span>
+    <span class="kr">static</span> <span class="nx">PI</span>: <span class="kt">number</span> <span class="o">=</span> <span class="mf">3.14</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>使用 extends 关键字继承类，使用 implements 关键字实现接口，写法和 Java 类似，包括也有 super 关键字，不多赘述：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kr">class</span> <span class="nx">Person</span> <span class="p">{</span>
+    <span class="kr">protected</span> <span class="nx">name</span>: <span class="kt">string</span><span class="p">;</span>
+    <span class="kr">constructor</span><span class="p">(</span><span class="nx">name</span>: <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">class</span> <span class="nx">Employee</span> <span class="kr">extends</span> <span class="nx">Person</span> <span class="p">{</span>
+    <span class="kr">private</span> <span class="nx">department</span>: <span class="kt">string</span><span class="p">;</span>
+
+    <span class="kr">constructor</span><span class="p">(</span><span class="nx">name</span>: <span class="kt">string</span><span class="p">,</span> <span class="nx">department</span>: <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kr">super</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">department</span> <span class="o">=</span> <span class="nx">department</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kr">public</span> <span class="nx">getElevatorPitch() {</span>
+        <span class="k">return</span> <span class="sb">`Hello, my name is </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb"> and I work in </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">department</span><span class="si">}</span><span class="sb">.`</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="typescript-类型推论">TypeScript 类型推论</h2>
+<p>对于未显式指定的类型的变量，TypeScript 会进行类型推断，所有的变量一定有其类型</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kd">let</span> <span class="nx">x</span>: <span class="kt">number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="nx">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// OK
+</span><span class="c1"></span><span class="nx">x</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">;</span> <span class="c1">// error
+</span></code></pre></td></tr></table>
+</div>
+</div><h2 id="typescript-类型断言">TypeScript 类型断言</h2>
+<p>可以通过类型断言来告诉编译器 any 是哪种类型，类型断言有两种形式：</p>
+<ol>
+<li>
+<p>尖括号</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kd">let</span> <span class="nx">someVal</span>: <span class="kt">any</span> <span class="o">=</span> <span class="s2">&#34;a string&#34;</span>
+<span class="kd">let</span> <span class="nx">strLength</span>: <span class="kt">number</span> <span class="o">=</span> <span class="p">(&lt;</span><span class="nt">string</span><span class="p">&gt;</span><span class="nx">someVal</span><span class="p">).</span><span class="nx">length</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>as 语法</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kd">let</span> <span class="nx">someVal</span>: <span class="kt">any</span> <span class="o">=</span> <span class="s2">&#34;a string&#34;</span>
+<span class="kd">let</span> <span class="nx">strLength</span>: <span class="kt">number</span> <span class="o">=</span> <span class="p">(</span><span class="nx">someVal</span> <span class="kr">as</span> <span class="kt">string</span><span class="p">).</span><span class="nx">length</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<p>两种形式是等价的。至于使用哪个大多数情况下是凭个人喜好；然而，当在 TypeScript 里使用到 JSX 时，只有 as 形式的断言是被允许的。</p>
+<h2 id="typescript-非空断言关键字">TypeScript 非空断言关键字</h2>
+<p>使用 ！来指定非空的变量，即告诉编译器值不能为 null。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kd">let</span> <span class="nx">a</span>: <span class="kt">number</span> <span class="o">|</span> <span class="kc">undefined</span> <span class="o">=</span> <span class="kc">undefined</span>
+<span class="kd">let</span> <span class="nx">b</span>: <span class="kt">number</span> <span class="o">=</span> <span class="nx">a</span><span class="o">!</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="typescript-泛型">TypeScript 泛型</h2>
+<p>TypeScript 泛型写法和 Java 泛型相似：</p>
+<p>泛型方法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kd">function</span> <span class="nx">add</span><span class="p">&lt;</span><span class="nt">T</span><span class="p">&gt;(</span><span class="nx">a</span>: <span class="kt">T</span><span class="p">,</span> <span class="nx">b</span>: <span class="kt">T</span><span class="p">)</span><span class="o">:</span> <span class="nx">T</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>泛型接口：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kr">interface</span> <span class="nx">GenericIdentityFn</span><span class="p">&lt;</span><span class="nt">T</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="p">(</span><span class="nx">arg</span>: <span class="kt">T</span><span class="p">)</span><span class="o">:</span> <span class="nx">T</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">identity</span><span class="p">&lt;</span><span class="nt">T</span><span class="p">&gt;(</span><span class="nx">arg</span>: <span class="kt">T</span><span class="p">)</span><span class="o">:</span> <span class="nx">T</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">arg</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">myIdentity</span>: <span class="kt">GenericIdentityFn</span><span class="p">&lt;</span><span class="nt">number</span><span class="p">&gt;</span> <span class="o">=</span> <span class="nx">identity</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>泛型类：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kr">class</span> <span class="nx">GenericNumber</span><span class="p">&lt;</span><span class="nt">T</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="nx">zeroValue</span>: <span class="kt">T</span><span class="p">;</span>
+    <span class="nx">add</span><span class="o">:</span> <span class="p">(</span><span class="nx">x</span>: <span class="kt">T</span><span class="p">,</span> <span class="nx">y</span>: <span class="kt">T</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">T</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>泛型约束：</p>
+<p>可以使用 extends 语法来约束泛型：<code>&lt;T extends Lengthwise&gt;</code>$</p>
+<p>泛型参数默认值：</p>
+<p>泛型参数可以指定默认值：<code>&lt;T = number&gt;</code></p>
+<h2 id="联合类型">联合类型</h2>
+<p>使用 <code>|</code> 表示联合类型，类似 C 语言中的 union，可以表示多种类型中的一个：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-TypeScript" data-lang="TypeScript"><span class="kd">let</span> <span class="nx">item</span>: <span class="kt">string</span> <span class="o">|</span> <span class="kt">number</span> <span class="o">|</span> <span class="kc">undefined</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>那么 item 可以是三种类型中的任意一种类型</p>
+<h2 id="参考">参考</h2>
+<p>语言更多特性参考官网文档：</p>
+<p><a href="https://www.typescriptlang.org/docs/handbook/intro.html">https://www.typescriptlang.org/docs/handbook/intro.html</a></p>
+<p>本文参考：</p>
+<p><a href="https://sinoui.github.io/sinoui-guide/docs/ts-tutorial#%E6%B3%9B%E5%9E%8B%E5%8F%82%E6%95%B0%E9%BB%98%E8%AE%A4%E5%80%BC">https://sinoui.github.io/sinoui-guide/docs/ts-tutorial#%E6%B3%9B%E5%9E%8B%E5%8F%82%E6%95%B0%E9%BB%98%E8%AE%A4%E5%80%BC</a>（讲的很全，不过有些地方讲的多了）</p>
+<p><a href="https://blog.csdn.net/twypx/article/details/80290806">https://blog.csdn.net/twypx/article/details/80290806</a>（有些地方没讲全）</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2021-06-22</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://jimall.github.io/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/" data-title="TypeScript 简明教程" data-via="xxxx"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://jimall.github.io/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://jimall.github.io/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/" data-title="TypeScript 简明教程"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://jimall.github.io/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/" data-title="TypeScript 简明教程"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://jimall.github.io/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/" data-title="TypeScript 简明教程"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/06.encryption/" class="prev" rel="prev" title="加密算法"><i class="fas fa-angle-left fa-fw"></i>加密算法</a>
+            <a href="/leetcode-206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/" class="next" rel="next" title="Leetcode-206-反转链表">Leetcode-206-反转链表<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.83.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":100},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BLOG</title><link>https://Jimall.github.io/</link><description>Recent content on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Leetcode-086-分隔链表</title><link>https://Jimall.github.io/posts/leetcode/problem/leetcode-086-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8/</link><pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-086-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8/</guid><description>题目链接：
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BLOG</title><link>https://Jimall.github.io/</link><description>Recent content on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 03 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Spring IoC 组件详解</title><link>https://Jimall.github.io/posts/java/spring/ioc/spring%E7%AC%94%E8%AE%B0/</link><pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/java/spring/ioc/spring%E7%AC%94%E8%AE%B0/</guid><description>Spring 有两大核心机制：
+IoC (Inverse of Control, 控制反转) AOP (Aspect-Oriented Programming, 面向切面编程) 学习 Spring 的核心（单指 Spring 本身，不包括别的组件）就在于学习理解这两大核心机制。
+这篇文章我们来讲讲 IoC。
+IoC IoC 是 Spring 的核心机制。
+什么是 IoC？ IoC (Inversion of Control)，即“控制反转”。它不是一种技术，而是一种设计思想。在 Java 开发中，IoC 意味着将你设计好的对象交给容器控制，而不是在你的对象内部控制（控制的意思是说对象内部需要通过 new 等方式创建依赖对象，需要我们自己进行创建）。
+如何理解好 IoC 呢？理解好 Ioc 的关键是要明确”谁控制谁？控制什么？为何是反转？哪些方面反转了？”：
+”谁控制谁？控制什么？“：在传统 Java SE 程序设计中，我们直接在对象内部通过 new 创建对象，是对象主动去创建依赖对象，而 IoC 通过一个专门的容器（称为 IoC 容器）来创建这些对象；谁控制谁？IoC 容器控制了对象；控制什么？控制了外部资源获取（不只是对象包括比如文件等）。
+“为何是反转？哪些方面反转了？”：有反转就有正转，传统应用程序由我们自己在程序中主动控制去获取依赖对象，也就是正转，而反转则是由容器来帮忙创建及注入依赖对象；为何是反转？因为由容器帮我们查找及注入依赖对象，对象只是被动的接受依赖对象，所以是反转；哪些方面反转了？依赖对象的获取反转。
+所以控制反转的意思就是，IoC 容器控制对象，让依赖对象的获取反转。
+IoC 能做什么？ IoC 不是一种技术，而是一种设计思想，一个重要的面向对象编程的法则，它能指导我们如何设计出松耦合、更优良的程序。传统应用程序都是由我们在类内部主动创建依赖对象，从而导致类与类之间高耦合，难于测试。有了IoC容器后，把创建和查找依赖对象的控制权交给了容器，由容器进行注入组合对象，所以对象与对象之间是松散耦合，这样也方便测试，利于功能复用，更重要的是使得程序的整个体系结构变得非常灵活。
+IoC 很好的体现了面向对象设计法则中的好莱坞法则：“别找我们，我们找你”，即由 IoC 容器帮对象找相应的依赖对象并注入，而不是由对象主动去找。
+DI DI (Dependency Injection) 依赖注入。这也是 Spring 中的一个重要概念。</description></item><item><title>Spring结合Junit进行单元测试</title><link>https://Jimall.github.io/posts/java/spring/spring%E7%BB%93%E5%90%88junit%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</link><pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/java/spring/spring%E7%BB%93%E5%90%88junit%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</guid><description>由于 Spring 各种注解的使用需要结合 xml 配置文件，所以单元测试没有办法直接写，需要引入 Spring 对单元测试的支持。下面讲讲详细步骤：
+引入 Spring-test 和 junit test 依赖：
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;junit&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;junit&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;4.13&amp;lt;/version&amp;gt; &amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-test&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;5.2.9.RELEASE&amp;lt;/version&amp;gt; &amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt; 在测试类中添加 @RunWith 和 @ContextConfiguration 注解
+@RunWith(SpringJUnit4ClassRunner.class) @ContextConfiguration(&amp;quot;classpath:spring.xml&amp;quot;) public class StudentTest { @Autowired public Student student; @Test public void testStudentCreation() { System.out.println(student); } } 这样就可以正常使用了，需要注意的是，spring.xml 中需要配置才能使用 @Autowired 等注解：
+&amp;lt;context:component-scan base-package=&amp;quot;org.example&amp;quot;/&amp;gt; （同时 xml 文件头还需要引入 context 相关的域，alt+enter 即可）</description></item><item><title>Java 集合框架 Map 接口</title><link>https://Jimall.github.io/posts/java/java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/map%E6%8E%A5%E5%8F%A3/</link><pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/java/java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/map%E6%8E%A5%E5%8F%A3/</guid><description>图示：
+Map 通过 key-value 形式存元素，每个元素称为 entry，即一个 entry 包含 key 和 value 两个值。
+Map 接口 api 信息：isEmpty(), size()
+添加修改：put(key, value) 如果 key 存在就会修改，否则添加
+查找：containKey(), containValue()
+遍历：entrySet() 返回映射关系的 set 视图，keySet() 返回 key 的 set 视图，values() 返回 value 的 collection 视图
+删除：remove(key)，clear()
+常用集合 HashMap 了解 HashMap，首先需要了解哈希算法：
+哈希冲突及四种解决方法
+四种解决方法：
+开放地址法 1.
+拉链法
+建立公共溢出区
+建立公共溢出区存储所有哈希冲突的数据。
+再哈希法
+然后需要了解红黑树：
+红黑树介绍和实现
+总结：
+红黑树是平衡的二叉查找树，和 AVL tree 是类似的，不同的是 AVL tree 和红黑树维持平衡的规则不太一样。 红黑树的关键性质： 每个结点要么是红的要么是黑的。 根结点是黑的。 每个叶结点（叶结点即指树尾端NIL指针或NULL结点）都是黑的。 如果一个结点是红的，那么它的两个儿子都是黑的。 对于任意结点而言，其到叶结点树尾端NIL指针的每条路径都包含相同数目的黑结点。 理解红黑树的关键是理解平衡和理解二叉查找树，二叉查找树插入、删除和查找的开销都是 O(h)，由于红黑树平衡，那么 h 最大为 log(n)，所以红黑树插入、删除和查找的开销为 log(n) 开始看 HashMap 解析博文，根据博文再看 HashMap 源码进行理解：</description></item><item><title>Leetcode-086-分隔链表</title><link>https://Jimall.github.io/posts/leetcode/problem/leetcode-086-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8/</link><pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-086-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8/</guid><description>题目链接：
 https://leetcode-cn.com/problems/partition-list/
 tag：链表 虚拟头
 关键是构造小大两个链表，然后串起来。只要想到这个思路，代码实现就很简单了。
@@ -19,8 +52,7 @@ let flag: boolean = false 有 true 和 false 两个值
 数字（number）类型
 let num1: number = 1 let num2: number = 1.8 let num3: number = -1 各种数字都是 number 类型，并且支持二进制八进制和十六进制值
 字符串（string）类型
-let name: string = &amp;#34;typescript&amp;#34; 支持模板字符串，用反引号
-let description: string = `${name}is good` 数组（array）类型</description></item><item><title>加密算法</title><link>https://Jimall.github.io/posts/06.encryption/</link><pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/06.encryption/</guid><description>加密算法涉及一些概念：数字签名、数据加密解密、加密算法、对称加密算法、非对称加密算法、单向加密算法。下面进行介绍。
+let name: string = &amp;quot;typescript&amp;quot; 支持模板字符串，用反引号</description></item><item><title>加密算法</title><link>https://Jimall.github.io/posts/06.encryption/</link><pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/06.encryption/</guid><description>加密算法涉及一些概念：数字签名、数据加密解密、加密算法、对称加密算法、非对称加密算法、单向加密算法。下面进行介绍。
 加密和解密 加密和解密主要是为了防止传输过程中的数据泄露，因为传输过程中不免会被抓包什么的。
 数据加密的基本过程，就是对原来为明文的文件或数据按某种算法进行处理，使其成为不可读的一段代码，通常称为密文。这样，发送的过程中，不会被非法人窃取，因为别人看不懂加密后的东西是啥。
 加密的逆过程为解密，即将”密文“转化为其原来数据的过程，因为传输后需要使用数据，不可能用加密后的看不懂的密文。
@@ -50,8 +82,7 @@ git add submodule git@github.com/example/example.git submodule 上面的命令�
 更新子模块 在项目中使用 git update 父模块并不会更新子模块。（别的操作同理，我们在项目中使用的各种以前使用的 git 操作都只会对父模块产生作用）
 使用 git submodule add 添加子项目。
 操作子模块 在子模块的文件夹内部，我们的各种操作都是对子模块的项目产生作用，比如 push 就是将子模块 push 到子模块的 remote repository。
-所以需要单独修改子模块，只需要 cd 到子模块内，把子模块当成一个普通的 git 项目即可。
-克隆含有子模块的项目 克隆包含子模块的项目有两种方法：</description></item><item><title>使用 Github actions 自动发布 Hugo 博客</title><link>https://Jimall.github.io/posts/04.hugoactions/</link><pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/04.hugoactions/</guid><description>使用 hugo 写博客的时候，每次增加文章，需要本地构建之后发布到 github 上通过 github pages 服务展示页面，不难想到可以使用 CI 的方法，将构建的过程自动化，实现写博文 push 到 github 即可自动构建并发布到 github pages。
+所以需要单独修改子模块，只需要 cd 到子模块内，把子模块当成一个普通的 git 项目即可。</description></item><item><title>使用 Github actions 自动发布 Hugo 博客</title><link>https://Jimall.github.io/posts/04.hugoactions/</link><pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/04.hugoactions/</guid><description>使用 hugo 写博客的时候，每次增加文章，需要本地构建之后发布到 github 上通过 github pages 服务展示页面，不难想到可以使用 CI 的方法，将构建的过程自动化，实现写博文 push 到 github 即可自动构建并发布到 github pages。
 搞的过程中坑比较多，记录为一个教程，供各位参考。
 我折腾过程中的参考：https://tianhui.xin/blog/2019/11/17/hugousegithubactionstopages/
 创建代码仓库和 github pages 仓库 构建过程中采用两个仓库：
@@ -92,7 +123,7 @@ tag：链表 虚拟头
 https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/
 tag：链表
 简单，不需要很多技巧，判断后面的节点是否与当前节点值相等，如果相等就删除，遍历一遍即可。
-/** * Definition for singly-linked list. * public class ListNode { * int val; * ListNode next; * ListNode() {} * ListNode(int val) { this.val = val; } * ListNode(int val, ListNode next) { this.val = val; this.next = next; } * } */ class Solution { public ListNode deleteDuplicates(ListNode head) { ListNode cur = head; while (cur != null) { // 如果下一个节点与当前节点值相等，则删除 if (cur.next !</description></item><item><title>Kotlin Learning Snippets</title><link>https://Jimall.github.io/posts/01.kotlin-learning-snippets/</link><pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/01.kotlin-learning-snippets/</guid><description>最近看到 Kotlin 可以做桌面应用甚至 Multiplatform 应用，感觉后面能用上，于是学一波！下面记录一些有意义的 Snippets。
+/** * Definition for singly-linked list. * public class ListNode { * int val; * ListNode next; * ListNode() {} * ListNode(int val) { this.val = val; } * ListNode(int val, ListNode next) { this.val = val; this.next = next; } * } */ class Solution { public ListNode deleteDuplicates(ListNode head) { ListNode cur = head; while (cur != null) { // 如果下一个节点与当前节点值相等，则删除 if (cur.next != null &amp;amp;&amp;amp; cur.</description></item><item><title>Kotlin Learning Snippets</title><link>https://Jimall.github.io/posts/01.kotlin-learning-snippets/</link><pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/01.kotlin-learning-snippets/</guid><description>最近看到 Kotlin 可以做桌面应用甚至 Multiplatform 应用，感觉后面能用上，于是学一波！下面记录一些有意义的 Snippets。
 学习材料 Idea Edu Plugin 课程 Kotlin Koan
 Kotlin 官网文档
 JetBrains 的社区建设做得很好，文档写的很好，把 Kotlin Koan 过一遍基本就没啥问题了。
@@ -120,7 +151,7 @@ https://leetcode-cn.com/problems/linked-list-cycle/
 https://leetcode-cn.com/problems/reverse-linked-list-ii/
 同时也可以利用快慢指针找到链表中点：
 https://leetcode-cn.com/problems/middle-of-the-linked-list/
-题目推荐 21.合并两个有序链表——题解✅Leetcode✅ 82.删除排序链表中的重复元素II——题解✅Leetcode✅ 83.删除排序链表中的重复元素——题解✅Leetcode✅ 86.分隔链表——题解✅Leetcode✅ 92.反转链表 II——题解✅Leetcode✅ 138.复制带随机指针的链表——题解Leetcode 141.环形链表——题解✅Leetcode✅ 142.环形链表 II——题解✅Leetcode✅ 143.</description></item><item><title/><link>https://Jimall.github.io/posts/leetcode/problem/leetcode-143-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</link><pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-143-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</guid><description>题目链接：
+题目推荐 21.合并两个有序链表——题解✅Leetcode✅ 82.删除排序链表中的重复元素II——题解✅Leetcode✅ 83.删除排序链表中的重复元素——题解✅Leetcode✅ 86.分隔链表——题解✅Leetcode✅ 92.反转链表 II——题解✅Leetcode✅ 138.复制带随机指针的链表——题解Leetcode 141.</description></item><item><title/><link>https://Jimall.github.io/posts/leetcode/problem/leetcode-143-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</link><pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-143-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</guid><description>题目链接：
 https://leetcode-cn.com/problems/reorder-list/
 tag：链表
 这题难度本身不大，但是涉及很多技巧，一方面是使用快慢指针寻找链表中点，一方面是反转链表，然后就是链表合并。

@@ -5,5 +5,4 @@ let flag: boolean = false 有 true 和 false 两个值
 数字（number）类型
 let num1: number = 1 let num2: number = 1.8 let num3: number = -1 各种数字都是 number 类型，并且支持二进制八进制和十六进制值
 字符串（string）类型
-let name: string = &amp;#34;typescript&amp;#34; 支持模板字符串，用反引号
-let description: string = `${name}is good` 数组（array）类型</description></item></channel></rss>
+let name: string = &amp;quot;typescript&amp;quot; 支持模板字符串，用反引号</description></item></channel></rss>

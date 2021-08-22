@@ -21,7 +21,7 @@ tag：链表 虚拟头
 https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/
 tag：链表
 简单，不需要很多技巧，判断后面的节点是否与当前节点值相等，如果相等就删除，遍历一遍即可。
-/** * Definition for singly-linked list. * public class ListNode { * int val; * ListNode next; * ListNode() {} * ListNode(int val) { this.val = val; } * ListNode(int val, ListNode next) { this.val = val; this.next = next; } * } */ class Solution { public ListNode deleteDuplicates(ListNode head) { ListNode cur = head; while (cur != null) { // 如果下一个节点与当前节点值相等，则删除 if (cur.next !</description></item><item><title>Leetcode-21-合并两个有序链表</title><link>https://Jimall.github.io/posts/leetcode/problem/leetcode-021-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/</link><pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-021-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/</guid><description>题目链接：
+/** * Definition for singly-linked list. * public class ListNode { * int val; * ListNode next; * ListNode() {} * ListNode(int val) { this.val = val; } * ListNode(int val, ListNode next) { this.val = val; this.next = next; } * } */ class Solution { public ListNode deleteDuplicates(ListNode head) { ListNode cur = head; while (cur != null) { // 如果下一个节点与当前节点值相等，则删除 if (cur.next != null &amp;amp;&amp;amp; cur.</description></item><item><title>Leetcode-21-合并两个有序链表</title><link>https://Jimall.github.io/posts/leetcode/problem/leetcode-021-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/</link><pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-021-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/</guid><description>题目链接：
 https://leetcode-cn.com/problems/merge-two-sorted-lists/
 tag：归并排序 链表 虚拟头
 链表和数组是类似的，所以合并两个有序链表可以借鉴合并两个有序数组的方法，不难想到使用归并排序的策略。
@@ -44,7 +44,7 @@ https://leetcode-cn.com/problems/linked-list-cycle/
 https://leetcode-cn.com/problems/reverse-linked-list-ii/
 同时也可以利用快慢指针找到链表中点：
 https://leetcode-cn.com/problems/middle-of-the-linked-list/
-题目推荐 21.合并两个有序链表——题解✅Leetcode✅ 82.删除排序链表中的重复元素II——题解✅Leetcode✅ 83.删除排序链表中的重复元素——题解✅Leetcode✅ 86.分隔链表——题解✅Leetcode✅ 92.反转链表 II——题解✅Leetcode✅ 138.复制带随机指针的链表——题解Leetcode 141.环形链表——题解✅Leetcode✅ 142.环形链表 II——题解✅Leetcode✅ 143.</description></item><item><title/><link>https://Jimall.github.io/posts/leetcode/problem/leetcode-143-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</link><pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-143-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</guid><description>题目链接：
+题目推荐 21.合并两个有序链表——题解✅Leetcode✅ 82.删除排序链表中的重复元素II——题解✅Leetcode✅ 83.删除排序链表中的重复元素——题解✅Leetcode✅ 86.分隔链表——题解✅Leetcode✅ 92.反转链表 II——题解✅Leetcode✅ 138.复制带随机指针的链表——题解Leetcode 141.</description></item><item><title/><link>https://Jimall.github.io/posts/leetcode/problem/leetcode-143-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</link><pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-143-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</guid><description>题目链接：
 https://leetcode-cn.com/problems/reorder-list/
 tag：链表
 这题难度本身不大，但是涉及很多技巧，一方面是使用快慢指针寻找链表中点，一方面是反转链表，然后就是链表合并。
