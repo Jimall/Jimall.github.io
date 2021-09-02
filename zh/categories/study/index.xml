@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Study on BLOG</title><link>https://Jimall.github.io/zh/categories/study/</link><description>Recent content in Study on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 18 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/zh/categories/study/index.xml" rel="self" type="application/rss+xml"/><item><title>使用卡片学习</title><link>https://Jimall.github.io/zh/posts/01.%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E5%AD%A6%E4%B9%A0/</link><pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/zh/posts/01.%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E5%AD%A6%E4%B9%A0/</guid><description>学习计算机知识的时候，很多时候会觉得看完了，但结束之后发现其实自己啥也不会，啥也不记得了。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Study on BLOG</title>
+    <link>https://Jimall.github.io/zh/categories/study/</link>
+    <description>Recent content in Study on BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/zh/categories/study/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用卡片学习</title>
+      <link>https://Jimall.github.io/zh/posts/01.%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Jimall.github.io/zh/posts/01.%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E5%AD%A6%E4%B9%A0/</guid>
+      <description>学习计算机知识的时候，很多时候会觉得看完了，但结束之后发现其实自己啥也不会，啥也不记得了。
 之前看到一篇文章：https://startupnextdoor.com/retaining-computer-science-knowledge/，文中鼓励我们使用卡片进行学习，打算试试，但是感觉使用文中提到的 flash-cards 不方便于记录卡片，所以打算使用 Anki 来记录。
 Anki 的使用配置有一些问题，详见 Anki 配置
-具体使用卡片学习有何体验，后续更新。</description></item></channel></rss>
+具体使用卡片学习有何体验，后续更新。
+ </description>
+    </item>
+    
+  </channel>
+</rss>
