@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Leetcode on BLOG</title><link>https://Jimall.github.io/technology/categories/leetcode/</link><description>Recent content in Leetcode on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/technology/categories/leetcode/index.xml" rel="self" type="application/rss+xml"/><item><title>Leetcode-086-分隔链表</title><link>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-086-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8/</link><pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-086-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8/</guid><description>&lt;p>题目链接：&lt;/p>
+&lt;p>&lt;a href="https://leetcode-cn.com/problems/partition-list/">https://leetcode-cn.com/problems/partition-list/&lt;/a>&lt;/p>
+&lt;p>tag：链表 虚拟头&lt;/p>
+&lt;p>关键是构造小大两个链表，然后串起来。只要想到这个思路，代码实现就很简单了。&lt;/p>
+&lt;p>注意串的时候，需要将大链表的尾部设为 null，不然会成环。&lt;/p>
+&lt;pre>&lt;code class="language-Java">/**
+* Definition for singly-linked list.
+* public class ListNode {
+* int val;
+* ListNode next;
+* ListNode() {}
+* ListNode(int val) { this.val = val; }
+* ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+* }
+*/
+class Solution {
+public ListNode partition(ListNode head, int x) {
+ListNode current = head;
+ListNode dummySmall = new ListNode();
+ListNode currentSmall = dummySmall;
+ListNode dummyLarge = new ListNode();
+ListNode currentLarge = dummyLarge;
+while (current != null) {
+if (current.val &amp;lt; x) {
+currentSmall.next = current;
+currentSmall = currentSmall.next;
+} else {
+currentLarge.next = current;
+currentLarge = currentLarge.next;
+}
+current = current.next;
+}
+// 这一步很关键，不然会成环
+currentLarge.next = null;
+currentSmall.next = dummyLarge.next;
+return dummySmall.next;
+}
+}
+&lt;/code>&lt;/pre></description></item><item><title>Leetcode-092-反转链表II</title><link>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-092-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8ii/</link><pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-092-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8ii/</guid><description>&lt;p>题目链接：&lt;/p>
+&lt;p>&lt;a href="https://leetcode-cn.com/problems/reverse-linked-list-ii/">https://leetcode-cn.com/problems/reverse-linked-list-ii/&lt;/a>&lt;/p>
+&lt;p>tag：链表&lt;/p>
+&lt;p>在串中，部分反转可以通过先部分反转，再整体反转的思路来进行。链表部分反转也是一样的，不过&lt;strong>链表部分反转之后通过穿针引线的方式串回原链表即可&lt;/strong>，不需要进行反转。&lt;/p>
+&lt;p>具体实现就是，首先切割出子链表，然后反转子链表，最后串起来。切割子链表这里的操作需要注意、&lt;/p>
+&lt;pre>&lt;code class="language-Java">/**
+* Definition for singly-linked list.
+* public class ListNode {
+* int val;
+* ListNode next;
+* ListNode() {}
+* ListNode(int val) { this.val = val; }
+* ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+* }
+*/
+class Solution {
+public ListNode reverseBetween(ListNode head, int left, int right) {
+// 虚拟头
+ListNode dummy = new ListNode();
+dummy.next = head;
+ListNode leftNode = dummy;
+// 获得左节点右节点和边界节点
+for (int i = 0; i &amp;lt; left - 1; i++) {
+leftNode = leftNode.next;
+}
+ListNode leftEdge = leftNode;
+leftNode = leftNode.next;
+ListNode rightNode = leftNode;
+for (int i = 0; i &amp;lt; right - left; i++) {
+rightNode = rightNode.next;
+}
+ListNode rightEdge = rightNode.next;
+// 分割子链表
+// leftEdge.next = null; // 要不要这一步都行
+rightNode.next = null;
+// 反转子链表
+reverse(leftNode);
+// 串起来
+leftNode.next = rightEdge;
+leftEdge.next = rightNode;
+return dummy.next;
+}
+public void reverse(ListNode node) {
+ListNode prev = null;
+ListNode current = node;
+while (current != null) {
+ListNode next = current.next;
+current.next = prev;
+prev = current;
+current = next;
+}
+}
+}
+&lt;/code>&lt;/pre></description></item><item><title>Leetcode-206-反转链表</title><link>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/</link><pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/</guid><description>&lt;p>题目链接：&lt;/p>
+&lt;p>&lt;a href="https://leetcode-cn.com/problems/reverse-linked-list/">https://leetcode-cn.com/problems/reverse-linked-list/&lt;/a>&lt;/p>
+&lt;p>tag：链表&lt;/p>
+&lt;p>链表反转的关键在于记录前驱节点 prev，想到这点就很快能做出来。&lt;/p>
+&lt;pre>&lt;code class="language-Java">/**
+* Definition for singly-linked list.
+* public class ListNode {
+* int val;
+* ListNode next;
+* ListNode() {}
+* ListNode(int val) { this.val = val; }
+* ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+* }
+*/
+class Solution {
+public ListNode reverseList(ListNode head) {
+ListNode prev = null;
+ListNode current = head;
+while (current != null) {
+ListNode next = current.next;
+current.next = prev;
+prev = current;
+current = next;
+}
+return prev;
+}
+}
+&lt;/code>&lt;/pre>
+&lt;p>需要注意，有的时候会要求递归实现：&lt;/p></description></item><item><title>Leetcode-082-删除链表中的重复元素II</title><link>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-082-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0ii/</link><pubDate>Thu, 13 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-082-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0ii/</guid><description>&lt;p>题目链接：&lt;/p>
+&lt;p>&lt;a href="https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/">https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/&lt;/a>&lt;/p>
+&lt;p>tag：链表 虚拟头&lt;/p>
+&lt;p>如果下两个节点值相等，就证明有连续相等的值，然后进行顺序遍历直到找到不相等的值作为下一个节点。&lt;/p>
+&lt;p>这题更加体现虚拟头的作用，可以直接开始判断，如果不使用虚拟头则感觉要分情况讨论。&lt;/p>
+&lt;pre>&lt;code class="language-Java">/**
+* Definition for singly-linked list.
+* public class ListNode {
+* int val;
+* ListNode next;
+* ListNode() {}
+* ListNode(int val) { this.val = val; }
+* ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+* }
+*/
+class Solution {
+public ListNode deleteDuplicates(ListNode head) {
+ListNode dummy = new ListNode();
+dummy.next = head;
+ListNode current = dummy;
+// 循环内的流程先画好图想清楚，基本画好图根据图写好代码，后面就是一些细节问题
+while (current.next != null &amp;amp;&amp;amp; current.next.next != null) {
+// 如果下两个值相等
+if (current.next.val == current.next.next.val) {
+ListNode temp = current.next.next;
+while (temp.next != null &amp;amp;&amp;amp; temp.next.val == temp.val) {
+temp = temp.next;
+}
+// 这里不修改当前头，因为画图可以发现可能会继续删
+current.next = temp.next;
+} else {
+current = current.next;
+}
+}
+return dummy.next;
+}
+}
+&lt;/code>&lt;/pre></description></item><item><title>Leetcode-083-删除排序链表中的重复元素</title><link>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-083-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/</link><pubDate>Thu, 13 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-083-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/</guid><description>&lt;p>题目链接：&lt;/p>
+&lt;p>&lt;a href="https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/">https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/&lt;/a>&lt;/p>
+&lt;p>tag：链表&lt;/p>
+&lt;p>简单，不需要很多技巧，判断后面的节点是否与当前节点值相等，如果相等就删除，遍历一遍即可。&lt;/p>
+&lt;pre>&lt;code class="language-Java">/**
+* Definition for singly-linked list.
+* public class ListNode {
+* int val;
+* ListNode next;
+* ListNode() {}
+* ListNode(int val) { this.val = val; }
+* ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+* }
+*/
+class Solution {
+public ListNode deleteDuplicates(ListNode head) {
+ListNode cur = head;
+while (cur != null) {
+// 如果下一个节点与当前节点值相等，则删除
+if (cur.next != null &amp;amp;&amp;amp; cur.next.val == cur.val) {
+cur.next = cur.next.next;
+} else {
+cur = cur.next;
+}
+}
+return head;
+}
+}
+&lt;/code>&lt;/pre></description></item><item><title>Leetcode-21-合并两个有序链表</title><link>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-021-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/</link><pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-021-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/</guid><description>&lt;p>题目链接：&lt;/p>
+&lt;p>&lt;a href="https://leetcode-cn.com/problems/merge-two-sorted-lists/">https://leetcode-cn.com/problems/merge-two-sorted-lists/&lt;/a>&lt;/p>
+&lt;p>tag：归并排序 链表 虚拟头&lt;/p>
+&lt;p>链表和数组是类似的，所以合并两个有序链表可以借鉴合并两个有序数组的方法，不难想到使用归并排序的策略。&lt;/p>
+&lt;p>做链表题是时刻考虑判空，&lt;strong>考虑到传入的 ListNode 可能为 null，即返回的链表可能为 null，使用虚拟头解决来避免判空&lt;/strong>。&lt;/p>
+&lt;pre>&lt;code class="language-Java">/**
+* Definition for singly-linked list.
+* public class ListNode {
+* int val;
+* ListNode next;
+* ListNode() {}
+* ListNode(int val) { this.val = val; }
+* ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+* }
+*/
+class Solution {
+public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+// 虚拟头
+ListNode result = new ListNode();
+ListNode current = result;
+// 以下就是归并操作
+ListNode left = l1;
+ListNode right = l2;
+while (left != null &amp;amp;&amp;amp; right != null) {
+if (left.val &amp;lt; right.val) {
+current.next = left;
+current = current.next;
+left = left.next;
+} else {
+current.next = right;
+current = current.next;
+right = right.next;
+}
+}
+while (left != null) {
+current.next = left;
+current = current.next;
+left = left.next;
+}
+while (right != null) {
+current.next = right;
+current = current.next;
+right = right.next;
+}
+return result.next;
+}
+}
+&lt;/code>&lt;/pre></description></item><item><title>LinkedList</title><link>https://Jimall.github.io/technology/posts/leetcode/topic/01.%E9%93%BE%E8%A1%A8%E4%B8%93%E9%A2%98/</link><pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/leetcode/topic/01.%E9%93%BE%E8%A1%A8%E4%B8%93%E9%A2%98/</guid><description>&lt;h2 id="链表结构">链表结构&lt;/h2>
+&lt;p>线性结构&lt;/p>
+&lt;pre>&lt;code class="language-Java">public class ListNode {
+int val;
+ListNode next;
+}
+&lt;/code>&lt;/pre>
+&lt;h2 id="链表的基本操作">链表的基本操作&lt;/h2>
+&lt;p>要熟悉链表的常用操作和各自复杂度。&lt;/p>
+&lt;p>插入操作：O(N)&lt;/p>
+&lt;p>删除操作：O(N)&lt;/p>
+&lt;p>查找操作：O(N)&lt;/p>
+&lt;p>要知道为什么是这样的复杂度。&lt;/p>
+&lt;h2 id="解题注意事项">解题注意事项&lt;/h2>
+&lt;p>解题时心中要时刻默念：&lt;/p>
+&lt;ol>
+&lt;li>先画图，再解题&lt;/li>
+&lt;li>时刻考虑判空&lt;/li>
+&lt;/ol>
+&lt;p>链表题只要能画出图，解题的方向基本不会出问题，容易出错的地方在判空上。&lt;/p>
+&lt;h2 id="解题技巧">解题技巧&lt;/h2>
+&lt;p>链表常用的解题技巧：&lt;/p>
+&lt;ol>
+&lt;li>虚拟头&lt;/li>
+&lt;li>快慢指针&lt;/li>
+&lt;/ol>
+&lt;h3 id="虚拟头">虚拟头&lt;/h3>
+&lt;p>虚拟头在返回的链表头结点可能为 null 的时候可以用上，利用虚拟头可以避免对返回值判空，可以避免分类讨论，是链表题中很常见的一个技巧。&lt;/p>
+&lt;p>虚拟头的常见模式如下，先创建一个链表，然后将链表头和输入链表连接：&lt;/p>
+&lt;pre>&lt;code class="language-Java">ListNode dummy = new ListNode();
+// 将虚拟头和输入链表连接
+dummy.next = input;
+&lt;/code>&lt;/pre>
+&lt;p>然后进行各种操作之后返回虚拟头的下一个节点，这样即使 input 全部删除了，即返回值为 null，也不用作判断。&lt;/p>
+&lt;pre>&lt;code class="language-Java">return dummy.next;
+&lt;/code>&lt;/pre>
+&lt;h3 id="快慢指针">快慢指针&lt;/h3>
+&lt;p>快慢指针的技巧用在一些特定的题目中，是一种固定的套路。&lt;/p>
+&lt;p>主要用来判断链表成环：&lt;/p>
+&lt;p>&lt;a href="https://leetcode-cn.com/problems/linked-list-cycle/">https://leetcode-cn.com/problems/linked-list-cycle/&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://leetcode-cn.com/problems/reverse-linked-list-ii/">https://leetcode-cn.com/problems/reverse-linked-list-ii/&lt;/a>&lt;/p>
+&lt;p>同时也可以利用快慢指针找到链表中点：&lt;/p>
+&lt;p>&lt;a href="https://leetcode-cn.com/problems/middle-of-the-linked-list/">https://leetcode-cn.com/problems/middle-of-the-linked-list/&lt;/a>&lt;/p>
+&lt;h2 id="题目推荐">题目推荐&lt;/h2>
+&lt;ul>
+&lt;li>21.合并两个有序链表——&lt;a href="https://Jimall.github.io/posts/leetcode/problem/leetcode-021-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/">题解&lt;/a>✅&lt;a href="https://leetcode-cn.com/problems/merge-two-sorted-lists/">Leetcode&lt;/a>✅&lt;/li>
+&lt;li>82.删除排序链表中的重复元素II——&lt;a href="https://Jimall.github.io/posts/leetcode/problem/leetcode-082-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0II/">题解&lt;/a>✅&lt;a href="https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/">Leetcode&lt;/a>✅&lt;/li>
+&lt;li>83.删除排序链表中的重复元素——&lt;a href="https://Jimall.github.io/posts/leetcode/problem/leetcode-083-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/">题解&lt;/a>✅&lt;a href="https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/">Leetcode&lt;/a>✅&lt;/li>
+&lt;li>86.分隔链表——&lt;a href="https://Jimall.github.io/posts/leetcode/problem/leetcode-086-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8/">题解&lt;/a>✅&lt;a href="https://leetcode-cn.com/problems/partition-list/">Leetcode&lt;/a>✅&lt;/li>
+&lt;li>92.反转链表 II——&lt;a href="https://Jimall.github.io/posts/leetcode/problem/leetcode-092-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8II/">题解&lt;/a>✅&lt;a href="https://leetcode-cn.com/problems/reverse-linked-list-ii/">Leetcode&lt;/a>✅&lt;/li>
+&lt;li>138.复制带随机指针的链表——&lt;a href="https://Jimall.github.io/posts/leetcode/problem/leetcode-138-%E5%A4%8D%E5%88%B6%E5%B8%A6%E9%9A%8F%E6%9C%BA%E6%8C%87%E9%92%88%E7%9A%84%E9%93%BE%E8%A1%A8/">题解&lt;/a>&lt;a href="https://leetcode-cn.com/problems/copy-list-with-random-pointer/">Leetcode&lt;/a>&lt;/li>
+&lt;li>141.环形链表——&lt;a href="https://Jimall.github.io/posts/leetcode/problem/leetcode-141-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/">题解&lt;/a>✅&lt;a href="https://leetcode-cn.com/problems/linked-list-cycle/">Leetcode&lt;/a>✅&lt;/li>
+&lt;li>142.环形链表 II——&lt;a href="https://Jimall.github.io/posts/leetcode/problem/leetcode-142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II/">题解&lt;/a>✅&lt;a href="https://leetcode-cn.com/problems/reverse-linked-list-ii/">Leetcode&lt;/a>✅&lt;/li>
+&lt;li>143.重排链表——&lt;a href="https://Jimall.github.io/posts/leetcode/problem/leetcode-143-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/">题解&lt;/a>✅&lt;a href="https://leetcode-cn.com/problems/reorder-list/">Leetcode&lt;/a>✅&lt;/li>
+&lt;li>148.排序链表——&lt;a href="https://Jimall.github.io/posts/leetcode/problem/leetcode-148-%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8/">题解&lt;/a>✅&lt;a href="https://leetcode-cn.com/problems/sort-list/">Leetcode&lt;/a>&lt;/li>
+&lt;li>206.反转链表——&lt;a href="https://Jimall.github.io/posts/leetcode/problem/leetcode-092-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/">题解&lt;/a>✅&lt;a href="https://leetcode-cn.com/problems/reverse-linked-list/">Leetcode&lt;/a>✅&lt;/li>
+&lt;li>234.回文链表——&lt;a href="https://Jimall.github.io/posts/leetcode/problem/leetcode-092-%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8/">题解&lt;/a>✅&lt;a href="https://leetcode-cn.com/problems/palindrome-linked-list/">Leetcode&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title/><link>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-143-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</link><pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-143-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</guid><description>&lt;p>题目链接：&lt;/p>
+&lt;p>&lt;a href="https://leetcode-cn.com/problems/reorder-list/">https://leetcode-cn.com/problems/reorder-list/&lt;/a>&lt;/p>
+&lt;p>tag：链表&lt;/p>
+&lt;p>这题难度本身不大，但是涉及很多技巧，一方面是使用快慢指针寻找链表中点，一方面是反转链表，然后就是链表合并。&lt;/p>
+&lt;p>找到链表中点，反转后半部分的链表然后进行链表合并即可。&lt;/p>
+&lt;p>找链表中点可以使用快慢指针的方法，有一道 Leetcode 题：&lt;/p>
+&lt;p>&lt;a href="https://leetcode-cn.com/problems/middle-of-the-linked-list/">https://leetcode-cn.com/problems/middle-of-the-linked-list/&lt;/a>&lt;/p>
+&lt;p>注意找链表中点有讲究：&lt;/p>
+&lt;p>如果条件为 &lt;code>fast != null &amp;amp;&amp;amp; fast.next != null&lt;/code>，那么偶数长度的链表中点为中间两个的第二个，如果条件为 &lt;code>fast.next != null &amp;amp;&amp;amp; fast.next.next != null&lt;/code>，那么偶数长度的链表中点为中间两个的第一个。&lt;/p>
+&lt;p>那么代码如下：&lt;/p>
+&lt;pre>&lt;code class="language-Java">/**
+* Definition for singly-linked list.
+* public class ListNode {
+* int val;
+* ListNode next;
+* ListNode() {}
+* ListNode(int val) { this.val = val; }
+* ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+* }
+*/
+class Solution {
+public void reorderList(ListNode head) {
+if (head == null) {
+return;
+}
+ListNode mid = findMiddle(head);
+ListNode head2 = mid.next;
+mid.next = null;
+head2 = reverse(head2);
+ListNode current = head;
+ListNode current2 = head2;
+while (current2 != null) {
+ListNode next = current.next;
+current.next = current2;
+current = next;
+ListNode next2 = current2.next;
+current2.next = next;
+current2 = next2;
+}
+}
+public ListNode findMiddle(ListNode head) {
+if (head == null || head.next == null || head.next.next == null) {
+return head;
+}
+ListNode slow = head;
+ListNode fast = head;
+while (fast.next != null &amp;amp;&amp;amp; fast.next.next != null) {
+slow = slow.next;
+fast = fast.next.next;
+}
+return slow;
+}
+public ListNode reverse(ListNode head) {
+ListNode pre = null;
+ListNode current = head;
+while (current != null) {
+ListNode next = current.next;
+current.next = pre;
+pre = current;
+current = next;
+}
+return pre;
+}
+}
+&lt;/code>&lt;/pre></description></item><item><title>Leetcode-141-环形链表</title><link>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-141-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/</link><pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-141-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/</guid><description>&lt;p>题目链接：&lt;/p>
+&lt;p>&lt;a href="https://leetcode-cn.com/problems/linked-list-cycle/">https://leetcode-cn.com/problems/linked-list-cycle/&lt;/a>&lt;/p>
+&lt;p>tag：链表 快慢指针&lt;/p>
+&lt;p>&lt;strong>使用快慢指针判断链表成环一个很常见的技巧&lt;/strong>，原理就是速度快的人在没成环的时候一定不可能被速度慢的人追上。需要注意的是，比较是否相等的时候，比较的是 node 是否相等，而不是 val 是否相等。&lt;/p>
+&lt;p>注意，让两个指针初始值为 head，因为另一种形式的环形链表题一定要两个指针从 head 开始走，防止搞混所以这样操作。&lt;/p>
+&lt;pre>&lt;code class="language-Java">/**
+* Definition for singly-linked list.
+* class ListNode {
+* int val;
+* ListNode next;
+* ListNode(int x) {
+* val = x;
+* next = null;
+* }
+* }
+*/
+public class Solution {
+public boolean hasCycle(ListNode head) {
+if (head == null) {
+return false;
+}
+ListNode slow = head;
+ListNode fast = head;
+while (slow != null &amp;amp;&amp;amp; fast != null) {
+slow = slow.next;
+if (fast.next == null) {
+return false;
+}
+fast = fast.next.next;
+// 这里不考虑 slow 和 fast 都为 null 的情况，是因为 fast 一定先为 null，那个时候程序早就返回了，不可能同时为 null
+if (slow == fast) {
+return true;
+}
+}
+return false;
+}
+}
+&lt;/code>&lt;/pre></description></item><item><title>Leetcode-142-环形链表II</title><link>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8ii/</link><pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8ii/</guid><description>&lt;p>题目链接：&lt;/p>
+&lt;p>&lt;a href="https://leetcode-cn.com/problems/linked-list-cycle-ii/">https://leetcode-cn.com/problems/linked-list-cycle-ii/&lt;/a>&lt;/p>
+&lt;p>tag：链表 快慢指针&lt;/p>
+&lt;p>判断链表成环我们已经会了，找到环形链表的开始节点需要通过数学推导发现规律得到：&lt;/p>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/shangjihao/images/blog/20210624102109.png" alt="">&lt;/p>
+&lt;p>所以代码如下，值得注意的是 slow 和 fast 的开始节点一定要为 head，不然这种直接使用方法不成立：&lt;/p>
+&lt;pre>&lt;code class="language-Java">/**
+* Definition for singly-linked list.
+* class ListNode {
+* int val;
+* ListNode next;
+* ListNode(int x) {
+* val = x;
+* next = null;
+* }
+* }
+*/
+public class Solution {
+public ListNode detectCycle(ListNode head) {
+if (head == null) {
+return null;
+}
+ListNode slow = head;
+ListNode fast = head;
+// 可以简化掉 slow != null，因为 fast 一定先为 null
+while (fast != null) {
+slow = slow.next;
+if (fast.next == null) {
+return null;
+}
+fast = fast.next.next;
+if (slow == fast) {
+ListNode temp = head;
+while (temp != slow) {
+temp = temp.next;
+slow = slow.next;
+}
+return temp;
+}
+}
+return null;
+}
+}
+&lt;/code>&lt;/pre></description></item></channel></rss>

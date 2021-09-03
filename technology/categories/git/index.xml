@@ -1,20 +1,100 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>git on BLOG</title><link>https://Jimall.github.io/technology/categories/git/</link><description>Recent content in git on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/technology/categories/git/index.xml" rel="self" type="application/rss+xml"/><item><title>git submodule 的使用</title><link>https://Jimall.github.io/technology/posts/05.gitsubmodule/</link><pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/05.gitsubmodule/</guid><description>在 Git 项目中，需要包含别的 Git 项目，我们希望能够独立的使用这两个项目。比如我们的博客是一个 Git 项目，而我们需要在博客中包含别人的项目作为博客主题，我们希望能够在自己写博文后 push 不影响博客主题仓库，同时希望能够独立使用主题仓库，这样我们就可以获取最新的主题。
-这个时候需要用到 git submodule。在使用 submodule 之后，两个项目便相对独立（或者多个 submodule，那么就是多个项目相对独立）。下面介绍子模块常用的用法：
-使用子模块 添加子模块 在 Git 项目中包含别的 Git 项目，不能够直接到相应文件夹 clone，而需要使用 git add submodule 命令，可以将这个命令视为子模块版本的 git clone。
-git add submodule git@github.com/example/example.git submodule 上面的命令将项目克隆到 submodule 目录。会发现根目录生成了一个 .gitmodule 文件，这个文件用于保存子模块信息。
-查看子模块 使用 git submodule 命令查看当前项目的子模块。
-更新子模块 在项目中使用 git update 父模块并不会更新子模块。（别的操作同理，我们在项目中使用的各种以前使用的 git 操作都只会对父模块产生作用）
-使用 git submodule add 添加子项目。
-操作子模块 在子模块的文件夹内部，我们的各种操作都是对子模块的项目产生作用，比如 push 就是将子模块 push 到子模块的 remote repository。
-所以需要单独修改子模块，只需要 cd 到子模块内，把子模块当成一个普通的 git 项目即可。</description></item><item><title>.gitignore 的写法</title><link>https://Jimall.github.io/technology/posts/03.gitignore/</link><pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/03.gitignore/</guid><description>在一个项目中，并不是所有的文件都需要使用 Git 进行版本管理，比如一些自动生成的文件，这时候可以在项目中添加 .gitignore 文件来忽略一些不需要进行版本管理的文件。
-.gitignore 有一套语法，下面介绍一下：
-.gitignore 文件语法 首先 .gitignore 文件每一行定义一条规则，从上到下进行解释的。
-注释 使用 # 行注释
-通配符匹配 .gitignore 可以使用通配符匹配，并且常常用到（* 用的比较多）
-* 表示一个或多个字符
-[] 表示范围
-? 表示单个字符
-忽略文件和否定忽略文件 每一行，写路径即可忽略掉相应的内容，在路径前使用 ! 即可取消忽略相应路径，比如：
-# 忽略 .exe 文件 *.exe # 否定忽略 main.exe，由于文件是从上到下进行解释的，所以上下两条规则的意思是忽略除了 main.exe 的所有 .exe 文件 !main.exe # 忽略 build 文件夹 build/ 防止递归 直接制定文件名，实际上是递归的忽略，也就是说 *.exe 会忽略目录下的所有 .exe 文件。
-使用 / 防止递归：
-# 仅在当前目录下忽略 temp 文件， 但不包括子目录下的 subdir/temp /temp # 忽略 build/ 文件夹下的所有文件 build/ # 忽略 doc/notes.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>git on BLOG</title><link>https://Jimall.github.io/technology/categories/git/</link><description>Recent content in git on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/technology/categories/git/index.xml" rel="self" type="application/rss+xml"/><item><title>git submodule 的使用</title><link>https://Jimall.github.io/technology/posts/05.gitsubmodule/</link><pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/05.gitsubmodule/</guid><description>&lt;p>在 Git 项目中，需要包含别的 Git 项目，我们希望能够独立的使用这两个项目。比如我们的博客是一个 Git 项目，而我们需要在博客中包含别人的项目作为博客主题，我们希望能够在自己写博文后 push 不影响博客主题仓库，同时希望能够独立使用主题仓库，这样我们就可以获取最新的主题。&lt;/p>
+&lt;p>这个时候需要用到 git submodule。在使用 submodule 之后，两个项目便相对独立（或者多个 submodule，那么就是多个项目相对独立）。下面介绍子模块常用的用法：&lt;/p>
+&lt;h2 id="使用子模块">使用子模块&lt;/h2>
+&lt;h3 id="添加子模块">添加子模块&lt;/h3>
+&lt;p>在 Git 项目中包含别的 Git 项目，不能够直接到相应文件夹 clone，而需要使用 &lt;code>git add submodule&lt;/code> 命令，可以将这个命令视为子模块版本的 &lt;code>git clone&lt;/code>。&lt;/p>
+&lt;pre>&lt;code class="language-bash">git add submodule git@github.com/example/example.git submodule
+&lt;/code>&lt;/pre>
+&lt;p>上面的命令将项目克隆到 submodule 目录。会发现根目录生成了一个 .gitmodule 文件，这个文件用于保存子模块信息。&lt;/p>
+&lt;h3 id="查看子模块">查看子模块&lt;/h3>
+&lt;p>使用 &lt;code>git submodule&lt;/code> 命令查看当前项目的子模块。&lt;/p>
+&lt;h3 id="更新子模块">更新子模块&lt;/h3>
+&lt;p>在项目中使用 &lt;code>git update&lt;/code> 父模块并不会更新子模块。（别的操作同理，我们在项目中使用的各种以前使用的 git 操作都只会对父模块产生作用）&lt;/p>
+&lt;p>使用 &lt;code>git submodule add&lt;/code> 添加子项目。&lt;/p>
+&lt;h3 id="操作子模块">操作子模块&lt;/h3>
+&lt;p>在子模块的文件夹内部，我们的各种操作都是对子模块的项目产生作用，比如 push 就是将子模块 push 到子模块的 remote repository。&lt;/p>
+&lt;p>所以需要单独修改子模块，只需要 cd 到子模块内，把子模块当成一个普通的 git 项目即可。&lt;/p>
+&lt;h2 id="克隆含有子模块的项目">克隆含有子模块的项目&lt;/h2>
+&lt;p>克隆包含子模块的项目有两种方法：&lt;/p>
+&lt;ol>
+&lt;li>先克隆父项目，再更新子模块&lt;/li>
+&lt;li>递归克隆整个项目。&lt;/li>
+&lt;/ol>
+&lt;h3 id="先克隆父项目再更新子模块">先克隆父项目，再更新子模块&lt;/h3>
+&lt;p>这种方法有以下步骤：&lt;/p>
+&lt;ol>
+&lt;li>克隆父项目：&lt;code>git clone xxx&lt;/code>。注意这种情况下，像之前说的，在父项目中的操作，只对父项目产生作用，所以子项目不会被 clone。&lt;/li>
+&lt;li>查看子模块：&lt;code>git submodule&lt;/code>。会发现子模块前面有一个 &lt;code>-&lt;/code>，说明子模块文件还未被 clone（为空文件夹）。
+&lt;pre>&lt;code class="language-bash">$ git submodule
+-e33f854d3f51f5ebd771a68da05ad0371a3c0570 xxx
+&lt;/code>&lt;/pre>
+&lt;/li>
+&lt;li>初始化子模块：&lt;code>git submodule init&lt;/code>。在父模块 clone 之后运行一次，就行了。&lt;/li>
+&lt;li>更新子模块：&lt;code>git submodule update&lt;/code>。运行后子模块被 clone，整个项目就 ready 了。&lt;/li>
+&lt;/ol>
+&lt;h3 id="递归克隆整个项目">递归克隆整个项目&lt;/h3>
+&lt;p>clone 的时候，添加 &lt;code>--recursive&lt;/code> 指令，递归克隆子模块，一步到位。&lt;/p>
+&lt;pre>&lt;code class="language-bash">git clone xxxx --recursive
+&lt;/code>&lt;/pre>
+&lt;h2 id="删除子模块">删除子模块&lt;/h2>
+&lt;p>删除子模块比较麻烦，需要手动删除相关的文件，否则在添加子模块时有可能出现错误&lt;/p>
+&lt;p>以删除 assets 文件夹为例&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>删除子模块文件夹&lt;/p>
+&lt;pre>&lt;code>$ git rm --cached assets
+$ rm -rf assets
+&lt;/code>&lt;/pre>
+&lt;/li>
+&lt;li>
+&lt;p>删除 .gitmodules 文件中相关子模块信息&lt;/p>
+&lt;pre>&lt;code>[submodule &amp;quot;assets&amp;quot;]
+path = assets
+url = https://github.com/maonx/vimwiki-assets.git
+&lt;/code>&lt;/pre>
+&lt;/li>
+&lt;li>
+&lt;p>删除 .git/config 中的相关子模块信息&lt;/p>
+&lt;pre>&lt;code>[submodule &amp;quot;assets&amp;quot;]
+url = https://github.com/maonx/vimwiki-assets.git
+&lt;/code>&lt;/pre>
+&lt;/li>
+&lt;li>
+&lt;p>删除 .git 文件夹中的相关子模块文件&lt;/p>
+&lt;pre>&lt;code>$ rm -rf .git/modules/assets
+&lt;/code>&lt;/pre>
+&lt;/li>
+&lt;/ol></description></item><item><title>.gitignore 的写法</title><link>https://Jimall.github.io/technology/posts/03.gitignore/</link><pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/03.gitignore/</guid><description>&lt;p>在一个项目中，并不是所有的文件都需要使用 Git 进行版本管理，比如一些自动生成的文件，这时候可以在项目中添加 .gitignore 文件来忽略一些不需要进行版本管理的文件。&lt;/p>
+&lt;p>.gitignore 有一套语法，下面介绍一下：&lt;/p>
+&lt;h2 id="gitignore-文件语法">.gitignore 文件语法&lt;/h2>
+&lt;p>首先 .gitignore 文件每一行定义一条规则，从上到下进行解释的。&lt;/p>
+&lt;h3 id="注释">注释&lt;/h3>
+&lt;p>使用 &lt;code>#&lt;/code> 行注释&lt;/p>
+&lt;h3 id="通配符匹配">通配符匹配&lt;/h3>
+&lt;p>.gitignore 可以使用通配符匹配，并且常常用到（&lt;code>*&lt;/code> 用的比较多）&lt;/p>
+&lt;p>&lt;code>*&lt;/code> 表示一个或多个字符&lt;/p>
+&lt;p>&lt;code>[]&lt;/code> 表示范围&lt;/p>
+&lt;p>&lt;code>?&lt;/code> 表示单个字符&lt;/p>
+&lt;h3 id="忽略文件和否定忽略文件">忽略文件和否定忽略文件&lt;/h3>
+&lt;p>每一行，写路径即可忽略掉相应的内容，在路径前使用 &lt;code>!&lt;/code> 即可取消忽略相应路径，比如：&lt;/p>
+&lt;pre>&lt;code class="language-gitignore"># 忽略 .exe 文件
+*.exe
+# 否定忽略 main.exe，由于文件是从上到下进行解释的，所以上下两条规则的意思是忽略除了 main.exe 的所有 .exe 文件
+!main.exe
+# 忽略 build 文件夹
+build/
+&lt;/code>&lt;/pre>
+&lt;h3 id="防止递归">防止递归&lt;/h3>
+&lt;p>直接制定文件名，实际上是递归的忽略，也就是说 &lt;code>*.exe&lt;/code> 会忽略目录下的所有 &lt;code>.exe&lt;/code> 文件。&lt;/p>
+&lt;p>使用 &lt;code>/&lt;/code> 防止递归：&lt;/p>
+&lt;pre>&lt;code class="language-gitignore"># 仅在当前目录下忽略 temp 文件， 但不包括子目录下的 subdir/temp
+/temp
+# 忽略 build/ 文件夹下的所有文件
+build/
+# 忽略 doc/notes.txt, 不包括 doc/server/arch.txt
+doc/*.txt
+# 忽略所有的 .pdf 文件 在 doc/ 下的所有 .txt 文件
+doc/**/*.txt
+&lt;/code>&lt;/pre>
+&lt;h2 id="gitignore-vscode-插件">gitignore vscode 插件&lt;/h2>
+&lt;p>vscode 有 gitignore 插件可以帮助我们写 .gitignore 文件，在 extension store 下载，使用 CTRL+SHIFT+P 运行 add gitignore 可以自动生成不同语言的 .gitignore 文件模板，同时可以将当前文件 add .gitignore。&lt;/p></description></item></channel></rss>

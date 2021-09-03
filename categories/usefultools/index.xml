@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>UsefulTools on BLOG</title><link>https://Jimall.github.io/categories/usefultools/</link><description>Recent content in UsefulTools on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 18 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/categories/usefultools/index.xml" rel="self" type="application/rss+xml"/><item><title>Anki 的配置</title><link>https://Jimall.github.io/tech/posts/usefultools/anki/</link><pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/tech/posts/usefultools/anki/</guid><description>Anki 在安装和下载上没有很大的难度，电脑端直接安装，Android 端 Google Play 直接下载。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UsefulTools on BLOG</title>
+    <link>https://Jimall.github.io/categories/usefultools/</link>
+    <description>Recent content in UsefulTools on BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/categories/usefultools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anki 的配置</title>
+      <link>https://Jimall.github.io/posts/usefultools/anki/</link>
+      <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Jimall.github.io/posts/usefultools/anki/</guid>
+      <description>Anki 在安装和下载上没有很大的难度，电脑端直接安装，Android 端 Google Play 直接下载。
 但是在同步方面有一定的问题，因为同步使用 Ankiweb 服务，这是个国外的服务，需要挂梯子。
-需要注意的事情是 PC 端直接挂梯子会发现登录报错，这个时候需要配置 HTTP_PROXY 环境变量：每次打开anki都提示发生网络错误 ? - 劳模盐的回答 - 知乎
-配置完之后就能愉快的挂梯子同步了。</description></item></channel></rss>
+需要注意的事情是 PC 端直接挂梯子会发现登录报错，这个时候需要配置 HTTP_PROXY 环境变量：每次打开anki都提示发生网络错误 ? - 劳模盐的回答 - 知乎 
+配置完之后就能愉快的挂梯子同步了。</description>
+    </item>
+    
+  </channel>
+</rss>

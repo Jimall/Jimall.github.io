@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LinkedList on BLOG</title><link>https://Jimall.github.io/technology/categories/linkedlist/</link><description>Recent content in LinkedList on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/technology/categories/linkedlist/index.xml" rel="self" type="application/rss+xml"/><item><title>Leetcode-092-反转链表II</title><link>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-092-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8ii/</link><pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-092-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8ii/</guid><description>&lt;p>题目链接：&lt;/p>
+&lt;p>&lt;a href="https://leetcode-cn.com/problems/reverse-linked-list-ii/">https://leetcode-cn.com/problems/reverse-linked-list-ii/&lt;/a>&lt;/p>
+&lt;p>tag：链表&lt;/p>
+&lt;p>在串中，部分反转可以通过先部分反转，再整体反转的思路来进行。链表部分反转也是一样的，不过&lt;strong>链表部分反转之后通过穿针引线的方式串回原链表即可&lt;/strong>，不需要进行反转。&lt;/p>
+&lt;p>具体实现就是，首先切割出子链表，然后反转子链表，最后串起来。切割子链表这里的操作需要注意、&lt;/p>
+&lt;pre>&lt;code class="language-Java">/**
+* Definition for singly-linked list.
+* public class ListNode {
+* int val;
+* ListNode next;
+* ListNode() {}
+* ListNode(int val) { this.val = val; }
+* ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+* }
+*/
+class Solution {
+public ListNode reverseBetween(ListNode head, int left, int right) {
+// 虚拟头
+ListNode dummy = new ListNode();
+dummy.next = head;
+ListNode leftNode = dummy;
+// 获得左节点右节点和边界节点
+for (int i = 0; i &amp;lt; left - 1; i++) {
+leftNode = leftNode.next;
+}
+ListNode leftEdge = leftNode;
+leftNode = leftNode.next;
+ListNode rightNode = leftNode;
+for (int i = 0; i &amp;lt; right - left; i++) {
+rightNode = rightNode.next;
+}
+ListNode rightEdge = rightNode.next;
+// 分割子链表
+// leftEdge.next = null; // 要不要这一步都行
+rightNode.next = null;
+// 反转子链表
+reverse(leftNode);
+// 串起来
+leftNode.next = rightEdge;
+leftEdge.next = rightNode;
+return dummy.next;
+}
+public void reverse(ListNode node) {
+ListNode prev = null;
+ListNode current = node;
+while (current != null) {
+ListNode next = current.next;
+current.next = prev;
+prev = current;
+current = next;
+}
+}
+}
+&lt;/code>&lt;/pre></description></item><item><title>Leetcode-206-反转链表</title><link>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/</link><pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/</guid><description>&lt;p>题目链接：&lt;/p>
+&lt;p>&lt;a href="https://leetcode-cn.com/problems/reverse-linked-list/">https://leetcode-cn.com/problems/reverse-linked-list/&lt;/a>&lt;/p>
+&lt;p>tag：链表&lt;/p>
+&lt;p>链表反转的关键在于记录前驱节点 prev，想到这点就很快能做出来。&lt;/p>
+&lt;pre>&lt;code class="language-Java">/**
+* Definition for singly-linked list.
+* public class ListNode {
+* int val;
+* ListNode next;
+* ListNode() {}
+* ListNode(int val) { this.val = val; }
+* ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+* }
+*/
+class Solution {
+public ListNode reverseList(ListNode head) {
+ListNode prev = null;
+ListNode current = head;
+while (current != null) {
+ListNode next = current.next;
+current.next = prev;
+prev = current;
+current = next;
+}
+return prev;
+}
+}
+&lt;/code>&lt;/pre>
+&lt;p>需要注意，有的时候会要求递归实现：&lt;/p></description></item></channel></rss>

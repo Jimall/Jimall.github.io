@@ -1,8 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>TypeScript on BLOG</title><link>https://Jimall.github.io/categories/typescript/</link><description>Recent content in TypeScript on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/categories/typescript/index.xml" rel="self" type="application/rss+xml"/><item><title>TypeScript 简明教程</title><link>https://Jimall.github.io/tech/posts/frontend/typescript/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/</link><pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/tech/posts/frontend/typescript/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/</guid><description>TypeScript 是 JavaScript 的超集，能够用类似写 Java 的体验（更准确说来更像 Kotlin）来写 JavaScript，很方便很快捷。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TypeScript on BLOG</title>
+    <link>https://Jimall.github.io/categories/typescript/</link>
+    <description>Recent content in TypeScript on BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/categories/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TypeScript 简明教程</title>
+      <link>https://Jimall.github.io/posts/frontend/typescript/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Jimall.github.io/posts/frontend/typescript/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/</guid>
+      <description>TypeScript 是 JavaScript 的超集，能够用类似写 Java 的体验（更准确说来更像 Kotlin）来写 JavaScript，很方便很快捷。
 TypeScript 类型 TypeScript 的数据类型分为 boolean, number, string, array, tuple, enum, object, null, undefined, any, void, never
-布尔（boolean）类型
-let flag: boolean = false 有 true 和 false 两个值
-数字（number）类型
-let num1: number = 1 let num2: number = 1.8 let num3: number = -1 各种数字都是 number 类型，并且支持二进制八进制和十六进制值
-字符串（string）类型
-let name: string = &amp;quot;typescript&amp;quot; 支持模板字符串，用反引号</description></item></channel></rss>
+  布尔（boolean）类型
+let flag: boolean = false 有 true 和 false 两个值
+  数字（number）类型
+let num1: number = 1let num2: number = 1.8let num3: number = -1 各种数字都是 number 类型，并且支持二进制八进制和十六进制值
+  字符串（string）类型
+let name: string = &amp;quot;typescript&amp;quot; 支持模板字符串，用反引号</description>
+    </item>
+    
+  </channel>
+</rss>

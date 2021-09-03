@@ -1,11 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ArticleShare on BLOG</title><link>https://Jimall.github.io/categories/articleshare/</link><description>Recent content in ArticleShare on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 21 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/categories/articleshare/index.xml" rel="self" type="application/rss+xml"/><item><title>一些有用的命令行工具</title><link>https://Jimall.github.io/tech/posts/articleshare/commandline/</link><pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/tech/posts/articleshare/commandline/</guid><description>看到一篇文章，介绍了一些有用的命令行工具，挺有意思的
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ArticleShare on BLOG</title>
+    <link>https://Jimall.github.io/categories/articleshare/</link>
+    <description>Recent content in ArticleShare on BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/categories/articleshare/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一些有用的命令行工具</title>
+      <link>https://Jimall.github.io/posts/articleshare/commandline/</link>
+      <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Jimall.github.io/posts/articleshare/commandline/</guid>
+      <description>看到一篇文章，介绍了一些有用的命令行工具，挺有意思的
 https://zhuanlan.zhihu.com/p/373633350
 个人感觉比较有用的：
-httpie：sudo apt install httpie
+  httpie：sudo apt install httpie
 感觉命令格式比 CUrl 友好
-bat: sudo apt install bat
+  bat: sudo apt install bat
 可以完全替代 cat
-gpustat: sudo apt install gpustat
+  gpustat: sudo apt install gpustat
 查询 GPU 状态，GPU 版本的 top
-ohmyzsh:
-这个自然不用多说了，就是牛</description></item></channel></rss>
+  ohmyzsh:
+这个自然不用多说了，就是牛
+  </description>
+    </item>
+    
+  </channel>
+</rss>
