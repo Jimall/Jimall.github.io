@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BLOG</title><link>https://Jimall.github.io/technology/</link><description>Recent content on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 03 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/technology/index.xml" rel="self" type="application/rss+xml"/><item><title>Spring IoC 组件详解</title><link>https://Jimall.github.io/technology/posts/java/spring/ioc/spring%E7%AC%94%E8%AE%B0/</link><pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/java/spring/ioc/spring%E7%AC%94%E8%AE%B0/</guid><description>&lt;p>Spring 有两大核心机制：&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BLOG</title><link>https://Jimall.github.io/technology/</link><description>Recent content on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 03 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/technology/index.xml" rel="self" type="application/rss+xml"/><item><title>Spring IoC 组件详解</title><link>https://Jimall.github.io/technology/java/spring/ioc/spring%E7%AC%94%E8%AE%B0/</link><pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/java/spring/ioc/spring%E7%AC%94%E8%AE%B0/</guid><description>&lt;p>Spring 有两大核心机制：&lt;/p>
 &lt;ol>
 &lt;li>IoC (Inverse of Control, 控制反转)&lt;/li>
 &lt;li>AOP (Aspect-Oriented Programming, 面向切面编程)&lt;/li>
@@ -30,7 +30,7 @@
 &lt;h3 id="参考">参考&lt;/h3>
 &lt;p>IoC 部分，参考：&lt;/p>
 &lt;p>&lt;a href="https://blog.csdn.net/GoGleTech/article/details/79557416">https://blog.csdn.net/GoGleTech/article/details/79557416&lt;/a>&lt;/p>
-&lt;h2 id="ioc-底层原理">IoC 底层原理&lt;/h2></description></item><item><title>Spring结合Junit进行单元测试</title><link>https://Jimall.github.io/technology/posts/java/spring/spring%E7%BB%93%E5%90%88junit%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</link><pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/java/spring/spring%E7%BB%93%E5%90%88junit%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</guid><description>&lt;p>由于 Spring 各种注解的使用需要结合 xml 配置文件，所以单元测试没有办法直接写，需要引入 Spring 对单元测试的支持。下面讲讲详细步骤：&lt;/p>
+&lt;h2 id="ioc-底层原理">IoC 底层原理&lt;/h2></description></item><item><title>Spring结合Junit进行单元测试</title><link>https://Jimall.github.io/technology/java/spring/spring%E7%BB%93%E5%90%88junit%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</link><pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/java/spring/spring%E7%BB%93%E5%90%88junit%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</guid><description>&lt;p>由于 Spring 各种注解的使用需要结合 xml 配置文件，所以单元测试没有办法直接写，需要引入 Spring 对单元测试的支持。下面讲讲详细步骤：&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>引入 Spring-test 和 junit test 依赖：&lt;/p>
@@ -66,7 +66,7 @@ System.out.println(student);
 &lt;p>这样就可以正常使用了，需要注意的是，spring.xml 中需要配置才能使用 @Autowired 等注解：&lt;/p>
 &lt;pre>&lt;code class="language-xml"> &amp;lt;context:component-scan base-package=&amp;quot;org.example&amp;quot;/&amp;gt;
 &lt;/code>&lt;/pre>
-&lt;p>（同时 xml 文件头还需要引入 context 相关的域，alt+enter 即可）&lt;/p></description></item><item><title>Java 集合框架 Map 接口</title><link>https://Jimall.github.io/technology/posts/java/java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/map%E6%8E%A5%E5%8F%A3/</link><pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/java/java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/map%E6%8E%A5%E5%8F%A3/</guid><description>&lt;p>图示：&lt;/p>
+&lt;p>（同时 xml 文件头还需要引入 context 相关的域，alt+enter 即可）&lt;/p></description></item><item><title>Java 集合框架 Map 接口</title><link>https://Jimall.github.io/technology/java/java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/map%E6%8E%A5%E5%8F%A3/</link><pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/java/java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/map%E6%8E%A5%E5%8F%A3/</guid><description>&lt;p>图示：&lt;/p>
 &lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/SUSTechee/images/blog/20210310083541.png" alt="">&lt;/p>
 &lt;p>Map 通过 key-value 形式存元素，每个元素称为 entry，即一个 entry 包含 key 和 value 两个值。&lt;/p>
 &lt;h2 id="map-接口-api">Map 接口 api&lt;/h2>
@@ -1123,4 +1123,22 @@ return temp;
 return null;
 }
 }
-&lt;/code>&lt;/pre></description></item><item><title/><link>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-148-%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-148-%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8/</guid><description/></item></channel></rss>
+&lt;/code>&lt;/pre></description></item><item><title/><link>https://Jimall.github.io/technology/nlp/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E5%AD%A6%E4%B9%A0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/nlp/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E5%AD%A6%E4%B9%A0/</guid><description>&lt;h1 id="创新实践知识图谱学习">创新实践知识图谱学习&lt;/h1>
+&lt;h2 id="前期准备">前期准备&lt;/h2>
+&lt;p>&lt;strong>机器学习、深度学习相关&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>&lt;a href="https://github.com/NLP-LOVE/ML-NLP">ML-NLP&lt;/a> 此项目是机器学习(Machine Learning)、深度学习(Deep Learning)、NLP面试中常考到的知识点和代码实现，也是作为一个算法工程师必会的理论基础知识。&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1nt411r7tj">机器学习入门&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1Wt411C75s">深度学习TensorFlow框架&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>NLP相关&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://mantchs.com/2020/02/03/Introduction-NLP/%E6%96%B0%E6%89%8B%E4%B8%8A%E8%B7%AF/">自然语言处理入门何晗&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV17y4y1m737">黑马自然语言处理课程&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>neo4j&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1HQ4y1h78j">Neo4j入门&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>知识图谱相关&lt;/strong>：&lt;/p>
+&lt;p>KBQA项目实战：https://www.bilibili.com/video/BV1ev4y1o7zj?p=1&amp;amp;t=1&lt;/p></description></item><item><title/><link>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-148-%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/technology/posts/leetcode/problem/leetcode-148-%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8/</guid><description/></item></channel></rss>
