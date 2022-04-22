@@ -1,27 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>soccer on BLOG</title><link>https://Jimall.github.io/categories/soccer/</link><description>Recent content in soccer on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 03 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/categories/soccer/index.xml" rel="self" type="application/rss+xml"/><item><title>足球训练</title><link>https://Jimall.github.io/passage/%E8%B6%B3%E7%90%83%E8%AE%AD%E7%BB%83/</link><pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/passage/%E8%B6%B3%E7%90%83%E8%AE%AD%E7%BB%83/</guid><description>&lt;p>足球可以说是我在大学中唯一的室外活动，虽然会的体育运动挺多，但是目前来说只玩玩足球了。&lt;/p>
-&lt;p>从大一仅仅能够停停球，被很尊敬的队长吕派说“技术还是差点”（显然是高情商的说法），然后自己潜心练技术，水平太差，不好意思找人陪练，松禾体育场的观众席的墙便是我的陪练。功夫不负有心人，大三队长吕派评价：“已经练出来了“。听到这种评价的感觉是很奇妙的，远比作业满分，考试满分要让人亢奋。&lt;/p>
-&lt;p>到了大学之后会发现，事实上这个阶段的自己已经具备了较强的学习能力，并且网上的资料和分享也不少，最关键的是持之以恒的努力和不畏艰难的意志。足球也不例外，不管是最为基础的停球脚弓传球还是各种花式的过人，在网上都能找到一个个细节抠的视频教程。&lt;/p>
-&lt;p>学习的过程中，要想获得提升，琢磨是最关键的。一方面琢磨怎么提升，一方面在实践的过程中琢磨问题出在哪，如何改进。这个道理并不难懂，但是要做到事实上要下很大的功夫，就和学习英雄联盟中的对线一样，很多细节需要仔细抠，慢慢累积感觉，最终实现提升。&lt;/p>
-&lt;p>下面记录一些足球训练的经验和教程：&lt;/p>
-&lt;h2 id="足球技巧">足球技巧&lt;/h2>
-&lt;h3 id="锁脚踝">锁脚踝&lt;/h3>
-&lt;p>&lt;a href="https://www.bilibili.com/video/BV1px411r7ix?share_source=copy_web">https://www.bilibili.com/video/BV1px411r7ix?share_source=copy_web&lt;/a>&lt;/p>
-&lt;p>关键点：&lt;/p>
-&lt;ol>
-&lt;li>两种锁脚踝的方法：翘脚尖和脚趾抓地&lt;/li>
-&lt;li>要做到在任意方向都能锁脚踝&lt;/li>
-&lt;/ol>
-&lt;p>锁脚踝不是一个技术，主要是一种习惯，要让自己的脚适应锁脚踝的感觉。&lt;/p>
-&lt;h3 id="传接球">传接球&lt;/h3>
-&lt;p>&lt;strong>足弓传球要点：&lt;/strong>&lt;/p>
-&lt;p>&lt;a href="https://www.bilibili.com/video/BV1Ni4y1E7DQ">https://www.bilibili.com/video/BV1Ni4y1E7DQ&lt;/a>&lt;/p>
-&lt;p>&lt;strong>大脚长传：&lt;/strong>&lt;/p>
-&lt;p>&lt;a href="https://www.bilibili.com/video/BV1E4411p74V/?spm_id_from=333.788.recommend_more_video.-1">https://www.bilibili.com/video/BV1E4411p74V/?spm_id_from=333.788.recommend_more_video.-1&lt;/a>&lt;/p>
-&lt;p>&lt;strong>传接球训练：&lt;/strong>&lt;/p>
-&lt;p>&lt;a href="https://www.bilibili.com/video/BV1XE411k73e">https://www.bilibili.com/video/BV1XE411k73e&lt;/a>&lt;/p>
-&lt;p>这个视频的动作其实相对难，前面的动作要求左右脚较强的均衡能力，后面的动作还要求颠球练的很好。不过对墙练习个人认为是一种很有效的方式，可以在较菜的情况下稳步提升自己的水平，既不会被队友坑也不会坑队友。&lt;/p>
-&lt;p>关键点：&lt;/p>
-&lt;ol>
-&lt;li>传球不别扭&lt;/li>
-&lt;li>接球接准，能随心所欲控制方向&lt;/li>
-&lt;/ol></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>soccer on Jimall&#39;s Space</title>
+    <link>https://jimall.github.io/categories/soccer/</link>
+    <description>Recent content in soccer on Jimall&#39;s Space</description>
+    <image>
+      <url>https://jimall.github.io/papermod-cover.png</url>
+      <link>https://jimall.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 03 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jimall.github.io/categories/soccer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>足球训练</title>
+      <link>https://jimall.github.io/posts/thoughts/%E8%B6%B3%E7%90%83%E8%AE%AD%E7%BB%83/</link>
+      <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimall.github.io/posts/thoughts/%E8%B6%B3%E7%90%83%E8%AE%AD%E7%BB%83/</guid>
+      <description>足球可以说是我在大学中唯一的室外活动，虽然会的体育运动挺多，但是目前来说只玩玩足球了。
+从大一仅仅能够停停球，被很尊敬的队长吕派说“技术还是差点”（显然是高情商的说法），然后自己潜心练技术，水平太差，不好意思找人陪练，松禾体育场的观众席的墙便是我的陪练。功夫不负有心人，大三队长吕派评价：“已经练出来了“。听到这种评价的感觉是很奇妙的，远比作业满分，考试满分要让人亢奋。
+到了大学之后会发现，事实上这个阶段的自己已经具备了较强的学习能力，并且网上的资料和分享也不少，最关键的是持之以恒的努力和不畏艰难的意志。足球也不例外，不管是最为基础的停球脚弓传球还是各种花式的过人，在网上都能找到一个个细节抠的视频教程。
+学习的过程中，要想获得提升，琢磨是最关键的。一方面琢磨怎么提升，一方面在实践的过程中琢磨问题出在哪，如何改进。这个道理并不难懂，但是要做到事实上要下很大的功夫，就和学习英雄联盟中的对线一样，很多细节需要仔细抠，慢慢累积感觉，最终实现提升。
+下面记录一些足球训练的经验和教程：
+足球技巧 锁脚踝 https://www.bilibili.com/video/BV1px411r7ix?share_source=copy_web
+关键点：
+ 两种锁脚踝的方法：翘脚尖和脚趾抓地 要做到在任意方向都能锁脚踝  锁脚踝不是一个技术，主要是一种习惯，要让自己的脚适应锁脚踝的感觉。
+传接球 足弓传球要点：
+https://www.bilibili.com/video/BV1Ni4y1E7DQ
+大脚长传：
+https://www.bilibili.com/video/BV1E4411p74V/?spm_id_from=333.788.recommend_more_video.-1
+传接球训练：
+https://www.bilibili.com/video/BV1XE411k73e
+这个视频的动作其实相对难，前面的动作要求左右脚较强的均衡能力，后面的动作还要求颠球练的很好。不过对墙练习个人认为是一种很有效的方式，可以在较菜的情况下稳步提升自己的水平，既不会被队友坑也不会坑队友。
+关键点：
+ 传球不别扭 接球接准，能随心所欲控制方向  </description>
+    </item>
+    
+  </channel>
+</rss>

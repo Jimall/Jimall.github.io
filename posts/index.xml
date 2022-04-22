@@ -1,108 +1,148 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on BLOG</title>
-    <link>https://Jimall.github.io/posts/</link>
-    <description>Recent content in Posts on BLOG</description>
+    <title>Posts on Jimall&#39;s Space</title>
+    <link>https://jimall.github.io/posts/</link>
+    <description>Recent content in Posts on Jimall&#39;s Space</description>
+    <image>
+      <url>https://jimall.github.io/papermod-cover.png</url>
+      <link>https://jimall.github.io/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 03 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jimall.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Spring IoC 组件详解</title>
-      <link>https://Jimall.github.io/posts/java/spring/ioc/spring%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
+      <title>做自己的观察者</title>
+      <link>https://jimall.github.io/posts/thoughts/%E5%81%9A%E8%87%AA%E5%B7%B1%E7%9A%84%E8%A7%82%E5%AF%9F%E8%80%85/</link>
+      <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://Jimall.github.io/posts/java/spring/ioc/spring%E7%AC%94%E8%AE%B0/</guid>
-      <description>Spring 有两大核心机制：
- IoC (Inverse of Control, 控制反转) AOP (Aspect-Oriented Programming, 面向切面编程)  学习 Spring 的核心（单指 Spring 本身，不包括别的组件）就在于学习理解这两大核心机制。
-这篇文章我们来讲讲 IoC。
-IoC IoC 是 Spring 的核心机制。
-什么是 IoC？ IoC (Inversion of Control)，即“控制反转”。它不是一种技术，而是一种设计思想。在 Java 开发中，IoC 意味着将你设计好的对象交给容器控制，而不是在你的对象内部控制（控制的意思是说对象内部需要通过 new 等方式创建依赖对象，需要我们自己进行创建）。
-如何理解好 IoC 呢？理解好 Ioc 的关键是要明确”谁控制谁？控制什么？为何是反转？哪些方面反转了？”：
-”谁控制谁？控制什么？“：在传统 Java SE 程序设计中，我们直接在对象内部通过 new 创建对象，是对象主动去创建依赖对象，而 IoC 通过一个专门的容器（称为 IoC 容器）来创建这些对象；谁控制谁？IoC 容器控制了对象；控制什么？控制了外部资源获取（不只是对象包括比如文件等）。
-“为何是反转？哪些方面反转了？”：有反转就有正转，传统应用程序由我们自己在程序中主动控制去获取依赖对象，也就是正转，而反转则是由容器来帮忙创建及注入依赖对象；为何是反转？因为由容器帮我们查找及注入依赖对象，对象只是被动的接受依赖对象，所以是反转；哪些方面反转了？依赖对象的获取反转。
-所以控制反转的意思就是，IoC 容器控制对象，让依赖对象的获取反转。
-IoC 能做什么？ IoC 不是一种技术，而是一种设计思想，一个重要的面向对象编程的法则，它能指导我们如何设计出松耦合、更优良的程序。传统应用程序都是由我们在类内部主动创建依赖对象，从而导致类与类之间高耦合，难于测试。有了IoC容器后，把创建和查找依赖对象的控制权交给了容器，由容器进行注入组合对象，所以对象与对象之间是松散耦合，这样也方便测试，利于功能复用，更重要的是使得程序的整个体系结构变得非常灵活。
-IoC 很好的体现了面向对象设计法则中的好莱坞法则：“别找我们，我们找你”，即由 IoC 容器帮对象找相应的依赖对象并注入，而不是由对象主动去找。
-DI DI (Dependency Injection) 依赖注入。这也是 Spring 中的一个重要概念。</description>
+      <guid>https://jimall.github.io/posts/thoughts/%E5%81%9A%E8%87%AA%E5%B7%B1%E7%9A%84%E8%A7%82%E5%AF%9F%E8%80%85/</guid>
+      <description>2021/09/03
+人，终究是本能地活着，我们不论如何设想自己会遇到什么情况要怎么做，最终靠的都是本能。
+我们的未雨绸缪，我们的各种准备，都是为了自己产生本能服务。
+本能是个不便于分析的东西。比如明明如何分析来分析去，都应该在女朋友生气的时候示下弱，可是你就是说那就算了吧，我们不合适。
+我们本能会做出什么反应事实无从分析，但我们做出的本能反应却可以细细分析，比如为什么自己会删了喜欢的女孩。你本能的反应，其实反映了一些内在真实，你说什么骗不了自己，身体做出的反应是诚实的。所以分析自己的本能反应，就是发现自己的内在真实，这可以帮助我们调整自己。
+要做自己的观察者，我们的所有反应都值得细细观察。</description>
     </item>
     
     <item>
-      <title>Spring结合Junit进行单元测试</title>
-      <link>https://Jimall.github.io/posts/java/spring/spring%E7%BB%93%E5%90%88junit%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</link>
-      <pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
+      <title>喜欢</title>
+      <link>https://jimall.github.io/posts/thoughts/%E5%96%9C%E6%AC%A2/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://Jimall.github.io/posts/java/spring/spring%E7%BB%93%E5%90%88junit%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</guid>
-      <description>由于 Spring 各种注解的使用需要结合 xml 配置文件，所以单元测试没有办法直接写，需要引入 Spring 对单元测试的支持。下面讲讲详细步骤：
-  引入 Spring-test 和 junit test 依赖：
-&amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;junit&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;junit&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;4.13&amp;lt;/version&amp;gt;&amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt;&amp;lt;/dependency&amp;gt;&amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;spring-test&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;5.2.9.RELEASE&amp;lt;/version&amp;gt;&amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt;&amp;lt;/dependency&amp;gt;   在测试类中添加 @RunWith 和 @ContextConfiguration 注解
-@RunWith(SpringJUnit4ClassRunner.class)@ContextConfiguration(&amp;quot;classpath:spring.xml&amp;quot;)public class StudentTest {@Autowiredpublic Student student;@Testpublic void testStudentCreation() {System.out.println(student);}}   这样就可以正常使用了，需要注意的是，spring.xml 中需要配置才能使用 @Autowired 等注解：
-&amp;lt;context:component-scan base-package=&amp;quot;org.example&amp;quot;/&amp;gt; （同时 xml 文件头还需要引入 context 相关的域，alt+enter 即可）</description>
+      <guid>https://jimall.github.io/posts/thoughts/%E5%96%9C%E6%AC%A2/</guid>
+      <description>喜欢 今天艺术概论课上，老师提到《暗恋桃花源》里面的片段：
+ 云之凡：（走动，江滨柳跟随）有时候我在想，你在昆明呆了三年，又是在联大念的书，真是不可思议，我们同校三年，我怎么会没见过你呢？或许，我们曾经在路上擦肩而过，可是我们居然在昆明不认识，跑到上海才认识。这么大的上海，要碰到还真不容易呢！如果，我们在上海也不认识的话，那不晓得会怎么样，呵。
+江滨柳：不会，我们在上海一定会认识！
+云之凡：这么肯定？
+江滨柳：当然！我没有办法想象，如果我们在上海不认识，那生活会变得多么空虚。好，就算我们在上海不认识，我们隔了十年，我们在……汉口也会认识；就算我们在汉口也不认识，那么我们隔了三十，甚至四十年，我们在……在海外也会认识。我们一定会认识。
+云之凡：可是那样的话，我们都老了。那又有什么意思呢？
+江滨柳：（握云之凡的手）老了，也很美呀！
+ 我们在人生中一定会相遇，实在是太浪漫了！
+每每这种时候，我就会想起那个姑娘，想到感情真挚的自己。
+你还喜欢她吗？ 高中同学都知道我喜欢她，并且显而易见我们最后没有在一起，所以他们当然会问：
+ ”你是不是还对她有感情？“
+ 这个问题并不好回答，于是我常常会面露难色。
+喜欢是什么？ 要回答是不是还喜欢这个问题，首先要回答喜欢是什么？
+我觉得，喜欢不是针对某个人的，喜欢是我们对美好的向往，我们喜欢一个人，其实不是喜欢那个人，是喜欢ta身上的某些特质。并且，喜欢一个人往往是带有想象的，即我们认为ta存在让自己很喜欢的一些特质，但是实际上不一定真的如此。可能，很遗憾，只是我们看错了，ta没有想象中那般美好，这种情况稍有遗憾但其实没那么大不了。又可能，很悲伤，ta其实把我们骗了，我们对她的一切想象都是不切实际的，这种情况谓之错爱。
+我对那个人，是稍有遗憾。
+我喜欢的她活泼可爱、真诚待人、天真浪漫。她早就活在我的脑海中，让我魂牵梦绕：看文学作品会想到她、看电影会想到她，甚至梦里她也常常出现。有一天，那个人出现了，让我觉得：哇！真的就是她！梦想成真的感觉！可是慢慢发现，那个人不是她，只是我以为是她而已。然而，那个人和她的相似点也足矣让我激动不已了。
+所以，要问我还喜不喜欢，我会说我当然喜欢，但是喜欢的不是那个人，而是那个人身上闪闪发光的特质，那个人在某些方面实在是太像她了！
+ 我跟那个人已经没有可能了，但我觉得十分幸运，认识了一个那么像她的人，所以我仍然会对那个人饱含激情
+ 喜欢过的那些女孩 从高中到现在，欣赏过的女孩不算很多，她们身上的特质其实是我觉得自己应该具备的特质：
+LYJ：她给人一种很呆、很天真，甚至感觉脑子有点不好使的感觉，从长相到说话都给人这种感觉。
+我也想这样，傻傻的、呆呆的，世界本来就没那么复杂，不需要我们思考太多，想那么多，考虑那么多，多累啊！其实有点随遇而安的味道，因为人总是觉得good is never good enough，花太多时间考虑better的问题，太累了，不如worse without thinking，哪来那么多时间比较来比较去啊！
+GZQ：我现在还记得，即使在高三那么忙的时候，她的头发都梳得十分整齐，大家闺秀的感觉。纯论长相，她确实并不出众，但是结合上言谈举止和气质，那真的就是女神。她的笑是我感觉最可爱的笑了！
+这种气质我比较难有，毕竟还是走屌丝风的，个人也觉得偏向于屌丝会活的有趣一些xD。但是这种本身并不出众，靠着后天的培养变得很有气质的感觉真的很酷，腹有诗书气自华的感觉，希望有一天我也能酱紫。
+CMK：她很活泼，爱笑，配上漂亮的脸，那自然是班花级别。但她从来不觉得美是资本，于是她很努力，她不会理睬那些搭讪的男孩子，她知道她们喜欢的是她的脸，而脸并不是自己的资本，所以自己要努力，努力创造真正的资本。
+最刻骨铭心的喜欢，概括后的特质其实也没有那么特别。不过其实我对她的印象还有后续，她可能从某种程度上感受到了，美也是一种资本。于是她会高兴地说自己在表白墙上被表白了很多次。她的语气从我这里听出了得意的感觉，“我在表白墙上被表白了好多次了，一群神经病”，究竟是真的得意还是因为我对她的感情滋生出的醋意让我感到她得意，我不得而知。总之，我希望自己做事的时候忘掉自己所有的美，一件件事情都是让自己更美的步骤。
+你在哪？ 我们是不是已经认识了？我们会认识吗？我们会在什么样的年华、什么样的场景下认识呢？一切不得而知，也没有哪个好心人会来告诉我。
+我相信，我们会认识，在正好的青春，忙碌的码农生活偷闲的周末，午后的星巴克，我恰好瞟了你一眼，做出了人生中最让自己讨厌的决定：“hello，能要个微信吗？”
+毕竟，我觉得向陌生人要微信的都是傻逼。</description>
     </item>
     
     <item>
-      <title>Leetcode-086-分隔链表</title>
-      <link>https://Jimall.github.io/posts/leetcode/problem/leetcode-086-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8/</link>
-      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      <title>认可自己</title>
+      <link>https://jimall.github.io/posts/thoughts/%E8%AE%A4%E5%8F%AF%E8%87%AA%E5%B7%B1/</link>
+      <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-086-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8/</guid>
-      <description>题目链接：
-https://leetcode-cn.com/problems/partition-list/
-tag：链表 虚拟头
-关键是构造小大两个链表，然后串起来。只要想到这个思路，代码实现就很简单了。
-注意串的时候，需要将大链表的尾部设为 null，不然会成环。
-/*** Definition for singly-linked list.* public class ListNode {* int val;* ListNode next;* ListNode() {}* ListNode(int val) { this.val = val; }* ListNode(int val, ListNode next) { this.val = val; this.next = next; }* }*/class Solution {public ListNode partition(ListNode head, int x) {ListNode current = head;ListNode dummySmall = new ListNode();ListNode currentSmall = dummySmall;ListNode dummyLarge = new ListNode();ListNode currentLarge = dummyLarge;while (current !</description>
-    </item>
-    
-    <item>
-      <title>Leetcode-092-反转链表II</title>
-      <link>https://Jimall.github.io/posts/leetcode/problem/leetcode-092-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8ii/</link>
-      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-092-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8ii/</guid>
-      <description>题目链接：
-https://leetcode-cn.com/problems/reverse-linked-list-ii/
-tag：链表
-在串中，部分反转可以通过先部分反转，再整体反转的思路来进行。链表部分反转也是一样的，不过链表部分反转之后通过穿针引线的方式串回原链表即可，不需要进行反转。
-具体实现就是，首先切割出子链表，然后反转子链表，最后串起来。切割子链表这里的操作需要注意、
-/*** Definition for singly-linked list.* public class ListNode {* int val;* ListNode next;* ListNode() {}* ListNode(int val) { this.val = val; }* ListNode(int val, ListNode next) { this.val = val; this.next = next; }* }*/class Solution {public ListNode reverseBetween(ListNode head, int left, int right) {// 虚拟头ListNode dummy = new ListNode();dummy.next = head;ListNode leftNode = dummy;// 获得左节点右节点和边界节点for (int i = 0; i &amp;lt; left - 1; i++) {leftNode = leftNode.</description>
-    </item>
-    
-    <item>
-      <title>Leetcode-206-反转链表</title>
-      <link>https://Jimall.github.io/posts/leetcode/problem/leetcode-206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/</link>
-      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/</guid>
-      <description>题目链接：
-https://leetcode-cn.com/problems/reverse-linked-list/
-tag：链表
-链表反转的关键在于记录前驱节点 prev，想到这点就很快能做出来。
-/*** Definition for singly-linked list.* public class ListNode {* int val;* ListNode next;* ListNode() {}* ListNode(int val) { this.val = val; }* ListNode(int val, ListNode next) { this.val = val; this.next = next; }* }*/class Solution {public ListNode reverseList(ListNode head) {ListNode prev = null;ListNode current = head;while (current != null) {ListNode next = current.</description>
+      <guid>https://jimall.github.io/posts/thoughts/%E8%AE%A4%E5%8F%AF%E8%87%AA%E5%B7%B1/</guid>
+      <description>认可自己 实习期间，主管请吃饭，聊着聊着家长里短，他突然问我，最让你感到骄傲的事情是什么，我答不上来，觉得人生中经历的所有事情好像都没啥了不起。
+事实上，让自己感到骄傲的事情有没有呢？显然是有的，这些事情真是让自己想到就觉得我是真的真的很不戳xD。
+ 比如通过自己的努力让自己喜欢的女孩子喜欢上自己； 比如高中自己觉得自己做人各方面都不错，结果确实别人也是这么看自己的； 比如当学助时对于同学的求助，从来不会敷衍了事，从来没有搞不定的情况。 &amp;hellip;
+ 说起这些事情，真是由衷为自己感到骄傲，但是要我说给别人听，我会下意识地抗拒。归根结底，是因为害怕被别人评判，因为无论怎样，自己的观点都能被恶意的揣测，这种感觉是很糟糕的。
+“走自己的路，让别人说去吧”的洒脱真不是说有就能有的，需要比较强的自我认同和足够清醒的判断。我显然缺少自我认同，并且打心底里希望得到他人的认同。这和我以为的自己不太一样。我印象中的自己，清楚自己想要什么，不好面子，希望得到别人的认可，但这种认可是共事之后对我的信任而不是一些tag产生的晕轮效应。
+我对自己还是缺乏足够的认可，多了太多的怀疑，想对自己说：洒脱一些，自己不是挺为自己感到高兴的吗，为什么因为环境、因为别人而对自己高兴的事情感到怀疑呢？
+认可自己的两个极端一个是过于自卑、一个是过分自信，对自己的认可向这两个方向发展都是不好的，要保持清醒，时刻保持对自己的判断。
+之前，我觉得诸如你觉得最骄傲的事情的这些问题，挺尬的。可是我现在觉得，这些问题可以触发我们内在的思考，让我们能更加全面地认识自己。</description>
     </item>
     
     <item>
       <title>TypeScript 简明教程</title>
-      <link>https://Jimall.github.io/posts/frontend/typescript/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/</link>
+      <link>https://jimall.github.io/posts/tech/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/</link>
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://Jimall.github.io/posts/frontend/typescript/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/</guid>
+      <guid>https://jimall.github.io/posts/tech/typescript-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/</guid>
       <description>TypeScript 是 JavaScript 的超集，能够用类似写 Java 的体验（更准确说来更像 Kotlin）来写 JavaScript，很方便很快捷。
 TypeScript 类型 TypeScript 的数据类型分为 boolean, number, string, array, tuple, enum, object, null, undefined, any, void, never
   布尔（boolean）类型
-let flag: boolean = false 有 true 和 false 两个值
+let flag: boolean = false 有 true 和 false 两个值
   数字（number）类型
-let num1: number = 1let num2: number = 1.8let num3: number = -1 各种数字都是 number 类型，并且支持二进制八进制和十六进制值
+let num1: number = 1 let num2: number = 1.8 let num3: number = -1 各种数字都是 number 类型，并且支持二进制八进制和十六进制值
   字符串（string）类型
-let name: string = &amp;quot;typescript&amp;quot; 支持模板字符串，用反引号</description>
+let name: string = &amp;#34;typescript&amp;#34; 支持模板字符串，用反引号
+let description: string = `${name}is good`   数组（array）类型</description>
+    </item>
+    
+    <item>
+      <title>热爱永存</title>
+      <link>https://jimall.github.io/posts/thoughts/%E7%83%AD%E7%88%B1%E6%B0%B8%E5%AD%98/</link>
+      <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimall.github.io/posts/thoughts/%E7%83%AD%E7%88%B1%E6%B0%B8%E5%AD%98/</guid>
+      <description>“爱好是很重要的” 记得高中某节课，兰素芹（我们语文老师）说：“爱好是很重要的，你们以后会体会到的”。当时的我当然不会苟同这句话，哪怕不考虑当时极强的”批判性思维“能力，就仅考虑高中环境塑造出的奋斗逼和唯分数论者属性，都足矣让我不屑地想到：”爱好有啥用，分数才是最关键的“。当然兰老师的这句话会时常在我中午学不下去揣球去球场的时候用来缓解摸鱼导致的焦虑（当时巨尼玛奋斗逼，中午十二点下课规定自己得学到十二点半以后），对于心态的调整有很大作用，四舍五入就是在我的高中生涯发挥了关键性的作用 xD。
+不过我当时不认可其实也没错，因为当时老师根据爱好很重要这一命题，引例到：
+ 踢球好的男孩子受女孩子喜欢 有爱好能交到很多朋友，对于以后有很大帮助  这种外在的收益显然并不能让我满意，甚至会引起很大程度的不屑。并且，让人震怒的是！经过几年大学生涯，我发现第一例显然要考虑人与人之间的差距。我还记得随院篮球队去港中深和他们的逸夫书院（应该是偏文科的书院）打交流赛的时候，边上一堆女生，嘀咕 xxx 好帅什么的。然而，在南科大这样的理工科学校，被夸帅的时候仅仅在酒桌上，觥筹交错之间，几个男人商业互吹：“说实话，xxx 有点小帅”，“我也感觉你很帅♂”，直接进行一个泪的流😭。例子 2 倒是说的没啥问题，能交到朋友是爱好的一个很大意义，我确实通过爱好结识了一批好朋友，这些朋友也确实在很多时候给了我很多欢乐，给我带来很大的力量，不过今天话题不在与此，不作展开。
+爱好对于个人内在的价值 老师将爱好与实际收益联系，告诉我们爱好很重要，这确实是一个角度，是对于缺乏经历体会的人一种有效的引导方式。而我想说，在有一定的经历和体会之后，会发现爱好对于个人内在的价值是这些功利性的外在价值所难以比拟的。
+刚进入大学，经历的是小镇做题家到大学生的转变，生活不是很丰富，每天基本都在学习。当时不怎么逛 b 站、不玩游戏，以玩手机为耻。这样的生活很无聊， 虽然对于小镇做题家来说充满充实感，但是显然，这样的生活不可能维持太久，不管是学习太久精力不够还是人对于喜欢的东西的需求都会导致根本学不下去，这导致不论是学习状态还是个人心情，都不是很好，使得学习效果很差，同时个人能力也没有提升，只是学会了一些在后面将很快忘掉并且永远用不到的课本知识。这样的生活持续了很久，索性当时也稍微喜欢打打篮球，一切没有变得十分糟糕。
+可是，生活开始给自己开玩笑：课程学不懂，但发现自己也没有太大的学习动力去弥补，gpa 一落千丈。在这种低谷的时候，自己只会拿着书本嗯啃，啃不下来怪自己不行，继续啃，还是啃不下来。那么结果可想而知：生活变得一团糟，像是垂死挣扎的小虫，抖动着身体，用整个生命的力量挣扎着，结果却没有得到丝毫改善。在这个阶段，我很庆幸，自己有了自己热爱的一个东西——番剧。很清晰地记着，我的入坑作是《未闻花名》和《女高中生的虚度日常》，都是晚上睡不着熬夜看的，当时的感觉是十分奇妙的，像是开启了新大陆一般。于是我逐渐在很多个失意的夜里就着苦涩的咖啡和咸咸的泪水靠着番剧的陪伴度过最艰难的时光，于是我开始从一蹶不振到发奋上进。
+状态并不是一条直线，在大多数时候，它是一条沿着 baseline 上下起伏的曲线，会时常有最低谷和最高峰。在最高峰的时候，哪怕是读晦涩的论文，也能专注地干下去，在最低谷的时候，哪怕早上下床拿个充电器也嫌累。在高中的时候，我们离真正的生活很远，状态差仅仅是啥也不想学，而在大学，我们是完全自由的，生活的各个细节都由自己体味，于是状态差便是整个生活的改变。我们的爱好，会在我们低谷的时候静静陪伴着我们，帮助我们走出这些时光，帮助我们重拾信心。
+热爱让你在百无聊赖之时提起兴趣做事，热爱帮助我们度过凹凸起伏的人生中的低谷期，热爱在热情被生活打磨的灯枯油竭之时保留一份热情。
+什么是热爱 我理解的热爱，不仅仅要喜欢，更需要深入了解和尝试。因为喜欢仅仅是心理的感觉，更多时候可能是第一印象，深入之后，可能发现自己喜欢的和实际的完全不同。
+我的热爱  足球 追番 看书 游戏  打算尝试的
+ pixiv 画师 长期贡献开源项目 摄影 （这可以列一个很长的 list）  </description>
+    </item>
+    
+    <item>
+      <title>足球训练</title>
+      <link>https://jimall.github.io/posts/thoughts/%E8%B6%B3%E7%90%83%E8%AE%AD%E7%BB%83/</link>
+      <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimall.github.io/posts/thoughts/%E8%B6%B3%E7%90%83%E8%AE%AD%E7%BB%83/</guid>
+      <description>足球可以说是我在大学中唯一的室外活动，虽然会的体育运动挺多，但是目前来说只玩玩足球了。
+从大一仅仅能够停停球，被很尊敬的队长吕派说“技术还是差点”（显然是高情商的说法），然后自己潜心练技术，水平太差，不好意思找人陪练，松禾体育场的观众席的墙便是我的陪练。功夫不负有心人，大三队长吕派评价：“已经练出来了“。听到这种评价的感觉是很奇妙的，远比作业满分，考试满分要让人亢奋。
+到了大学之后会发现，事实上这个阶段的自己已经具备了较强的学习能力，并且网上的资料和分享也不少，最关键的是持之以恒的努力和不畏艰难的意志。足球也不例外，不管是最为基础的停球脚弓传球还是各种花式的过人，在网上都能找到一个个细节抠的视频教程。
+学习的过程中，要想获得提升，琢磨是最关键的。一方面琢磨怎么提升，一方面在实践的过程中琢磨问题出在哪，如何改进。这个道理并不难懂，但是要做到事实上要下很大的功夫，就和学习英雄联盟中的对线一样，很多细节需要仔细抠，慢慢累积感觉，最终实现提升。
+下面记录一些足球训练的经验和教程：
+足球技巧 锁脚踝 https://www.bilibili.com/video/BV1px411r7ix?share_source=copy_web
+关键点：
+ 两种锁脚踝的方法：翘脚尖和脚趾抓地 要做到在任意方向都能锁脚踝  锁脚踝不是一个技术，主要是一种习惯，要让自己的脚适应锁脚踝的感觉。
+传接球 足弓传球要点：
+https://www.bilibili.com/video/BV1Ni4y1E7DQ
+大脚长传：
+https://www.bilibili.com/video/BV1E4411p74V/?spm_id_from=333.788.recommend_more_video.-1
+传接球训练：
+https://www.bilibili.com/video/BV1XE411k73e
+这个视频的动作其实相对难，前面的动作要求左右脚较强的均衡能力，后面的动作还要求颠球练的很好。不过对墙练习个人认为是一种很有效的方式，可以在较菜的情况下稳步提升自己的水平，既不会被队友坑也不会坑队友。
+关键点：
+ 传球不别扭 接球接准，能随心所欲控制方向  </description>
     </item>
     
     <item>
       <title>加密算法</title>
-      <link>https://Jimall.github.io/posts/06.encryption/</link>
+      <link>https://jimall.github.io/posts/tech/06.encryption/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://Jimall.github.io/posts/06.encryption/</guid>
+      <guid>https://jimall.github.io/posts/tech/06.encryption/</guid>
       <description>加密算法涉及一些概念：数字签名、数据加密解密、加密算法、对称加密算法、非对称加密算法、单向加密算法。下面进行介绍。
 加密和解密 加密和解密主要是为了防止传输过程中的数据泄露，因为传输过程中不免会被抓包什么的。
 数据加密的基本过程，就是对原来为明文的文件或数据按某种算法进行处理，使其成为不可读的一段代码，通常称为密文。这样，发送的过程中，不会被非法人窃取，因为别人看不懂加密后的东西是啥。
@@ -129,28 +169,45 @@ let name: string = &amp;quot;typescript&amp;quot; 支持模板字符串，用�
     </item>
     
     <item>
+      <title>北方的空地</title>
+      <link>https://jimall.github.io/posts/thoughts/%E5%8C%97%E6%96%B9%E7%9A%84%E7%A9%BA%E5%9C%B0/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimall.github.io/posts/thoughts/%E5%8C%97%E6%96%B9%E7%9A%84%E7%A9%BA%E5%9C%B0/</guid>
+      <description>前段时间，看到甘肃马拉松赛的惨剧：https://www.zhihu.com/question/460921357，在比赛中，好几位经验丰富的跑者，因为恶劣天气失温最终去世，这让我对失温症产生了敬畏。
+在想到失温是一种后果很严重的情况后，就跑去刷如何处理失温啥的，刷着刷着，就刷到了推车穿越无人区的话题，大概是因为穿越无人区，防止失温是其中一个很关键的话题，又由无人区刷到《北方的空地》这篇帖子。这是一篇作者记录自己穿越大羌塘无人区的帖子，给我带来很大震撼：https://bbs.8264.com/forum-viewthread-tid-512349-extra&amp;ndash;authorid-33896449-page-1.html，推荐大家去看一看✅。
+穿越无人区，是一种冒险行为，风险很大，不仅会遇上恶劣的天气，还可能遭遇野生动物的攻击，并且生存所需的水和食物可能在中途就不够了（所以帖子的作者要推自行车而不是背包步行穿越无人区，这样能尽量多带装备和食品），中间只要有一环出现了问题，就走不出来暴尸荒野了。
+穿越无人区，需要有过硬的户外生存知识。比如知道如何应对不同的野生动物，人的身体能力相对于野生动物实在是差距甚大，即使是印象中笨重的熊跑起来也比世界上跑的最快的人要快，如果让它们对自己产生了兴趣，那基本没可能活下来。比如依靠指南针等设备进行定位和寻路的能力，显然，无人区没有高德地图，想要中途跑路需要知道该怎么走，这需要人自己判断。比如维修装备的能力，在无人区中，有一些装备是重要的，比如指南针、自行车，不可能坏了就不用了，需要自己修。还有很多很多别的户外生存知识，只有各种知识尽量完善了，才能有希望在环境恶劣的无人区中活下来，网上一些说走就走穿越无人区的行为无异于送死。
+在无人区生存，对于身体、心理上都是考验。身体上的考验自然不用多说，恶劣的环境会让人伤痕累累，会让人疲惫不堪。在心理上，生理上的疲惫势必会导致心理上的疲惫，同时，由于需要走出无人区，对于食物每天的配比，需要精确到克，防止后期食物不足走不出去，并且食物种类有限，带的调味料量也有限，这样的伙食条件持续久了，极容易让人感觉嘴馋想多吃些，然而又不能多吃，不然后面不够吃了要饿死，这就对人是一种很大的考验。不过无人区的美景对人的心理倒是很大的慰藉，大自然的鬼斧神工是人难以想象的，美不胜收的风景不也正是人们冒名前来的缘由之一吗，自由的景致、脱俗的风光，是人们痴迷这儿的很大原因。
+同时，即使各方面要素都具备了，也需要运气成分，特别是作者穿越的大羌塘无人区很大、环境很恶劣，这种情况下，运气成分可以说占了相当一部分。可能，运气不好，穿过一个山谷正好遇到饥肠辘辘的狼群，可能遇到把人卷起来的沙尘暴，可能阴雨连绵被大河围困，即使做好了万全的准备，也可能逃不过那个要命的可能。所以，穿越无人区，更需要很大的勇气，因为一旦失败，就是死。
+我觉得，大自然的美是毋庸置疑的，想象自己行路其中，胜收美景，对于心理的震撼与治愈是不言而喻的。穿越无人区，给人带来兴奋的更是自己综合能力的体现，自己通过自己的能力，通过自己的思维判断，去穿越无人区，去收获沿途美景，并且赌上的是自己的命，这能够成功，确实是人综合能力的体现，是值得骄傲的。我不喜欢和别人一起去看自然风光，大概是因为我很讨厌附和别人“真美真美，确实确实“，如果自己背上背包，一对一和大自然对话，这种感觉会是好的。
+以后一定要找一些野外宿营的机会，这种自由的感觉，我痴迷。</description>
+    </item>
+    
+    <item>
       <title>git submodule 的使用</title>
-      <link>https://Jimall.github.io/posts/05.gitsubmodule/</link>
+      <link>https://jimall.github.io/posts/tech/05.gitsubmodule/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://Jimall.github.io/posts/05.gitsubmodule/</guid>
+      <guid>https://jimall.github.io/posts/tech/05.gitsubmodule/</guid>
       <description>在 Git 项目中，需要包含别的 Git 项目，我们希望能够独立的使用这两个项目。比如我们的博客是一个 Git 项目，而我们需要在博客中包含别人的项目作为博客主题，我们希望能够在自己写博文后 push 不影响博客主题仓库，同时希望能够独立使用主题仓库，这样我们就可以获取最新的主题。
 这个时候需要用到 git submodule。在使用 submodule 之后，两个项目便相对独立（或者多个 submodule，那么就是多个项目相对独立）。下面介绍子模块常用的用法：
 使用子模块 添加子模块 在 Git 项目中包含别的 Git 项目，不能够直接到相应文件夹 clone，而需要使用 git add submodule 命令，可以将这个命令视为子模块版本的 git clone。
-git add submodule git@github.com/example/example.git submodule 上面的命令将项目克隆到 submodule 目录。会发现根目录生成了一个 .gitmodule 文件，这个文件用于保存子模块信息。
+git add submodule git@github.com/example/example.git submodule 上面的命令将项目克隆到 submodule 目录。会发现根目录生成了一个 .gitmodule 文件，这个文件用于保存子模块信息。
 查看子模块 使用 git submodule 命令查看当前项目的子模块。
 更新子模块 在项目中使用 git update 父模块并不会更新子模块。（别的操作同理，我们在项目中使用的各种以前使用的 git 操作都只会对父模块产生作用）
 使用 git submodule add 添加子项目。
 操作子模块 在子模块的文件夹内部，我们的各种操作都是对子模块的项目产生作用，比如 push 就是将子模块 push 到子模块的 remote repository。
-所以需要单独修改子模块，只需要 cd 到子模块内，把子模块当成一个普通的 git 项目即可。</description>
+所以需要单独修改子模块，只需要 cd 到子模块内，把子模块当成一个普通的 git 项目即可。
+克隆含有子模块的项目 克隆包含子模块的项目有两种方法：</description>
     </item>
     
     <item>
       <title>使用 Github actions 自动发布 Hugo 博客</title>
-      <link>https://Jimall.github.io/posts/04.hugoactions/</link>
+      <link>https://jimall.github.io/posts/tech/04.hugoactions/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://Jimall.github.io/posts/04.hugoactions/</guid>
+      <guid>https://jimall.github.io/posts/tech/04.hugoactions/</guid>
       <description>使用 hugo 写博客的时候，每次增加文章，需要本地构建之后发布到 github 上通过 github pages 服务展示页面，不难想到可以使用 CI 的方法，将构建的过程自动化，实现写博文 push 到 github 即可自动构建并发布到 github pages。
 搞的过程中坑比较多，记录为一个教程，供各位参考。
 我折腾过程中的参考：https://tianhui.xin/blog/2019/11/17/hugousegithubactionstopages/
@@ -164,10 +221,10 @@ git add submodule git@github.com/example/example.git submodule 上面的命令�
     
     <item>
       <title>.gitignore 的写法</title>
-      <link>https://Jimall.github.io/posts/03.gitignore/</link>
+      <link>https://jimall.github.io/posts/tech/03.gitignore/</link>
       <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://Jimall.github.io/posts/03.gitignore/</guid>
+      <guid>https://jimall.github.io/posts/tech/03.gitignore/</guid>
       <description>在一个项目中，并不是所有的文件都需要使用 Git 进行版本管理，比如一些自动生成的文件，这时候可以在项目中添加 .gitignore 文件来忽略一些不需要进行版本管理的文件。
 .gitignore 有一套语法，下面介绍一下：
 .gitignore 文件语法 首先 .gitignore 文件每一行定义一条规则，从上到下进行解释的。
@@ -177,179 +234,18 @@ git add submodule git@github.com/example/example.git submodule 上面的命令�
 [] 表示范围
 ? 表示单个字符
 忽略文件和否定忽略文件 每一行，写路径即可忽略掉相应的内容，在路径前使用 ! 即可取消忽略相应路径，比如：
-# 忽略 .exe 文件*.exe# 否定忽略 main.exe，由于文件是从上到下进行解释的，所以上下两条规则的意思是忽略除了 main.exe 的所有 .exe 文件!main.exe# 忽略 build 文件夹build/ 防止递归 直接制定文件名，实际上是递归的忽略，也就是说 *.exe 会忽略目录下的所有 .exe 文件。
+# 忽略 .exe 文件 *.exe # 否定忽略 main.exe，由于文件是从上到下进行解释的，所以上下两条规则的意思是忽略除了 main.exe 的所有 .exe 文件 !main.exe # 忽略 build 文件夹 build/ 防止递归 直接制定文件名，实际上是递归的忽略，也就是说 *.exe 会忽略目录下的所有 .exe 文件。
 使用 / 防止递归：
-# 仅在当前目录下忽略 temp 文件， 但不包括子目录下的 subdir/temp/temp# 忽略 build/ 文件夹下的所有文件build/# 忽略 doc/notes.</description>
-    </item>
-    
-    <item>
-      <title>一些有用的命令行工具</title>
-      <link>https://Jimall.github.io/posts/articleshare/commandline/</link>
-      <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://Jimall.github.io/posts/articleshare/commandline/</guid>
-      <description>看到一篇文章，介绍了一些有用的命令行工具，挺有意思的
-https://zhuanlan.zhihu.com/p/373633350
-个人感觉比较有用的：
-  httpie：sudo apt install httpie
-感觉命令格式比 CUrl 友好
-  bat: sudo apt install bat
-可以完全替代 cat
-  gpustat: sudo apt install gpustat
-查询 GPU 状态，GPU 版本的 top
-  ohmyzsh:
-这个自然不用多说了，就是牛
-  </description>
-    </item>
-    
-    <item>
-      <title>Anki 的配置</title>
-      <link>https://Jimall.github.io/posts/usefultools/anki/</link>
-      <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://Jimall.github.io/posts/usefultools/anki/</guid>
-      <description>Anki 在安装和下载上没有很大的难度，电脑端直接安装，Android 端 Google Play 直接下载。
-但是在同步方面有一定的问题，因为同步使用 Ankiweb 服务，这是个国外的服务，需要挂梯子。
-需要注意的事情是 PC 端直接挂梯子会发现登录报错，这个时候需要配置 HTTP_PROXY 环境变量：每次打开anki都提示发生网络错误 ? - 劳模盐的回答 - 知乎 
-配置完之后就能愉快的挂梯子同步了。</description>
-    </item>
-    
-    <item>
-      <title>Leetcode-082-删除链表中的重复元素II</title>
-      <link>https://Jimall.github.io/posts/leetcode/problem/leetcode-082-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0ii/</link>
-      <pubDate>Thu, 13 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-082-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0ii/</guid>
-      <description>题目链接：
-https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/
-tag：链表 虚拟头
-如果下两个节点值相等，就证明有连续相等的值，然后进行顺序遍历直到找到不相等的值作为下一个节点。
-这题更加体现虚拟头的作用，可以直接开始判断，如果不使用虚拟头则感觉要分情况讨论。
-/*** Definition for singly-linked list.* public class ListNode {* int val;* ListNode next;* ListNode() {}* ListNode(int val) { this.val = val; }* ListNode(int val, ListNode next) { this.val = val; this.next = next; }* }*/class Solution {public ListNode deleteDuplicates(ListNode head) {ListNode dummy = new ListNode();dummy.next = head;ListNode current = dummy;// 循环内的流程先画好图想清楚，基本画好图根据图写好代码，后面就是一些细节问题while (current.</description>
-    </item>
-    
-    <item>
-      <title>Leetcode-083-删除排序链表中的重复元素</title>
-      <link>https://Jimall.github.io/posts/leetcode/problem/leetcode-083-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/</link>
-      <pubDate>Thu, 13 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-083-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/</guid>
-      <description>题目链接：
-https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/
-tag：链表
-简单，不需要很多技巧，判断后面的节点是否与当前节点值相等，如果相等就删除，遍历一遍即可。
-/*** Definition for singly-linked list.* public class ListNode {* int val;* ListNode next;* ListNode() {}* ListNode(int val) { this.val = val; }* ListNode(int val, ListNode next) { this.val = val; this.next = next; }* }*/class Solution {public ListNode deleteDuplicates(ListNode head) {ListNode cur = head;while (cur != null) {// 如果下一个节点与当前节点值相等，则删除if (cur.next != null &amp;amp;&amp;amp; cur.</description>
-    </item>
-    
-    <item>
-      <title>Kotlin Learning Snippets</title>
-      <link>https://Jimall.github.io/posts/01.kotlin-learning-snippets/</link>
-      <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://Jimall.github.io/posts/01.kotlin-learning-snippets/</guid>
-      <description>最近看到 Kotlin 可以做桌面应用甚至 Multiplatform 应用，感觉后面能用上，于是学一波！下面记录一些有意义的 Snippets。
-学习材料 Idea Edu Plugin 课程 Kotlin Koan
-Kotlin 官网文档
-JetBrains 的社区建设做得很好，文档写的很好，把 Kotlin Koan 过一遍基本就没啥问题了。
-这种看文档去解决练习的方式个人认为是最利于有一定经验的编程者上手一个技术的方法。
-函数声明 fun sum(a: Int, b: Int): Int {return a + b}fun sum(a: Int = 1, b: Int = 2): Int = a + b </description>
-    </item>
-    
-    <item>
-      <title>Leetcode-21-合并两个有序链表</title>
-      <link>https://Jimall.github.io/posts/leetcode/problem/leetcode-021-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/</link>
-      <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-021-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/</guid>
-      <description>题目链接：
-https://leetcode-cn.com/problems/merge-two-sorted-lists/
-tag：归并排序 链表 虚拟头
-链表和数组是类似的，所以合并两个有序链表可以借鉴合并两个有序数组的方法，不难想到使用归并排序的策略。
-做链表题是时刻考虑判空，考虑到传入的 ListNode 可能为 null，即返回的链表可能为 null，使用虚拟头解决来避免判空。
-/*** Definition for singly-linked list.* public class ListNode {* int val;* ListNode next;* ListNode() {}* ListNode(int val) { this.val = val; }* ListNode(int val, ListNode next) { this.val = val; this.next = next; }* }*/class Solution {public ListNode mergeTwoLists(ListNode l1, ListNode l2) {// 虚拟头ListNode result = new ListNode();ListNode current = result;// 以下就是归并操作ListNode left = l1;ListNode right = l2;while (left !</description>
-    </item>
-    
-    <item>
-      <title>LinkedList</title>
-      <link>https://Jimall.github.io/posts/leetcode/topic/01.%E9%93%BE%E8%A1%A8%E4%B8%93%E9%A2%98/</link>
-      <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://Jimall.github.io/posts/leetcode/topic/01.%E9%93%BE%E8%A1%A8%E4%B8%93%E9%A2%98/</guid>
-      <description>链表结构 线性结构
-public class ListNode {int val;ListNode next;} 链表的基本操作 要熟悉链表的常用操作和各自复杂度。
-插入操作：O(N)
-删除操作：O(N)
-查找操作：O(N)
-要知道为什么是这样的复杂度。
-解题注意事项 解题时心中要时刻默念：
- 先画图，再解题 时刻考虑判空  链表题只要能画出图，解题的方向基本不会出问题，容易出错的地方在判空上。
-解题技巧 链表常用的解题技巧：
- 虚拟头 快慢指针  虚拟头 虚拟头在返回的链表头结点可能为 null 的时候可以用上，利用虚拟头可以避免对返回值判空，可以避免分类讨论，是链表题中很常见的一个技巧。
-虚拟头的常见模式如下，先创建一个链表，然后将链表头和输入链表连接：
-ListNode dummy = new ListNode();// 将虚拟头和输入链表连接dummy.next = input; 然后进行各种操作之后返回虚拟头的下一个节点，这样即使 input 全部删除了，即返回值为 null，也不用作判断。
-return dummy.next; 快慢指针 快慢指针的技巧用在一些特定的题目中，是一种固定的套路。
-主要用来判断链表成环：
-https://leetcode-cn.com/problems/linked-list-cycle/
-https://leetcode-cn.com/problems/reverse-linked-list-ii/
-同时也可以利用快慢指针找到链表中点：
-https://leetcode-cn.com/problems/middle-of-the-linked-list/
-题目推荐  21.合并两个有序链表——题解✅Leetcode✅ 82.删除排序链表中的重复元素II——题解✅Leetcode✅ 83.删除排序链表中的重复元素——题解✅Leetcode✅ 86.分隔链表——题解✅Leetcode✅ 92.反转链表 II——题解✅Leetcode✅ 138.复制带随机指针的链表——题解Leetcode 141.</description>
+# 仅在当前目录下忽略 temp 文件， 但不包括子目录下的 subdir/temp /temp # 忽略 build/ 文件夹下的所有文件 build/ # 忽略 doc/notes.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://Jimall.github.io/posts/leetcode/problem/leetcode-143-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</link>
-      <pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-143-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</guid>
-      <description>题目链接：
-https://leetcode-cn.com/problems/reorder-list/
-tag：链表
-这题难度本身不大，但是涉及很多技巧，一方面是使用快慢指针寻找链表中点，一方面是反转链表，然后就是链表合并。
-找到链表中点，反转后半部分的链表然后进行链表合并即可。
-找链表中点可以使用快慢指针的方法，有一道 Leetcode 题：
-https://leetcode-cn.com/problems/middle-of-the-linked-list/
-注意找链表中点有讲究：
-如果条件为 fast != null &amp;amp;&amp;amp; fast.next != null，那么偶数长度的链表中点为中间两个的第二个，如果条件为 fast.next != null &amp;amp;&amp;amp; fast.next.next != null，那么偶数长度的链表中点为中间两个的第一个。
-那么代码如下：
-/*** Definition for singly-linked list.* public class ListNode {* int val;* ListNode next;* ListNode() {}* ListNode(int val) { this.val = val; }* ListNode(int val, ListNode next) { this.val = val; this.next = next; }* }*/class Solution {public void reorderList(ListNode head) {if (head == null) {return;}ListNode mid = findMiddle(head);ListNode head2 = mid.</description>
-    </item>
-    
-    <item>
-      <title>Leetcode-141-环形链表</title>
-      <link>https://Jimall.github.io/posts/leetcode/problem/leetcode-141-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/</link>
-      <pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-141-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/</guid>
-      <description>题目链接：
-https://leetcode-cn.com/problems/linked-list-cycle/
-tag：链表 快慢指针
-使用快慢指针判断链表成环一个很常见的技巧，原理就是速度快的人在没成环的时候一定不可能被速度慢的人追上。需要注意的是，比较是否相等的时候，比较的是 node 是否相等，而不是 val 是否相等。
-注意，让两个指针初始值为 head，因为另一种形式的环形链表题一定要两个指针从 head 开始走，防止搞混所以这样操作。
-/*** Definition for singly-linked list.* class ListNode {* int val;* ListNode next;* ListNode(int x) {* val = x;* next = null;* }* }*/public class Solution {public boolean hasCycle(ListNode head) {if (head == null) {return false;}ListNode slow = head;ListNode fast = head;while (slow !</description>
-    </item>
-    
-    <item>
-      <title>Leetcode-142-环形链表II</title>
-      <link>https://Jimall.github.io/posts/leetcode/problem/leetcode-142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8ii/</link>
-      <pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8ii/</guid>
-      <description>题目链接：
-https://leetcode-cn.com/problems/linked-list-cycle-ii/
-tag：链表 快慢指针
-判断链表成环我们已经会了，找到环形链表的开始节点需要通过数学推导发现规律得到：
-所以代码如下，值得注意的是 slow 和 fast 的开始节点一定要为 head，不然这种直接使用方法不成立：
-/*** Definition for singly-linked list.* class ListNode {* int val;* ListNode next;* ListNode(int x) {* val = x;* next = null;* }* }*/public class Solution {public ListNode detectCycle(ListNode head) {if (head == null) {return null;}ListNode slow = head;ListNode fast = head;// 可以简化掉 slow !</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://Jimall.github.io/posts/leetcode/problem/leetcode-148-%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8/</link>
+      <link>https://jimall.github.io/posts/tech/java%E8%AE%A1%E7%AE%97%E5%A4%A9%E6%95%B0%E5%B7%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://Jimall.github.io/posts/leetcode/problem/leetcode-148-%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8/</guid>
-      <description></description>
+      <guid>https://jimall.github.io/posts/tech/java%E8%AE%A1%E7%AE%97%E5%A4%A9%E6%95%B0%E5%B7%AE/</guid>
+      <description>Java计算天数差 import java.time.Duration; import java.time.LocalDate; import java.time.format.DateTimeFormatter; import java.util.Scanner; public class Q4 { public static void main(String[] args) { Scanner in = new Scanner(System.in); LocalDate from = LocalDate.parse(in.next(), DateTimeFormatter.BASIC_ISO_DATE); LocalDate to = LocalDate.parse(&amp;#34;20210917&amp;#34;, DateTimeFormatter.BASIC_ISO_DATE); in.close(); Duration diff = Duration.between(from.atStartOfDay(), to.atStartOfDay()); System.out.println(diff.toDays()); } } import java.text.ParseException; import java.text.SimpleDateFormat; import java.util.Date; import java.util.Scanner; public class Q4_2 { public static void main(String[] args) { SimpleDateFormat dateFormat = new SimpleDateFormat(&amp;#34;yyyyMMdd&amp;#34;); try { Scanner in = new Scanner(System.</description>
     </item>
     
   </channel>

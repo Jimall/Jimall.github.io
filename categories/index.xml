@@ -1,1 +1,86 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on BLOG</title><link>https://Jimall.github.io/categories/</link><description>Recent content in Categories on BLOG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 04 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>随笔</title><link>https://Jimall.github.io/categories/%E9%9A%8F%E7%AC%94/</link><pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/categories/%E9%9A%8F%E7%AC%94/</guid><description/></item><item><title>soccer</title><link>https://Jimall.github.io/categories/soccer/</link><pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/categories/soccer/</guid><description/></item><item><title>Reading</title><link>https://Jimall.github.io/categories/reading/</link><pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/categories/reading/</guid><description/></item><item><title>Study</title><link>https://Jimall.github.io/categories/study/</link><pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate><guid>https://Jimall.github.io/categories/study/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on Jimall&#39;s Space</title>
+    <link>https://jimall.github.io/categories/</link>
+    <description>Recent content in Categories on Jimall&#39;s Space</description>
+    <image>
+      <url>https://jimall.github.io/papermod-cover.png</url>
+      <link>https://jimall.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jimall.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ProgrammingLanguage</title>
+      <link>https://jimall.github.io/categories/programminglanguage/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimall.github.io/categories/programminglanguage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TypeScript</title>
+      <link>https://jimall.github.io/categories/typescript/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimall.github.io/categories/typescript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>随笔</title>
+      <link>https://jimall.github.io/categories/%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimall.github.io/categories/%E9%9A%8F%E7%AC%94/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>soccer</title>
+      <link>https://jimall.github.io/categories/soccer/</link>
+      <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimall.github.io/categories/soccer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reading</title>
+      <link>https://jimall.github.io/categories/reading/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimall.github.io/categories/reading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://jimall.github.io/categories/security/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimall.github.io/categories/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BlogBuild</title>
+      <link>https://jimall.github.io/categories/blogbuild/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimall.github.io/categories/blogbuild/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://jimall.github.io/categories/git/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimall.github.io/categories/git/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

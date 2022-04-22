@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>security on BLOG</title>
-    <link>https://Jimall.github.io/categories/security/</link>
-    <description>Recent content in security on BLOG</description>
+    <title>security on Jimall&#39;s Space</title>
+    <link>https://jimall.github.io/categories/security/</link>
+    <description>Recent content in security on Jimall&#39;s Space</description>
+    <image>
+      <url>https://jimall.github.io/papermod-cover.png</url>
+      <link>https://jimall.github.io/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jimall.github.io/categories/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jimall.github.io/categories/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>加密算法</title>
-      <link>https://Jimall.github.io/posts/06.encryption/</link>
+      <link>https://jimall.github.io/posts/tech/06.encryption/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://Jimall.github.io/posts/06.encryption/</guid>
+      <guid>https://jimall.github.io/posts/tech/06.encryption/</guid>
       <description>加密算法涉及一些概念：数字签名、数据加密解密、加密算法、对称加密算法、非对称加密算法、单向加密算法。下面进行介绍。
 加密和解密 加密和解密主要是为了防止传输过程中的数据泄露，因为传输过程中不免会被抓包什么的。
 数据加密的基本过程，就是对原来为明文的文件或数据按某种算法进行处理，使其成为不可读的一段代码，通常称为密文。这样，发送的过程中，不会被非法人窃取，因为别人看不懂加密后的东西是啥。

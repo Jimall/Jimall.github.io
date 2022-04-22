@@ -1,180 +1,227 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
-<html class="h-full w-full font-sans" lang='en-us'><head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href='https://Jimall.github.io/favicon.ico' type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kotlin - BLOG</title>
+<html lang="en" dir="auto">
 
-    
-
-    
-
-    
-
-    
-
-    <link rel="stylesheet" href="/css/styles.min.4c080db7fce41f0a8332e8eb8b4c79d69d962494eb4cb5ed4d60a61cccf1226df26cccda2c9d017ab61334d2c781bf23dfc392841b9d6e18733bd790025d9a2c.css" integrity="sha512-TAgNt/zkHwqDMujri0x51p2WJJTrTLXtTWCmHMzxIm3ybMzaLJ0BerYTNNLHgb8j38OShBudbhhzO9eQAl2aLA==">
-
-
-
-
-
-    
-    <script>
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Kotlin | Jimall&#39;s Space</title>
+<meta name="keywords" content="">
+<meta name="description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
+<meta name="author" content="Jimall">
+<link rel="canonical" href="https://jimall.github.io/categories/kotlin/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.48a18943c2fc15c38a372b8dde1f5e5dc0bc64fa6cb90f5a817d2f8c76b7f3ae.css" integrity="sha256-SKGJQ8L8FcOKNyuN3h9eXcC8ZPpsuQ9agX0vjHa3864=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://jimall.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jimall.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jimall.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jimall.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jimall.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://jimall.github.io/categories/kotlin/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
         }
-    </script>
-</head><body class="flex flex-col items-center w-full">
-        <main class="w-full sm:w-10/12 md:w-9/12 lg:w-7/12 xl:w-5/12 m-auto px-6"><header class="mt-9 mb-8">
-    <div class="flex justify-between items-center">
-        <div class="flex items-center">
-            <input id="navbar_btn" class="hidden" type="checkbox">
-            <label for="navbar_btn" class="menu-btn mr-4 items-center flex xl:hidden">
-                <span class="navicon"></span>
-            </label>
-            <a href="/" class="font-bold text-lg xl:text-2xl mr-auto">BLOG</a>
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Kotlin" />
+<meta property="og:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://jimall.github.io/categories/kotlin/" /><meta property="og:image" content="https://jimall.github.io/papermod-cover.png"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://jimall.github.io/papermod-cover.png"/>
+
+<meta name="twitter:title" content="Kotlin"/>
+<meta name="twitter:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"/>
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://jimall.github.io/" accesskey="h" title="Jimall&#39;s Space (Alt + H)">Jimall&#39;s Space</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
         </div>
-
-        <div class="flex items-center">
-            <div class="cursor-pointer ml-2">
-                <svg id="dark_mode_btn" class="hidden" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg></svg>
-                <svg id="light_mode_btn" class="hidden" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><g><g><path d="M14,2c1.82,0,3.53,0.5,5,1.35C16.01,5.08,14,8.3,14,12s2.01,6.92,5,8.65C17.53,21.5,15.82,22,14,22C8.48,22,4,17.52,4,12 S8.48,2,14,2z"/></g></g></g></svg></svg>
-            </div>
-
-            
-                <div id="translation_wrapper" class="relative flex items-center cursor-pointer text-xs ml-2 py-2">
-                    <svg id="translation_btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></svg>
-                    <span class="hidden ml-1 sm:block">Tech</span>
-                    <ul id="translation_menu" class="absolute top-full left-0 rounded hidden w-max shadow-xl z-10">
-                        
-                        <li class="px-2 py-1.5">
-                            <a href="https://Jimall.github.io/zh/">Thoughts</a>
-                        </li>
-                        
-                        <li class="px-2 py-1.5">
-                            <a href="https://Jimall.github.io/">Tech</a>
-                        </li>
-                        
-                        <li class="px-2 py-1.5">
-                            <a href="https://Jimall.github.io/bangumi/">Bangumi</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-            
-
-            
-                <div class="ml-2 sep hidden sm:block"></div>
-                <div class="ml-2 relative flex items-center">
-                    <svg id="search_btn" class="cursor-pointer" width="18px" height="18px" viewBox="2 0 20 20"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></svg><div id="search_menu_wrapper" class="hidden justify-center fixed top-0 left-0 w-full h-full z-40">
-    <div id="search_menu" class="fixed flex flex-col w-full h-full sm:h-auto sm:top-24 sm:bottom-24 rounded-none sm:rounded-md sm:w-120 z-50">
-        <div class="flex min-h-10 shadow-md">
-            <div class="flex flex-grow">
-                <input id="search_menu_input" class="flex-grow focus:outline-none px-4 rounded-tl-md" type="text" placeholder=
-                >
-            </div>
-            <div id="search_menu_close_btn" class="flex items-center justify-center w-10 rounded-tr-md cursor-pointer">
-                <svg width="14px" height="14px" viewBox="3 3 18 18"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></svg>
-            </div>
-        </div>
-        <div id="search_menu_results" class="flex-grow overflow-y-auto">
-        </div>
-    </div>
-</div>
-</div>
-            
-        </div>
-    </div>
-
-    <nav id="navbar" class="mt-3 hidden xl:block"><ul class="flex"><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
-                        <a href="/posts/leetcode/problem/">Leetcode</a>
-                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
-                        <a href="/posts/java/java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/">Java</a>
-                    </li></ul>
-    </nav>
-
-    <nav id="navbar_sm" class="mt-2 hidden">
-        <ul>
-            
-                <li class="text-sm mt-2">
-                    <a href="/posts/leetcode/problem/">Leetcode</a></li>
-            
-                <li class="text-sm mt-2">
-                    <a href="/posts/java/java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/">Java</a></li>
-            
+        <ul id="menu">
+            <li>
+                <a href="https://jimall.github.io/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jimall.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jimall.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jimall.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
-
-        <hr class="my-4">
     </nav>
 </header>
-<div id="content" class="my-8">
-                <div>
-    <h1 class="font-bold text-2xl mb-4 mt-8">Kotlin</h1>
-    
-        <ul class="my-2">
-            
-                <li class="mb-2 leading-relaxed list-item">
-                    <a href="/posts/01.kotlin-learning-snippets/" class="text-base border-b-2">Kotlin Learning Snippets</a>
-                    <span class="text-xs">2021/05/08</span>
-                </li>
-            
-        </ul>
-    
-</div>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://jimall.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://jimall.github.io/categories/">Categories</a></div>
+  <h1>Kotlin</h1>
+</header>
 
-                
-                    
-                
-            </div>
-<footer class="my-8 w-full text-center text-xs">
-    <article>KON！</article>
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Kotlin Learning Snippets
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>最近看到 Kotlin 可以做桌面应用甚至 Multiplatform 应用，感觉后面能用上，于是学一波！下面记录一些有意义的 Snippets。
+学习材料 Idea Edu Plugin 课程 Kotlin Koan
+Kotlin 官网文档
+JetBrains 的社区建设做得很好，文档写的很好，把 Kotlin Koan 过一遍基本就没啥问题了。
+这种看文档去解决练习的方式个人认为是最利于有一定经验的编程者上手一个技术的方法。
+函数声明 fun sum(a: Int, b: Int): Int { return a &#43; b } fun sum(a: Int = 1, b: Int = 2): Int = a &#43; b </p>
+  </section>
+  <footer class="entry-footer"><span title='2021-05-08 00:00:00 +0000 UTC'>May 8, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jimall</footer>
+  <a class="entry-link" aria-label="post link to Kotlin Learning Snippets" href="https://jimall.github.io/tech/posts/01.kotlin-learning-snippets/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://jimall.github.io/">Jimall&#39;s Space</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
 
-</main>
-<script src="/js/header.0b11855b871cb4d10c6c07b6723b9209f5c2bc9100735ab6ff47c8f9b76bb3d6ae41b488083b5fb15697987334039eb651b25c83228c29ac48a2bc168db8a894.js" integrity="sha512-CxGFW4cctNEMbAe2cjuSCfXCvJEAc1q2/0fI&#43;bdrs9auQbSICDtfsVaXmHM0A562UbJcgyKMKaxIorwWjbiolA=="></script>
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
 
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
 
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
-
-
-    <script src="/js/multilingual.84eb767ebf77f5840471f65eceeb3b8a86b56bff9bf4de1e1da7caa0331440cd7ecfeff6bb26884c7ce0df1e258ed80ec90c80a92bb2fa2bbe550c602c181bbe.js" integrity="sha512-hOt2fr939YQEcfZezus7ioa1a/&#43;b9N4eHafKoDMUQM1&#43;z&#43;/2uyaITHzg3x4ljtgOyQyAqSuy&#43;iu&#43;VQxgLBgbvg=="></script>
-
-
-
-
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/math.d7efde37b2eb8879651e1f4489bcd4d8203b8c2bf8ca12c9e1b8cd11bfd6395b172f4999fff43ce0d047889a2bdb71ee74aebbae5327590192d1144e790fcd7b.js" integrity="sha512-1&#43;/eN7LriHllHh9EibzU2CA7jCv4yhLJ4bjNEb/WOVsXL0mZ//Q84NBHiJor23HudK67rlMnWQGS0RROeQ/New=="></script>
-
-
-
-
-    
-    
-    
-    <script src="/js/search-en-us.min.13227239449aa3f6c0a7698ac4bf80b4c6cd135fa8720c3a6016136f68162ef55edce2b9fbe8c9c8e2bdf667528c7e6400ae822cc5e3ebf218b960586d463f4a.js" integrity="sha512-EyJyOUSao/bAp2mKxL&#43;AtMbNE1&#43;ocgw6YBYTb2gWLvVe3OK5&#43;&#43;jJyOK99mdSjH5kAK6CLMXj6/IYuWBYbUY/Sg=="></script>
-
-
-
-
+</script>
 </body>
+
 </html>
