@@ -9,13 +9,40 @@
       <link>https://jimall.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 12 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jimall.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 May 2022 01:56:04 +0000</lastBuildDate><atom:link href="https://jimall.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Thinking</title>
-      <link>https://jimall.github.io/tags/thinking/</link>
+      <title>category</title>
+      <link>https://jimall.github.io/tags/category/</link>
+      <pubDate>Fri, 06 May 2022 01:56:04 +0000</pubDate>
+      
+      <guid>https://jimall.github.io/tags/category/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tag</title>
+      <link>https://jimall.github.io/tags/tag/</link>
+      <pubDate>Fri, 06 May 2022 01:56:04 +0000</pubDate>
+      
+      <guid>https://jimall.github.io/tags/tag/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://jimall.github.io/tags/about-me/</link>
       <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jimall.github.io/tags/thinking/</guid>
+      <guid>https://jimall.github.io/tags/about-me/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Career</title>
+      <link>https://jimall.github.io/tags/career/</link>
+      <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimall.github.io/tags/career/</guid>
       <description></description>
     </item>
     
@@ -25,6 +52,15 @@
       <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jimall.github.io/tags/feeling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Risk</title>
+      <link>https://jimall.github.io/tags/risk/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimall.github.io/tags/risk/</guid>
       <description></description>
     </item>
     
@@ -52,6 +88,15 @@
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jimall.github.io/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notes</title>
+      <link>https://jimall.github.io/tags/notes/</link>
+      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimall.github.io/tags/notes/</guid>
       <description></description>
     </item>
     

@@ -12,10 +12,10 @@
     <lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jimall.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>git submodule 的使用</title>
-      <link>https://jimall.github.io/posts/tech/05.gitsubmodule/</link>
+      <link>https://jimall.github.io/posts/technology/git-submodule/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/tech/05.gitsubmodule/</guid>
+      <guid>https://jimall.github.io/posts/technology/git-submodule/</guid>
       <description>在 Git 项目中，需要包含别的 Git 项目，我们希望能够独立的使用这两个项目。比如我们的博客是一个 Git 项目，而我们需要在博客中包含别人的项目作为博客主题，我们希望能够在自己写博文后 push 不影响博客主题仓库，同时希望能够独立使用主题仓库，这样我们就可以获取最新的主题。
 这个时候需要用到 git submodule。在使用 submodule 之后，两个项目便相对独立（或者多个 submodule，那么就是多个项目相对独立）。下面介绍子模块常用的用法：
 使用子模块 添加子模块 在 Git 项目中包含别的 Git 项目，不能够直接到相应文件夹 clone，而需要使用 git add submodule 命令，可以将这个命令视为子模块版本的 git clone。
@@ -30,10 +30,10 @@ git add submodule git@github.com/example/example.git submodule 上面的命令�
     
     <item>
       <title>.gitignore 的写法</title>
-      <link>https://jimall.github.io/posts/tech/03.gitignore/</link>
+      <link>https://jimall.github.io/posts/technology/usage-of-gitignore/</link>
       <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/tech/03.gitignore/</guid>
+      <guid>https://jimall.github.io/posts/technology/usage-of-gitignore/</guid>
       <description>在一个项目中，并不是所有的文件都需要使用 Git 进行版本管理，比如一些自动生成的文件，这时候可以在项目中添加 .gitignore 文件来忽略一些不需要进行版本管理的文件。
 .gitignore 有一套语法，下面介绍一下：
 .gitignore 文件语法 首先 .gitignore 文件每一行定义一条规则，从上到下进行解释的。

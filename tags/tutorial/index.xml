@@ -12,10 +12,10 @@
     <lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jimall.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>git submodule 的使用</title>
-      <link>https://jimall.github.io/posts/tech/05.gitsubmodule/</link>
+      <link>https://jimall.github.io/posts/technology/git-submodule/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/tech/05.gitsubmodule/</guid>
+      <guid>https://jimall.github.io/posts/technology/git-submodule/</guid>
       <description>在 Git 项目中，需要包含别的 Git 项目，我们希望能够独立的使用这两个项目。比如我们的博客是一个 Git 项目，而我们需要在博客中包含别人的项目作为博客主题，我们希望能够在自己写博文后 push 不影响博客主题仓库，同时希望能够独立使用主题仓库，这样我们就可以获取最新的主题。
 这个时候需要用到 git submodule。在使用 submodule 之后，两个项目便相对独立（或者多个 submodule，那么就是多个项目相对独立）。下面介绍子模块常用的用法：
 使用子模块 添加子模块 在 Git 项目中包含别的 Git 项目，不能够直接到相应文件夹 clone，而需要使用 git add submodule 命令，可以将这个命令视为子模块版本的 git clone。
@@ -30,10 +30,10 @@ git add submodule git@github.com/example/example.git submodule 上面的命令�
     
     <item>
       <title>使用 Github actions 自动发布 Hugo 博客</title>
-      <link>https://jimall.github.io/posts/tech/04.hugoactions/</link>
+      <link>https://jimall.github.io/posts/technology/%E4%BD%BF%E7%94%A8-github-actions-%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83-hugo-%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/tech/04.hugoactions/</guid>
+      <guid>https://jimall.github.io/posts/technology/%E4%BD%BF%E7%94%A8-github-actions-%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83-hugo-%E5%8D%9A%E5%AE%A2/</guid>
       <description>使用 hugo 写博客的时候，每次增加文章，需要本地构建之后发布到 github 上通过 github pages 服务展示页面，不难想到可以使用 CI 的方法，将构建的过程自动化，实现写博文 push 到 github 即可自动构建并发布到 github pages。
 搞的过程中坑比较多，记录为一个教程，供各位参考。
 我折腾过程中的参考：https://tianhui.xin/blog/2019/11/17/hugousegithubactionstopages/
@@ -43,26 +43,6 @@ git add submodule git@github.com/example/example.git submodule 上面的命令�
 创建代码仓库 这个仓库和我们本地直接关联，创建有一些细节需要注意，我下面的过程给各位参考：
   github 创建空仓库 username.github.io.source
   本地找个空文件夹，比如叫 HugoBlog，进去之后初始化 Hugo Blog：hugo new site .</description>
-    </item>
-    
-    <item>
-      <title>.gitignore 的写法</title>
-      <link>https://jimall.github.io/posts/tech/03.gitignore/</link>
-      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://jimall.github.io/posts/tech/03.gitignore/</guid>
-      <description>在一个项目中，并不是所有的文件都需要使用 Git 进行版本管理，比如一些自动生成的文件，这时候可以在项目中添加 .gitignore 文件来忽略一些不需要进行版本管理的文件。
-.gitignore 有一套语法，下面介绍一下：
-.gitignore 文件语法 首先 .gitignore 文件每一行定义一条规则，从上到下进行解释的。
-注释 使用 # 行注释
-通配符匹配 .gitignore 可以使用通配符匹配，并且常常用到（* 用的比较多）
-* 表示一个或多个字符
-[] 表示范围
-? 表示单个字符
-忽略文件和否定忽略文件 每一行，写路径即可忽略掉相应的内容，在路径前使用 ! 即可取消忽略相应路径，比如：
-# 忽略 .exe 文件 *.exe # 否定忽略 main.exe，由于文件是从上到下进行解释的，所以上下两条规则的意思是忽略除了 main.exe 的所有 .exe 文件 !main.exe # 忽略 build 文件夹 build/ 防止递归 直接制定文件名，实际上是递归的忽略，也就是说 *.exe 会忽略目录下的所有 .exe 文件。
-使用 / 防止递归：
-# 仅在当前目录下忽略 temp 文件， 但不包括子目录下的 subdir/temp /temp # 忽略 build/ 文件夹下的所有文件 build/ # 忽略 doc/notes.</description>
     </item>
     
   </channel>
