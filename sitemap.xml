@@ -2,37 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jimall.github.io/categories/</loc>
+    <lastmod>2022-06-20T12:43:52+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall.github.io/</loc>
+    <lastmod>2022-06-20T12:43:52+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall.github.io/categories/misc/</loc>
+    <lastmod>2022-06-20T12:43:52+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall.github.io/posts/</loc>
+    <lastmod>2022-06-20T12:43:52+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall.github.io/tags/software/</loc>
+    <lastmod>2022-06-20T12:43:52+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall.github.io/tags/</loc>
+    <lastmod>2022-06-20T12:43:52+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall.github.io/posts/misc/%E6%88%91%E7%9A%84-journal-%E8%AE%B0%E5%BD%95%E6%96%B9%E6%A1%88/</loc>
+    <lastmod>2022-06-20T12:43:52+00:00</lastmod>
+  </url><url>
     <loc>https://jimall.github.io/posts/book/atomic-habits/</loc>
     <lastmod>2022-05-21T23:32:59+00:00</lastmod>
   </url><url>
     <loc>https://jimall.github.io/categories/book/</loc>
     <lastmod>2022-05-21T23:32:59+00:00</lastmod>
   </url><url>
-    <loc>https://jimall.github.io/categories/</loc>
-    <lastmod>2022-05-21T23:32:59+00:00</lastmod>
-  </url><url>
     <loc>https://jimall.github.io/tags/habit/</loc>
     <lastmod>2022-05-21T23:32:59+00:00</lastmod>
   </url><url>
-    <loc>https://jimall.github.io/</loc>
-    <lastmod>2022-05-21T23:32:59+00:00</lastmod>
-  </url><url>
-    <loc>https://jimall.github.io/posts/</loc>
-    <lastmod>2022-05-21T23:32:59+00:00</lastmod>
-  </url><url>
     <loc>https://jimall.github.io/tags/productivity/</loc>
-    <lastmod>2022-05-21T23:32:59+00:00</lastmod>
-  </url><url>
-    <loc>https://jimall.github.io/tags/</loc>
     <lastmod>2022-05-21T23:32:59+00:00</lastmod>
   </url><url>
     <loc>https://jimall.github.io/about/</loc>
     <lastmod>2022-05-06T05:51:25+00:00</lastmod>
   </url><url>
     <loc>https://jimall.github.io/tags/category/</loc>
-    <lastmod>2022-05-06T05:29:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jimall.github.io/categories/misc/</loc>
     <lastmod>2022-05-06T05:29:00+00:00</lastmod>
   </url><url>
     <loc>https://jimall.github.io/tags/tag/</loc>

@@ -38,11 +38,11 @@ git add submodule git@github.com/example/example.git submodule 上面的命令�
 搞的过程中坑比较多，记录为一个教程，供各位参考。
 我折腾过程中的参考：https://tianhui.xin/blog/2019/11/17/hugousegithubactionstopages/
 创建代码仓库和 github pages 仓库 构建过程中采用两个仓库：
- 代码仓库，github pages 在这里构建并发布，我们设为 username.github.io.source github pages 仓库，用于存放构建好的文件，github pages 服务会根据构建好的文件展示我们的博。客，我们设为 username.github.io （username 改为你自己的 github username）  简单说来就是根据代码仓库的文件构建，构建好之后发布到 github pages 仓库，github pages 仓库由于有 github 提供的服务，会自动展示我们的 blog。
+代码仓库，github pages 在这里构建并发布，我们设为 username.github.io.source github pages 仓库，用于存放构建好的文件，github pages 服务会根据构建好的文件展示我们的博。客，我们设为 username.github.io （username 改为你自己的 github username） 简单说来就是根据代码仓库的文件构建，构建好之后发布到 github pages 仓库，github pages 仓库由于有 github 提供的服务，会自动展示我们的 blog。
 创建 github pages 仓库 没啥特别，github 上创建一个空仓库 username.github.io
 创建代码仓库 这个仓库和我们本地直接关联，创建有一些细节需要注意，我下面的过程给各位参考：
-  github 创建空仓库 username.github.io.source
-  本地找个空文件夹，比如叫 HugoBlog，进去之后初始化 Hugo Blog：hugo new site .</description>
+github 创建空仓库 username.github.io.source
+本地找个空文件夹，比如叫 HugoBlog，进去之后初始化 Hugo Blog：hugo new site . 初始化 git 仓库：git init 添加主题文件，这步需要注意，需要使用 git submodule 来进行（照着做就完了，不需要深入了解），比如我这边采用的主题文件为 joway/hugo-theme-yinyang，那么命令为：git submodule add git@github.</description>
     </item>
     
   </channel>
