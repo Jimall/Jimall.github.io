@@ -30,10 +30,10 @@ git add submodule git@github.com/example/example.git submodule 上面的命令�
     
     <item>
       <title>使用 Github actions 自动发布 Hugo 博客</title>
-      <link>https://jimall.github.io/posts/technology/%E4%BD%BF%E7%94%A8-github-actions-%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83-hugo-%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://jimall.github.io/posts/technology/github-acitons/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/technology/%E4%BD%BF%E7%94%A8-github-actions-%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83-hugo-%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://jimall.github.io/posts/technology/github-acitons/</guid>
       <description>使用 hugo 写博客的时候，每次增加文章，需要本地构建之后发布到 github 上通过 github pages 服务展示页面，不难想到可以使用 CI 的方法，将构建的过程自动化，实现写博文 push 到 github 即可自动构建并发布到 github pages。
 搞的过程中坑比较多，记录为一个教程，供各位参考。
 我折腾过程中的参考：https://tianhui.xin/blog/2019/11/17/hugousegithubactionstopages/
