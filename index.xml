@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Jimall&#39;s Blog</title>
-    <link>https://jimall.github.io/</link>
+    <link>https://jimall-blog.vercel.app/</link>
     <description>Recent content on Jimall&#39;s Blog</description>
     <image>
-      <url>https://jimall.github.io/papermod-cover.png</url>
-      <link>https://jimall.github.io/papermod-cover.png</link>
+      <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
+      <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 07 Jul 2022 15:15:01 +0000</lastBuildDate><atom:link href="https://jimall.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jul 2022 15:15:01 +0000</lastBuildDate><atom:link href="https://jimall-blog.vercel.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>爱情，大概是奢侈品罢</title>
-      <link>https://jimall.github.io/posts/book/love-is-luxury/</link>
+      <link>https://jimall-blog.vercel.app/posts/book/love-is-luxury/</link>
       <pubDate>Thu, 07 Jul 2022 15:15:01 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/book/love-is-luxury/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/book/love-is-luxury/</guid>
       <description>《我本芬芳》书评</description>
     </item>
     
     <item>
       <title>我的 Journal 记录方案</title>
-      <link>https://jimall.github.io/posts/misc/how-do-i-take-journal/</link>
+      <link>https://jimall-blog.vercel.app/posts/misc/how-do-i-take-journal/</link>
       <pubDate>Mon, 20 Jun 2022 12:43:52 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/misc/how-do-i-take-journal/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/misc/how-do-i-take-journal/</guid>
       <description>关于 Journal 究竟记什么以及我如何记 Journal</description>
     </item>
     
     <item>
       <title>Atomic Habits: 不止于习惯</title>
-      <link>https://jimall.github.io/posts/book/atomic-habits/</link>
+      <link>https://jimall-blog.vercel.app/posts/book/atomic-habits/</link>
       <pubDate>Sat, 21 May 2022 21:13:04 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/book/atomic-habits/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/book/atomic-habits/</guid>
       <description>James Clear *Atomic Habits* 读书笔记</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jimall.github.io/about/</link>
+      <link>https://jimall-blog.vercel.app/about/</link>
       <pubDate>Fri, 06 May 2022 05:51:25 +0000</pubDate>
       
-      <guid>https://jimall.github.io/about/</guid>
+      <guid>https://jimall-blog.vercel.app/about/</guid>
       <description>I am Jimall, a software engineer living in Shenzhen, China.
 I just graduated from the university, so I&amp;rsquo;m just a rookie, but I can feel my passion on programming, hope I can become a skillful software engineer🙏.
 Here are some keywords about me:
@@ -52,10 +52,10 @@ I love Python, I often use Python to handle data-related work and use it to auto
     
     <item>
       <title>Tag 和 Category 的不同</title>
-      <link>https://jimall.github.io/posts/misc/difference-between-tag-and-category/</link>
+      <link>https://jimall-blog.vercel.app/posts/misc/difference-between-tag-and-category/</link>
       <pubDate>Fri, 06 May 2022 01:56:04 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/misc/difference-between-tag-and-category/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/misc/difference-between-tag-and-category/</guid>
       <description>静态博客中 Tag 和 Category 的不同之处</description>
     </item>
     
@@ -63,10 +63,10 @@ I love Python, I often use Python to handle data-related work and use it to auto
     
     <item>
       <title>认可自己</title>
-      <link>https://jimall.github.io/posts/thought/recgonize-yourself/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/recgonize-yourself/</link>
       <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/thought/recgonize-yourself/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/recgonize-yourself/</guid>
       <description>实习期间，主管请吃饭，聊着聊着家长里短，他突然问我，最让你感到骄傲的事情是什么，我答不上来，觉得人生中经历的所有事情好像都没啥了不起。
 事实上，让自己感到骄傲的事情有没有呢？显然是有的，这些事情真是让自己想到就觉得我是真的真的很不戳xD。
 比如能冷静地思考很多事情，同时不显得异类；
@@ -82,10 +82,10 @@ I love Python, I often use Python to handle data-related work and use it to auto
     
     <item>
       <title>做自己的观察者</title>
-      <link>https://jimall.github.io/posts/thought/observe-youself/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/observe-youself/</link>
       <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/thought/observe-youself/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/observe-youself/</guid>
       <description>人，终究是本能地活着，我们不论如何设想自己会遇到什么情况要怎么做，最终靠的都是本能。
 我们的未雨绸缪，我们的各种准备，都是为了自己产生本能服务。
 本能是个不便于分析的东西。比如明明如何分析来分析去，都应该在女朋友生气的时候示下弱，可是你就是说那就算了吧，我们不合适。
@@ -95,10 +95,10 @@ I love Python, I often use Python to handle data-related work and use it to auto
     
     <item>
       <title>热爱永存</title>
-      <link>https://jimall.github.io/posts/thought/love-never-die/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/love-never-die/</link>
       <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/thought/love-never-die/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/love-never-die/</guid>
       <description>“爱好是很重要的” 记得高中某节课，兰素芹（高中语文老师）说：“爱好是很重要的，你们以后会体会到的”。当时的我当然不会认同这句话，哪怕不考虑当时极强的”批判性思维“能力，就仅考虑高中环境塑造出的奋斗逼和唯分数论者属性，都足矣让我不屑地想到：”爱好有啥用，分数才是最关键的“。当然兰老师的这句话会时常在我中午学不下去揣球去球场的时候用来缓解摸鱼导致的焦虑（当时巨奋斗逼，中午十二点下课规定自己得学到十二点半以后）。
 不过我当时不认可其实也没错，因为当时老师根据爱好很重要这一命题，引例到：
 踢球好的男孩子受女孩子喜欢 有爱好能交到很多朋友，对于以后有很大帮助 这种外在的收益显然并不能让我满意，甚至会引起很大程度的不屑。并且，让人震怒的是！经过几年大学生涯，我发现第一例显然要考虑人与人之间的差距。我还记得随院篮球队去港中深和他们的逸夫书院（应该是偏文科的书院）打交流赛的时候，边上一堆女生，嘀咕 xxx 好帅什么的。然而，在南科大这样的理工科学校，被夸帅的时候仅仅在酒桌上，觥筹交错之间，几个男人商业互吹：“说实话，xxx 有点小帅”，“我也感觉你很帅♂”，直接进行一个泪的流😭。例子 2 倒是说的没啥问题，能交到朋友是爱好的一个很大意义，我确实通过爱好结识了一批好朋友，这些朋友也确实在很多时候给了我很多欢乐，给我带来很大的力量，不过今天话题不在与此，不作展开。
@@ -114,10 +114,10 @@ pixiv 画师 长期贡献开源项目 摄影 （这可以列一个很长的 list
     
     <item>
       <title>北方的空地</title>
-      <link>https://jimall.github.io/posts/thought/adventures-in-changtang/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/adventures-in-changtang/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/thought/adventures-in-changtang/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/adventures-in-changtang/</guid>
       <description>今天，看到甘肃马拉松赛的惨剧，感到不寒而栗。在马拉松比赛中，好几位经验丰富的跑者，因为恶劣天气失温最终去世。
 我很早就知道失温是一种极其危险的情况，就跑去刷如何处理失温啥的。刷着刷着，大概是因为防止失温是穿越无人区很重要的话题，就刷到了推自行车穿越无人区的话题，又由无人区刷到《北方的空地》这篇帖子。这是一篇作者记录自己穿越大羌塘无人区的帖子，给我带来很大震撼：北方的空地，孤身穿越大羌塘无人区，推荐大家去看一看✅。阮一峰也有一篇博客讲到这则帖子：北方的空地 - 阮一峰网络日志。
 穿越无人区，是十分冒险的行为，不仅会遇上恶劣的天气，还可能遭遇野生动物的攻击，即使没有被恶劣环境折磨，由于穿越需要较长的时间，生存所需的水和食物可能在中途就不够了，所以穿越无人区要推自行车，不是为了能骑行，而是为了尽可能多带物资。
@@ -131,10 +131,10 @@ pixiv 画师 长期贡献开源项目 摄影 （这可以列一个很长的 list
     
     <item>
       <title>git submodule 的使用</title>
-      <link>https://jimall.github.io/posts/technology/git-submodule/</link>
+      <link>https://jimall-blog.vercel.app/posts/technology/git-submodule/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/technology/git-submodule/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/technology/git-submodule/</guid>
       <description>在 Git 项目中，需要包含别的 Git 项目，我们希望能够独立的使用这两个项目。比如我们的博客是一个 Git 项目，而我们需要在博客中包含别人的项目作为博客主题，我们希望能够在自己写博文后 push 不影响博客主题仓库，同时希望能够独立使用主题仓库，这样我们就可以获取最新的主题。
 这个时候需要用到 git submodule。在使用 submodule 之后，两个项目便相对独立（或者多个 submodule，那么就是多个项目相对独立）。下面介绍子模块常用的用法：
 使用子模块 添加子模块 在 Git 项目中包含别的 Git 项目，不能够直接到相应文件夹 clone，而需要使用 git add submodule 命令，可以将这个命令视为子模块版本的 git clone。
@@ -149,10 +149,10 @@ git add submodule git@github.com/example/example.git submodule 上面的命令�
     
     <item>
       <title>使用 Github actions 自动发布 Hugo 博客</title>
-      <link>https://jimall.github.io/posts/technology/github-acitons/</link>
+      <link>https://jimall-blog.vercel.app/posts/technology/github-acitons/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/technology/github-acitons/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/technology/github-acitons/</guid>
       <description>使用 hugo 写博客的时候，每次增加文章，需要本地构建之后发布到 github 上通过 github pages 服务展示页面，不难想到可以使用 CI 的方法，将构建的过程自动化，实现写博文 push 到 github 即可自动构建并发布到 github pages。
 搞的过程中坑比较多，记录为一个教程，供各位参考。
 我折腾过程中的参考：https://tianhui.xin/blog/2019/11/17/hugousegithubactionstopages/
@@ -166,10 +166,10 @@ github 创建空仓库 username.github.io.source
     
     <item>
       <title>.gitignore 的写法</title>
-      <link>https://jimall.github.io/posts/technology/usage-of-gitignore/</link>
+      <link>https://jimall-blog.vercel.app/posts/technology/usage-of-gitignore/</link>
       <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/technology/usage-of-gitignore/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/technology/usage-of-gitignore/</guid>
       <description>在一个项目中，并不是所有的文件都需要使用 Git 进行版本管理，比如一些自动生成的文件，这时候可以在项目中添加 .gitignore 文件来忽略一些不需要进行版本管理的文件。
 .gitignore 有一套语法，下面介绍一下：
 .gitignore 文件语法 首先 .gitignore 文件每一行定义一条规则，从上到下进行解释的。

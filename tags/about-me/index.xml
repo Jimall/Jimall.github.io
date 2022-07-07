@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>About me on Jimall&#39;s Blog</title>
-    <link>https://jimall.github.io/tags/about-me/</link>
+    <link>https://jimall-blog.vercel.app/tags/about-me/</link>
     <description>Recent content in About me on Jimall&#39;s Blog</description>
     <image>
-      <url>https://jimall.github.io/papermod-cover.png</url>
-      <link>https://jimall.github.io/papermod-cover.png</link>
+      <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
+      <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 12 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jimall.github.io/tags/about-me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jimall-blog.vercel.app/tags/about-me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>认可自己</title>
-      <link>https://jimall.github.io/posts/thought/recgonize-yourself/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/recgonize-yourself/</link>
       <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/thought/recgonize-yourself/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/recgonize-yourself/</guid>
       <description>实习期间，主管请吃饭，聊着聊着家长里短，他突然问我，最让你感到骄傲的事情是什么，我答不上来，觉得人生中经历的所有事情好像都没啥了不起。
 事实上，让自己感到骄傲的事情有没有呢？显然是有的，这些事情真是让自己想到就觉得我是真的真的很不戳xD。
 比如能冷静地思考很多事情，同时不显得异类；

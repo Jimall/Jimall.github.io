@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>habit on Jimall&#39;s Blog</title>
-    <link>https://jimall.github.io/tags/habit/</link>
+    <link>https://jimall-blog.vercel.app/tags/habit/</link>
     <description>Recent content in habit on Jimall&#39;s Blog</description>
     <image>
-      <url>https://jimall.github.io/papermod-cover.png</url>
-      <link>https://jimall.github.io/papermod-cover.png</link>
+      <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
+      <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 21 May 2022 21:13:04 +0000</lastBuildDate><atom:link href="https://jimall.github.io/tags/habit/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 May 2022 21:13:04 +0000</lastBuildDate><atom:link href="https://jimall-blog.vercel.app/tags/habit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Atomic Habits: 不止于习惯</title>
-      <link>https://jimall.github.io/posts/book/atomic-habits/</link>
+      <link>https://jimall-blog.vercel.app/posts/book/atomic-habits/</link>
       <pubDate>Sat, 21 May 2022 21:13:04 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/book/atomic-habits/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/book/atomic-habits/</guid>
       <description>James Clear *Atomic Habits* 读书笔记</description>
     </item>
     

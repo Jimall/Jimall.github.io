@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Notes on Jimall&#39;s Blog</title>
-    <link>https://jimall.github.io/tags/notes/</link>
+    <link>https://jimall-blog.vercel.app/tags/notes/</link>
     <description>Recent content in Notes on Jimall&#39;s Blog</description>
     <image>
-      <url>https://jimall.github.io/papermod-cover.png</url>
-      <link>https://jimall.github.io/papermod-cover.png</link>
+      <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
+      <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jimall.github.io/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jimall-blog.vercel.app/tags/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>.gitignore 的写法</title>
-      <link>https://jimall.github.io/posts/technology/usage-of-gitignore/</link>
+      <link>https://jimall-blog.vercel.app/posts/technology/usage-of-gitignore/</link>
       <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/technology/usage-of-gitignore/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/technology/usage-of-gitignore/</guid>
       <description>在一个项目中，并不是所有的文件都需要使用 Git 进行版本管理，比如一些自动生成的文件，这时候可以在项目中添加 .gitignore 文件来忽略一些不需要进行版本管理的文件。
 .gitignore 有一套语法，下面介绍一下：
 .gitignore 文件语法 首先 .gitignore 文件每一行定义一条规则，从上到下进行解释的。

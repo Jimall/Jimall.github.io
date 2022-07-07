@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>GitHub Actions on Jimall&#39;s Blog</title>
-    <link>https://jimall.github.io/tags/github-actions/</link>
+    <link>https://jimall-blog.vercel.app/tags/github-actions/</link>
     <description>Recent content in GitHub Actions on Jimall&#39;s Blog</description>
     <image>
-      <url>https://jimall.github.io/papermod-cover.png</url>
-      <link>https://jimall.github.io/papermod-cover.png</link>
+      <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
+      <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jimall.github.io/tags/github-actions/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jimall-blog.vercel.app/tags/github-actions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 Github actions 自动发布 Hugo 博客</title>
-      <link>https://jimall.github.io/posts/technology/github-acitons/</link>
+      <link>https://jimall-blog.vercel.app/posts/technology/github-acitons/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/technology/github-acitons/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/technology/github-acitons/</guid>
       <description>使用 hugo 写博客的时候，每次增加文章，需要本地构建之后发布到 github 上通过 github pages 服务展示页面，不难想到可以使用 CI 的方法，将构建的过程自动化，实现写博文 push 到 github 即可自动构建并发布到 github pages。
 搞的过程中坑比较多，记录为一个教程，供各位参考。
 我折腾过程中的参考：https://tianhui.xin/blog/2019/11/17/hugousegithubactionstopages/

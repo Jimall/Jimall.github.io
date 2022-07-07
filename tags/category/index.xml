@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>category on Jimall&#39;s Blog</title>
-    <link>https://jimall.github.io/tags/category/</link>
+    <link>https://jimall-blog.vercel.app/tags/category/</link>
     <description>Recent content in category on Jimall&#39;s Blog</description>
     <image>
-      <url>https://jimall.github.io/papermod-cover.png</url>
-      <link>https://jimall.github.io/papermod-cover.png</link>
+      <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
+      <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 May 2022 01:56:04 +0000</lastBuildDate><atom:link href="https://jimall.github.io/tags/category/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 May 2022 01:56:04 +0000</lastBuildDate><atom:link href="https://jimall-blog.vercel.app/tags/category/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tag 和 Category 的不同</title>
-      <link>https://jimall.github.io/posts/misc/difference-between-tag-and-category/</link>
+      <link>https://jimall-blog.vercel.app/posts/misc/difference-between-tag-and-category/</link>
       <pubDate>Fri, 06 May 2022 01:56:04 +0000</pubDate>
       
-      <guid>https://jimall.github.io/posts/misc/difference-between-tag-and-category/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/misc/difference-between-tag-and-category/</guid>
       <description>静态博客中 Tag 和 Category 的不同之处</description>
     </item>
     
