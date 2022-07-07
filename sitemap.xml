@@ -2,31 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jimall.github.io/categories/book/</loc>
+    <lastmod>2022-07-07T15:15:01+00:00</lastmod>
+  </url><url>
     <loc>https://jimall.github.io/categories/</loc>
-    <lastmod>2022-06-20T12:43:52+00:00</lastmod>
+    <lastmod>2022-07-07T15:15:01+00:00</lastmod>
   </url><url>
     <loc>https://jimall.github.io/</loc>
-    <lastmod>2022-06-20T12:43:52+00:00</lastmod>
+    <lastmod>2022-07-07T15:15:01+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall.github.io/tags/love/</loc>
+    <lastmod>2022-07-07T15:15:01+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall.github.io/tags/marriage/</loc>
+    <lastmod>2022-07-07T15:15:01+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall.github.io/posts/</loc>
+    <lastmod>2022-07-07T15:15:01+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall.github.io/tags/</loc>
+    <lastmod>2022-07-07T15:15:01+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall.github.io/posts/book/love-is-luxury/</loc>
+    <lastmod>2022-07-07T15:15:01+00:00</lastmod>
   </url><url>
     <loc>https://jimall.github.io/categories/misc/</loc>
     <lastmod>2022-06-20T12:43:52+00:00</lastmod>
   </url><url>
-    <loc>https://jimall.github.io/posts/</loc>
-    <lastmod>2022-06-20T12:43:52+00:00</lastmod>
-  </url><url>
     <loc>https://jimall.github.io/tags/software/</loc>
-    <lastmod>2022-06-20T12:43:52+00:00</lastmod>
-  </url><url>
-    <loc>https://jimall.github.io/tags/</loc>
     <lastmod>2022-06-20T12:43:52+00:00</lastmod>
   </url><url>
     <loc>https://jimall.github.io/posts/misc/how-do-i-take-journal/</loc>
     <lastmod>2022-06-20T12:43:52+00:00</lastmod>
   </url><url>
     <loc>https://jimall.github.io/posts/book/atomic-habits/</loc>
-    <lastmod>2022-05-21T23:32:59+00:00</lastmod>
-  </url><url>
-    <loc>https://jimall.github.io/categories/book/</loc>
     <lastmod>2022-05-21T23:32:59+00:00</lastmod>
   </url><url>
     <loc>https://jimall.github.io/tags/habit/</loc>
