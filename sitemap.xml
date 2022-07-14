@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jimall-blog.vercel.app/categories/book/</loc>
-    <lastmod>2022-07-07T15:15:01+00:00</lastmod>
-  </url><url>
     <loc>https://jimall-blog.vercel.app/categories/</loc>
-    <lastmod>2022-07-07T15:15:01+00:00</lastmod>
+    <lastmod>2022-07-14T01:06:01+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall-blog.vercel.app/tags/choice/</loc>
+    <lastmod>2022-07-14T01:06:01+00:00</lastmod>
   </url><url>
     <loc>https://jimall-blog.vercel.app/</loc>
+    <lastmod>2022-07-14T01:06:01+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall-blog.vercel.app/categories/misc/</loc>
+    <lastmod>2022-07-14T01:06:01+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall-blog.vercel.app/posts/</loc>
+    <lastmod>2022-07-14T01:06:01+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall-blog.vercel.app/tags/</loc>
+    <lastmod>2022-07-14T01:06:01+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall-blog.vercel.app/posts/misc/%E9%AB%98%E8%80%83%E5%A6%82%E4%BD%95%E5%A1%AB%E5%BF%97%E6%84%BF/</loc>
+    <lastmod>2022-07-14T01:06:01+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall-blog.vercel.app/categories/book/</loc>
     <lastmod>2022-07-07T15:15:01+00:00</lastmod>
   </url><url>
     <loc>https://jimall-blog.vercel.app/tags/love/</loc>
@@ -17,17 +32,8 @@
     <loc>https://jimall-blog.vercel.app/tags/marriage/</loc>
     <lastmod>2022-07-07T15:15:01+00:00</lastmod>
   </url><url>
-    <loc>https://jimall-blog.vercel.app/posts/</loc>
-    <lastmod>2022-07-07T15:15:01+00:00</lastmod>
-  </url><url>
-    <loc>https://jimall-blog.vercel.app/tags/</loc>
-    <lastmod>2022-07-07T15:15:01+00:00</lastmod>
-  </url><url>
     <loc>https://jimall-blog.vercel.app/posts/book/love-is-luxury/</loc>
     <lastmod>2022-07-07T15:15:01+00:00</lastmod>
-  </url><url>
-    <loc>https://jimall-blog.vercel.app/categories/misc/</loc>
-    <lastmod>2022-06-20T12:43:52+00:00</lastmod>
   </url><url>
     <loc>https://jimall-blog.vercel.app/tags/software/</loc>
     <lastmod>2022-06-20T12:43:52+00:00</lastmod>
