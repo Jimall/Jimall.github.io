@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>examination on Jimall&#39;s Blog</title>
+    <link>https://jimall-blog.vercel.app/tags/examination/</link>
+    <description>Recent content in examination on Jimall&#39;s Blog</description>
+    <image>
+      <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
+      <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 01 Oct 2022 22:34:41 +0000</lastBuildDate><atom:link href="https://jimall-blog.vercel.app/tags/examination/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>讨厌刷题</title>
+      <link>https://jimall-blog.vercel.app/posts/misc/i-hate-doing-exercises/</link>
+      <pubDate>Sat, 01 Oct 2022 22:34:41 +0000</pubDate>
+      
+      <guid>https://jimall-blog.vercel.app/posts/misc/i-hate-doing-exercises/</guid>
+      <description>回想自己所受的教育，发现对于刷题这个概念，我一直存在执念，这影响了我后来的路</description>
+    </item>
+    
+  </channel>
+</rss>
