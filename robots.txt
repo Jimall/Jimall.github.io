@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://jimall-blog.vercel.app/sitemap.xml
