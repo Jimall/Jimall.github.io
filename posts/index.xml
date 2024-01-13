@@ -243,24 +243,6 @@ github 创建空仓库 username.github.io.source
 本地找个空文件夹，比如叫 HugoBlog，进去之后初始化 Hugo Blog：hugo new site . 初始化 git 仓库：git init 添加主题文件，这步需要注意，需要使用 git submodule 来进行（照着做就完了，不需要深入了解），比如我这边采用的主题文件为 joway/hugo-theme-yinyang，那么命令为：git submodule add git@github.</description>
     </item>
     <item>
-      <title>.gitignore 的写法</title>
-      <link>https://jimall.github.io/posts/technology/write-gitignore/</link>
-      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/technology/write-gitignore/</guid>
-      <description>在一个项目中，并不是所有的文件都需要使用 Git 进行版本管理，比如一些自动生成的文件，这时候可以在项目中添加 .gitignore 文件来忽略一些不需要进行版本管理的文件。
-.gitignore 有一套语法，下面介绍一下：
-.gitignore 文件语法 首先 .gitignore 文件每一行定义一条规则，从上到下进行解释的。
-注释 使用 # 行注释
-通配符匹配 .gitignore 可以使用通配符匹配，并且常常用到（* 用的比较多）
-* 表示一个或多个字符
-[] 表示范围
-? 表示单个字符
-忽略文件和否定忽略文件 每一行，写路径即可忽略掉相应的内容，在路径前使用 ! 即可取消忽略相应路径，比如：
-# 忽略 .exe 文件 *.exe # 否定忽略 main.exe，由于文件是从上到下进行解释的，所以上下两条规则的意思是忽略除了 main.exe 的所有 .exe 文件 !main.exe # 忽略 build 文件夹 build/ 防止递归 直接制定文件名，实际上是递归的忽略，也就是说 *.exe 会忽略目录下的所有 .exe 文件。
-使用 / 防止递归：
-# 仅在当前目录下忽略 temp 文件， 但不包括子目录下的 subdir/temp /temp # 忽略 build/ 文件夹下的所有文件 build/ # 忽略 doc/notes.</description>
-    </item>
-    <item>
       <title>人生的方程组</title>
       <link>https://jimall.github.io/posts/thought/equations-of-life/</link>
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>

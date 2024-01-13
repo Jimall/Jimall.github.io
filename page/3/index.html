@@ -24,18 +24,7 @@ git add submodule git@github.com/example/example.git submodule 上面的命令�
 创建 github pages 仓库 没啥特别，github 上创建一个空仓库 username.github.io
 创建代码仓库 这个仓库和我们本地直接关联，创建有一些细节需要注意，我下面的过程给各位参考：
 github 创建空仓库 username.github.io.source
-本地找个空文件夹，比如叫 HugoBlog，进去之后初始化 Hugo Blog：hugo new site . 初始化 git 仓库：git init 添加主题文件，这步需要注意，需要使用 git submodule 来进行（照着做就完了，不需要深入了解），比如我这边采用的主题文件为 joway/hugo-theme-yinyang，那么命令为：git submodule add git@github....</p></div><footer class=entry-footer><span title='2021-05-31 00:00:00 +0000 UTC'>May 31, 2021</span></footer><a class=entry-link aria-label="post link to 使用 Github actions 自动发布 Hugo 博客" href=https://jimall.github.io/posts/technology/github-acitons/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>.gitignore 的写法</h2></header><div class=entry-content><p>在一个项目中，并不是所有的文件都需要使用 Git 进行版本管理，比如一些自动生成的文件，这时候可以在项目中添加 .gitignore 文件来忽略一些不需要进行版本管理的文件。
-.gitignore 有一套语法，下面介绍一下：
-.gitignore 文件语法 首先 .gitignore 文件每一行定义一条规则，从上到下进行解释的。
-注释 使用 # 行注释
-通配符匹配 .gitignore 可以使用通配符匹配，并且常常用到（* 用的比较多）
-* 表示一个或多个字符
-[] 表示范围
-? 表示单个字符
-忽略文件和否定忽略文件 每一行，写路径即可忽略掉相应的内容，在路径前使用 ! 即可取消忽略相应路径，比如：
-# 忽略 .exe 文件 *.exe # 否定忽略 main.exe，由于文件是从上到下进行解释的，所以上下两条规则的意思是忽略除了 main.exe 的所有 .exe 文件 !main.exe # 忽略 build 文件夹 build/ 防止递归 直接制定文件名，实际上是递归的忽略，也就是说 *.exe 会忽略目录下的所有 .exe 文件。
-使用 / 防止递归：
-# 仅在当前目录下忽略 temp 文件， 但不包括子目录下的 subdir/temp /temp # 忽略 build/ 文件夹下的所有文件 build/ # 忽略 doc/notes....</p></div><footer class=entry-footer><span title='2021-05-25 00:00:00 +0000 UTC'>May 25, 2021</span></footer><a class=entry-link aria-label="post link to .gitignore 的写法" href=https://jimall.github.io/posts/technology/write-gitignore/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>人生的方程组</h2></header><div class=entry-content><p>这篇 Blog 的 Context 今天是 2023-05-26，而这篇 Blog 写于 2020-06-14。
+本地找个空文件夹，比如叫 HugoBlog，进去之后初始化 Hugo Blog：hugo new site . 初始化 git 仓库：git init 添加主题文件，这步需要注意，需要使用 git submodule 来进行（照着做就完了，不需要深入了解），比如我这边采用的主题文件为 joway/hugo-theme-yinyang，那么命令为：git submodule add git@github....</p></div><footer class=entry-footer><span title='2021-05-31 00:00:00 +0000 UTC'>May 31, 2021</span></footer><a class=entry-link aria-label="post link to 使用 Github actions 自动发布 Hugo 博客" href=https://jimall.github.io/posts/technology/github-acitons/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>人生的方程组</h2></header><div class=entry-content><p>这篇 Blog 的 Context 今天是 2023-05-26，而这篇 Blog 写于 2020-06-14。
 在全部迁移到 Apple 生态之前，我的很多文件都是通过坚果云、百度云来同步的，最近突然整理到坚果云的文件，发现当时居然写了一些文章，实在是怀念。这篇，就是 2020-06-14 留下的文章。
 在大学，我开始热衷于写作，有很大一部分原因就是当时翻到了初高中留下的文字，尽管觉得以前的自己想法幼稚，但仍旧让人甚是怀念。现如今，也是相同的情感。
 时间过得真是快啊，三年了！大脑偏偏只能在一定时间范围内对记忆进行 random pick，无法对记忆进行遍历，于是很多事情压根想不起来，以至于时常觉得大学的时光尽管忙但仿佛什么也没做。幸好，留下了一些文章，它们是记忆的索引，唤起那段时间的记忆，多么宝贵。
