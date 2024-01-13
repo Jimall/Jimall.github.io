@@ -15,16 +15,16 @@
     <atom:link href="https://jimall.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>git submodule 的使用</title>
-      <link>https://jimall.github.io/zh-cn/technology/git-submodule/</link>
+      <link>https://jimall.github.io/posts/technology/git-submodule/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://jimall.github.io/zh-cn/technology/git-submodule/</guid>
+      <guid>https://jimall.github.io/posts/technology/git-submodule/</guid>
       <description>在 hugo blog 中，会用到 git submodule，本文介绍这个特性的使用</description>
     </item>
     <item>
       <title>.gitignore 的写法</title>
-      <link>https://jimall.github.io/zh-cn/technology/write-gitignore/</link>
+      <link>https://jimall.github.io/posts/technology/write-gitignore/</link>
       <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://jimall.github.io/zh-cn/technology/write-gitignore/</guid>
+      <guid>https://jimall.github.io/posts/technology/write-gitignore/</guid>
       <description>在一个项目中，并不是所有的文件都需要使用 Git 进行版本管理，比如一些自动生成的文件，这时候可以在项目中添加 .gitignore 文件来忽略一些不需要进行版本管理的文件。
 .gitignore 有一套语法，下面介绍一下：
 .gitignore 文件语法 首先 .gitignore 文件每一行定义一条规则，从上到下进行解释的。
