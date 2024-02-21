@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Git on Jimall&#39;s Blog</title>
     <link>https://jimall.github.io/tags/git/</link>
@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 May 2022 05:27:49 +0000</lastBuildDate>
     <atom:link href="https://jimall.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>git submodule 的使用</title>
