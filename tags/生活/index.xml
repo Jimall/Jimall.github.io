@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>生活 on Jimall&#39;s Blog</title>
-    <link>https://jimall.github.io/tags/%E7%94%9F%E6%B4%BB/</link>
+    <link>https://jimall-blog.vercel.app/tags/%E7%94%9F%E6%B4%BB/</link>
     <description>Recent content in 生活 on Jimall&#39;s Blog</description>
     <image>
       <title>Jimall&#39;s Blog</title>
-      <url>https://jimall.github.io/papermod-cover.png</url>
-      <link>https://jimall.github.io/papermod-cover.png</link>
+      <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
+      <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 10 Mar 2023 17:14:18 +0000</lastBuildDate>
-    <atom:link href="https://jimall.github.io/tags/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jimall-blog.vercel.app/tags/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>凉宫春日——追寻不平凡的热情</title>
-      <link>https://jimall.github.io/posts/anime/%E5%87%89%E5%AE%AB%E6%98%A5%E6%97%A5%E8%BF%BD%E5%AF%BB%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E7%83%AD%E6%83%85/</link>
+      <link>https://jimall-blog.vercel.app/posts/anime/%E5%87%89%E5%AE%AB%E6%98%A5%E6%97%A5%E8%BF%BD%E5%AF%BB%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E7%83%AD%E6%83%85/</link>
       <pubDate>Fri, 10 Mar 2023 17:14:18 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/anime/%E5%87%89%E5%AE%AB%E6%98%A5%E6%97%A5%E8%BF%BD%E5%AF%BB%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E7%83%AD%E6%83%85/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/anime/%E5%87%89%E5%AE%AB%E6%98%A5%E6%97%A5%E8%BF%BD%E5%AF%BB%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E7%83%AD%E6%83%85/</guid>
       <description>《凉宫春日的忧郁》观后感</description>
     </item>
   </channel>

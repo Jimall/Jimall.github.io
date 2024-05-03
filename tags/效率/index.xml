@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>效率 on Jimall&#39;s Blog</title>
-    <link>https://jimall.github.io/tags/%E6%95%88%E7%8E%87/</link>
+    <link>https://jimall-blog.vercel.app/tags/%E6%95%88%E7%8E%87/</link>
     <description>Recent content in 效率 on Jimall&#39;s Blog</description>
     <image>
       <title>Jimall&#39;s Blog</title>
-      <url>https://jimall.github.io/papermod-cover.png</url>
-      <link>https://jimall.github.io/papermod-cover.png</link>
+      <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
+      <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 20 Feb 2024 12:52:24 +0000</lastBuildDate>
-    <atom:link href="https://jimall.github.io/tags/%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jimall-blog.vercel.app/tags/%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我对番茄工作法的理解</title>
-      <link>https://jimall.github.io/posts/pomodoro-technique/</link>
+      <link>https://jimall-blog.vercel.app/posts/pomodoro-technique/</link>
       <pubDate>Tue, 20 Feb 2024 12:52:24 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/pomodoro-technique/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/pomodoro-technique/</guid>
       <description>想必很多人都听过番茄工作法，然而不看《番茄工作法》这本书、不真正实践番茄工作法，很容易片面理解番茄工作法，这里谈谈我在学习和实践番茄工作法后的理解
 番茄工作法的功能 根据我的理解，我认为番茄工作法有以下功能
 Focus —— 帮助专注 Memorize —— 帮助记忆 Plan —— 帮助计划 Predict —— 帮助预测 Prioritize —— 帮助任务优先级管理 接触过番茄工作法的人想必都知道番茄工作法的基本要点：

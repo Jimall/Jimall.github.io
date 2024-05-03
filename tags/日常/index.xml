@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>日常 on Jimall&#39;s Blog</title>
-    <link>https://jimall.github.io/tags/%E6%97%A5%E5%B8%B8/</link>
+    <link>https://jimall-blog.vercel.app/tags/%E6%97%A5%E5%B8%B8/</link>
     <description>Recent content in 日常 on Jimall&#39;s Blog</description>
     <image>
       <title>Jimall&#39;s Blog</title>
-      <url>https://jimall.github.io/papermod-cover.png</url>
-      <link>https://jimall.github.io/papermod-cover.png</link>
+      <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
+      <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 09 Nov 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jimall.github.io/tags/%E6%97%A5%E5%B8%B8/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jimall-blog.vercel.app/tags/%E6%97%A5%E5%B8%B8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我们的旅程，才刚刚开始开始呢！</title>
-      <link>https://jimall.github.io/posts/anime/day-to-day-life/</link>
+      <link>https://jimall-blog.vercel.app/posts/anime/day-to-day-life/</link>
       <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/anime/day-to-day-life/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/anime/day-to-day-life/</guid>
       <description>《男子高中生的日常》追番感受，还有与之相关的《女高》、《日常》</description>
     </item>
   </channel>

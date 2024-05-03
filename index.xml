@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Jimall&#39;s Blog</title>
-    <link>https://jimall.github.io/</link>
+    <link>https://jimall-blog.vercel.app/</link>
     <description>Recent content on Jimall&#39;s Blog</description>
     <image>
       <title>Jimall&#39;s Blog</title>
-      <url>https://jimall.github.io/papermod-cover.png</url>
-      <link>https://jimall.github.io/papermod-cover.png</link>
+      <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
+      <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 20 Feb 2024 12:52:24 +0000</lastBuildDate>
-    <atom:link href="https://jimall.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jimall-blog.vercel.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我对番茄工作法的理解</title>
-      <link>https://jimall.github.io/posts/pomodoro-technique/</link>
+      <link>https://jimall-blog.vercel.app/posts/pomodoro-technique/</link>
       <pubDate>Tue, 20 Feb 2024 12:52:24 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/pomodoro-technique/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/pomodoro-technique/</guid>
       <description>想必很多人都听过番茄工作法，然而不看《番茄工作法》这本书、不真正实践番茄工作法，很容易片面理解番茄工作法，这里谈谈我在学习和实践番茄工作法后的理解
 番茄工作法的功能 根据我的理解，我认为番茄工作法有以下功能
 Focus —— 帮助专注 Memorize —— 帮助记忆 Plan —— 帮助计划 Predict —— 帮助预测 Prioritize —— 帮助任务优先级管理 接触过番茄工作法的人想必都知道番茄工作法的基本要点：
@@ -37,9 +37,9 @@ Focus: 控制每个番茄钟内专注于一项任务有助于专注 Memorize: �
     </item>
     <item>
       <title>当我们谈论”三观“时我们在谈论什么？</title>
-      <link>https://jimall.github.io/posts/thought/%E5%BD%93%E6%88%91%E4%BB%AC%E8%B0%88%E8%AE%BA%E4%B8%89%E8%A7%82%E6%97%B6%E6%88%91%E4%BB%AC%E5%9C%A8%E8%B0%88%E8%AE%BA%E4%BB%80%E4%B9%88/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/%E5%BD%93%E6%88%91%E4%BB%AC%E8%B0%88%E8%AE%BA%E4%B8%89%E8%A7%82%E6%97%B6%E6%88%91%E4%BB%AC%E5%9C%A8%E8%B0%88%E8%AE%BA%E4%BB%80%E4%B9%88/</link>
       <pubDate>Sun, 20 Aug 2023 07:49:47 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/thought/%E5%BD%93%E6%88%91%E4%BB%AC%E8%B0%88%E8%AE%BA%E4%B8%89%E8%A7%82%E6%97%B6%E6%88%91%E4%BB%AC%E5%9C%A8%E8%B0%88%E8%AE%BA%E4%BB%80%E4%B9%88/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/%E5%BD%93%E6%88%91%E4%BB%AC%E8%B0%88%E8%AE%BA%E4%B8%89%E8%A7%82%E6%97%B6%E6%88%91%E4%BB%AC%E5%9C%A8%E8%B0%88%E8%AE%BA%E4%BB%80%E4%B9%88/</guid>
       <description>“三观”这个词，传播甚广、耳熟能详，哪怕初中生也能在气急败坏的时候来一句：“我和你三观不同”。
 然而，我甚至在大二才知道三观确切来说是哪三观，以及它们的解释，即：
 世界观：对世界的看法 人生观：对人生的看法 价值观：对价值的看法 这种解释显然是说了等于白说，这之后很长时间，我对三观都是仅知其字面意思而毫无理解的。记得那时我问过我相对成熟的室友：“什么是恋爱观？”，他说：“其实恋爱观的本质也是三观”，由于当时不理解三观，他的回答并没有解答我的疑问，但是这个疑问一直留在我心里。
@@ -65,16 +65,16 @@ Afterthoughts 2024.03.16 价值、价值观的概念其实并不存在，但它�
     </item>
     <item>
       <title>高中的我是怎样喜欢一个女孩的</title>
-      <link>https://jimall.github.io/posts/anime/love-in-high-school/</link>
+      <link>https://jimall-blog.vercel.app/posts/anime/love-in-high-school/</link>
       <pubDate>Sat, 22 Jul 2023 08:59:23 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/anime/love-in-high-school/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/anime/love-in-high-school/</guid>
       <description>看《言叶之庭》有感</description>
     </item>
     <item>
       <title>此刻的我对未来有何种期待</title>
-      <link>https://jimall.github.io/posts/thought/%E6%AD%A4%E5%88%BB%E7%9A%84%E6%88%91%E5%AF%B9%E6%9C%AA%E6%9D%A5%E6%9C%89%E4%BD%95%E7%A7%8D%E6%9C%9F%E5%BE%85/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/%E6%AD%A4%E5%88%BB%E7%9A%84%E6%88%91%E5%AF%B9%E6%9C%AA%E6%9D%A5%E6%9C%89%E4%BD%95%E7%A7%8D%E6%9C%9F%E5%BE%85/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/thought/%E6%AD%A4%E5%88%BB%E7%9A%84%E6%88%91%E5%AF%B9%E6%9C%AA%E6%9D%A5%E6%9C%89%E4%BD%95%E7%A7%8D%E6%9C%9F%E5%BE%85/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/%E6%AD%A4%E5%88%BB%E7%9A%84%E6%88%91%E5%AF%B9%E6%9C%AA%E6%9D%A5%E6%9C%89%E4%BD%95%E7%A7%8D%E6%9C%9F%E5%BE%85/</guid>
       <description>世界尽头与冷酷仙境 昨天，好友给我发来一句村上的话，《世界尽头与冷酷仙境》里的，他很喜欢村上的书：
 有的东西不过很久是不可能理解的，有的东西等到理解又为时已晚。大多时候，我们不得不在尚未清楚认识自己的心的情况下选择行动，因而感到迷惘和困惑
 他说：“高中就读了村上的这部作品，如今这些话越看越觉得深刻”。
@@ -102,107 +102,107 @@ Afterthoughts 2024.03.16 价值、价值观的概念其实并不存在，但它�
     </item>
     <item>
       <title>我对 Stay hungry. Stay foolish. 的理解</title>
-      <link>https://jimall.github.io/posts/thought/stay-hungry-stay-foolish/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/stay-hungry-stay-foolish/</link>
       <pubDate>Sat, 13 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/thought/stay-hungry-stay-foolish/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/stay-hungry-stay-foolish/</guid>
       <description>我对 *Stay hungry. Stay foolish.* 这句话的探索过程和现在的理解</description>
     </item>
     <item>
       <title>我对 Follow Your Heart 的理解</title>
-      <link>https://jimall.github.io/posts/thought/follow-your-heart/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/follow-your-heart/</link>
       <pubDate>Mon, 01 May 2023 06:26:53 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/thought/follow-your-heart/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/follow-your-heart/</guid>
       <description>Steve Jobs 说的 Follow Your Heart，其实并不容易达成，写一写我目前对这句话的理解</description>
     </item>
     <item>
       <title>凉宫春日——追寻不平凡的热情</title>
-      <link>https://jimall.github.io/posts/anime/%E5%87%89%E5%AE%AB%E6%98%A5%E6%97%A5%E8%BF%BD%E5%AF%BB%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E7%83%AD%E6%83%85/</link>
+      <link>https://jimall-blog.vercel.app/posts/anime/%E5%87%89%E5%AE%AB%E6%98%A5%E6%97%A5%E8%BF%BD%E5%AF%BB%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E7%83%AD%E6%83%85/</link>
       <pubDate>Fri, 10 Mar 2023 17:14:18 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/anime/%E5%87%89%E5%AE%AB%E6%98%A5%E6%97%A5%E8%BF%BD%E5%AF%BB%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E7%83%AD%E6%83%85/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/anime/%E5%87%89%E5%AE%AB%E6%98%A5%E6%97%A5%E8%BF%BD%E5%AF%BB%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E7%83%AD%E6%83%85/</guid>
       <description>《凉宫春日的忧郁》观后感</description>
     </item>
     <item>
       <title>对抗虚无</title>
-      <link>https://jimall.github.io/posts/thought/%E5%AF%B9%E6%8A%97%E8%99%9A%E6%97%A0/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/%E5%AF%B9%E6%8A%97%E8%99%9A%E6%97%A0/</link>
       <pubDate>Thu, 23 Feb 2023 13:39:35 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/thought/%E5%AF%B9%E6%8A%97%E8%99%9A%E6%97%A0/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/%E5%AF%B9%E6%8A%97%E8%99%9A%E6%97%A0/</guid>
       <description>关于为何工作后开始感到虚无，以及我如何对抗这种虚无</description>
     </item>
     <item>
       <title>灵能III——细碎的青春感</title>
-      <link>https://jimall.github.io/posts/anime/%E7%81%B5%E8%83%BDiii%E7%BB%86%E7%A2%8E%E7%9A%84%E9%9D%92%E6%98%A5%E6%84%9F/</link>
+      <link>https://jimall-blog.vercel.app/posts/anime/%E7%81%B5%E8%83%BDiii%E7%BB%86%E7%A2%8E%E7%9A%84%E9%9D%92%E6%98%A5%E6%84%9F/</link>
       <pubDate>Sun, 25 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/anime/%E7%81%B5%E8%83%BDiii%E7%BB%86%E7%A2%8E%E7%9A%84%E9%9D%92%E6%98%A5%E6%84%9F/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/anime/%E7%81%B5%E8%83%BDiii%E7%BB%86%E7%A2%8E%E7%9A%84%E9%9D%92%E6%98%A5%E6%84%9F/</guid>
       <description>看《灵能百分百III》的感受</description>
     </item>
     <item>
       <title>突然有了盼头</title>
-      <link>https://jimall.github.io/posts/thought/dream/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/dream/</link>
       <pubDate>Mon, 12 Dec 2022 11:40:29 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/thought/dream/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/dream/</guid>
       <description>在很长时间感觉到工作无比漫长和折磨后，突然有了盼头</description>
     </item>
     <item>
       <title>我们的旅程，才刚刚开始开始呢！</title>
-      <link>https://jimall.github.io/posts/anime/day-to-day-life/</link>
+      <link>https://jimall-blog.vercel.app/posts/anime/day-to-day-life/</link>
       <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/anime/day-to-day-life/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/anime/day-to-day-life/</guid>
       <description>《男子高中生的日常》追番感受，还有与之相关的《女高》、《日常》</description>
     </item>
     <item>
       <title>《周公解梦》和《梦的解析》有何不同？</title>
-      <link>https://jimall.github.io/posts/thought/%E5%91%A8%E5%85%AC%E8%A7%A3%E6%A2%A6%E5%92%8C%E6%A2%A6%E7%9A%84%E8%A7%A3%E6%9E%90%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/%E5%91%A8%E5%85%AC%E8%A7%A3%E6%A2%A6%E5%92%8C%E6%A2%A6%E7%9A%84%E8%A7%A3%E6%9E%90%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C/</link>
       <pubDate>Mon, 17 Oct 2022 14:22:16 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/thought/%E5%91%A8%E5%85%AC%E8%A7%A3%E6%A2%A6%E5%92%8C%E6%A2%A6%E7%9A%84%E8%A7%A3%E6%9E%90%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/%E5%91%A8%E5%85%AC%E8%A7%A3%E6%A2%A6%E5%92%8C%E6%A2%A6%E7%9A%84%E8%A7%A3%E6%9E%90%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C/</guid>
       <description>周公解梦和梦的解析，最大的差别在于是否用科学的态度看问题</description>
     </item>
     <item>
       <title>讨厌刷题</title>
-      <link>https://jimall.github.io/posts/misc/i-hate-doing-exercises/</link>
+      <link>https://jimall-blog.vercel.app/posts/misc/i-hate-doing-exercises/</link>
       <pubDate>Sat, 01 Oct 2022 22:34:41 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/misc/i-hate-doing-exercises/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/misc/i-hate-doing-exercises/</guid>
       <description>回想自己所受的教育，发现对于刷题这个概念，我一直存在抵触情绪，这影响了我后来的路</description>
     </item>
     <item>
       <title>做自我解答者</title>
-      <link>https://jimall.github.io/posts/thought/self-answerer/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/self-answerer/</link>
       <pubDate>Sat, 06 Aug 2022 15:03:01 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/thought/self-answerer/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/self-answerer/</guid>
       <description>我的入职阶段行动纲领</description>
     </item>
     <item>
       <title>高考如何填志愿</title>
-      <link>https://jimall.github.io/posts/thought/%E9%AB%98%E8%80%83%E5%A6%82%E4%BD%95%E5%A1%AB%E5%BF%97%E6%84%BF/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/%E9%AB%98%E8%80%83%E5%A6%82%E4%BD%95%E5%A1%AB%E5%BF%97%E6%84%BF/</link>
       <pubDate>Thu, 14 Jul 2022 01:06:01 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/thought/%E9%AB%98%E8%80%83%E5%A6%82%E4%BD%95%E5%A1%AB%E5%BF%97%E6%84%BF/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/%E9%AB%98%E8%80%83%E5%A6%82%E4%BD%95%E5%A1%AB%E5%BF%97%E6%84%BF/</guid>
       <description>关于高考如何填志愿，我的思考</description>
     </item>
     <item>
       <title>爱情，大概是奢侈品罢</title>
-      <link>https://jimall.github.io/posts/book/love-is-luxury/</link>
+      <link>https://jimall-blog.vercel.app/posts/book/love-is-luxury/</link>
       <pubDate>Thu, 07 Jul 2022 15:15:01 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/book/love-is-luxury/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/book/love-is-luxury/</guid>
       <description>《我本芬芳》书评</description>
     </item>
     <item>
       <title>我的 Journal 记录方案</title>
-      <link>https://jimall.github.io/posts/misc/how-do-i-take-journal/</link>
+      <link>https://jimall-blog.vercel.app/posts/misc/how-do-i-take-journal/</link>
       <pubDate>Mon, 20 Jun 2022 12:43:52 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/misc/how-do-i-take-journal/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/misc/how-do-i-take-journal/</guid>
       <description>关于 Journal 究竟记什么以及我如何记 Journal</description>
     </item>
     <item>
       <title>Atomic Habits: 不止于习惯</title>
-      <link>https://jimall.github.io/posts/book/atomic-habits/</link>
+      <link>https://jimall-blog.vercel.app/posts/book/atomic-habits/</link>
       <pubDate>Sat, 21 May 2022 21:13:04 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/book/atomic-habits/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/book/atomic-habits/</guid>
       <description>看完 James Clear 的 *Atomic Habits* 的感受</description>
     </item>
     <item>
       <title>做自己的观察者</title>
-      <link>https://jimall.github.io/posts/thought/observe-youself/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/observe-youself/</link>
       <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/thought/observe-youself/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/observe-youself/</guid>
       <description>人，终究是本能地活着，我们不论如何设想自己会遇到什么情况要怎么做，最终靠的都是本能。
 我们的未雨绸缪，我们的各种准备，都是为了自己产生本能服务。
 本能是个不便于分析的东西。比如明明如何分析来分析去，都应该在女朋友生气的时候示下弱，可是你就是说那就算了吧，我们不合适。
@@ -211,9 +211,9 @@ Afterthoughts 2024.03.16 价值、价值观的概念其实并不存在，但它�
     </item>
     <item>
       <title>热爱永存</title>
-      <link>https://jimall.github.io/posts/thought/hobby-is-important/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/hobby-is-important/</link>
       <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/thought/hobby-is-important/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/hobby-is-important/</guid>
       <description>“爱好是很重要的” 记得高中某节课，兰素芹（高中语文老师）说：“爱好是很重要的，你们以后会体会到的”。当时的我当然不会认同这句话，哪怕不考虑当时极强的”批判性思维“能力，就仅考虑高中环境塑造出的奋斗逼和唯分数论者属性，都足矣让我不屑地想到：”爱好有啥用，分数才是最关键的“。当然兰老师的这句话会时常在我中午学不下去揣球去球场的时候用来缓解摸鱼导致的焦虑（当时巨奋斗逼，中午十二点下课规定自己得学到十二点半以后）。
 不过我当时不认可其实也没错，因为当时老师根据爱好很重要这一命题，引例到：
 踢球好的男孩子受女孩子喜欢 有爱好能交到很多朋友，对于以后有很大帮助 这种外在的收益显然并不能让我满意，甚至会引起很大程度的不屑。并且，让人震怒的是！经过几年大学生涯，我发现第一例显然要考虑人与人之间的差距。我还记得随院篮球队去港中深和他们的逸夫书院（应该是偏文科的书院）打交流赛的时候，边上一堆女生，嘀咕 xxx 好帅什么的。然而，在南科大这样的理工科学校，被夸帅的时候仅仅在酒桌上，觥筹交错之间，几个男人商业互吹：“说实话，xxx 有点小帅”，“我也感觉你很帅♂”，直接进行一个泪的流😭。例子 2 倒是说的没啥问题，能交到朋友是爱好的一个很大意义，我确实通过爱好结识了一批好朋友，这些朋友也确实在很多时候给了我很多欢乐，给我带来很大的力量，不过今天话题不在与此，不作展开。
@@ -228,9 +228,9 @@ pixiv 画师 长期贡献开源项目 摄影 （这可以列一个很长的 list
     </item>
     <item>
       <title>北方的空地</title>
-      <link>https://jimall.github.io/posts/misc/adventure-in-qiangtang/</link>
+      <link>https://jimall-blog.vercel.app/posts/misc/adventure-in-qiangtang/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/misc/adventure-in-qiangtang/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/misc/adventure-in-qiangtang/</guid>
       <description>今天，看到甘肃马拉松赛的惨剧，感到不寒而栗——在马拉松比赛中，好几位经验丰富的跑者，因为恶劣天气失温最终去世。
 我很早就知道失温是一种极其危险的情况，就跑去刷如何处理失温啥的。刷着刷着，大概是因为防止失温是穿越无人区很重要的话题，就刷到了推自行车穿越无人区的话题，又由无人区刷到《北方的空地》这篇帖子。这是一篇作者记录自己穿越大羌塘无人区的帖子，给我带来很大震撼：北方的空地，孤身穿越大羌塘无人区，推荐大家去看一看✅。阮一峰也有一篇博客讲到这则帖子：北方的空地 - 阮一峰网络日志。
 穿越无人区，是十分冒险的行为，不仅会遇上恶劣的天气，还可能遭遇野生动物的攻击，即使没有被恶劣环境折磨，由于穿越需要较长的时间，生存所需的水和食物可能在中途就不够了，所以穿越无人区要推自行车，不是为了能骑行，而是为了尽可能多带物资。
@@ -243,16 +243,16 @@ pixiv 画师 长期贡献开源项目 摄影 （这可以列一个很长的 list
     </item>
     <item>
       <title>git submodule 的使用</title>
-      <link>https://jimall.github.io/posts/technology/git-submodule/</link>
+      <link>https://jimall-blog.vercel.app/posts/technology/git-submodule/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/technology/git-submodule/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/technology/git-submodule/</guid>
       <description>在 hugo blog 中，会用到 git submodule，本文介绍这个特性的使用</description>
     </item>
     <item>
       <title>使用 Github actions 自动发布 Hugo 博客</title>
-      <link>https://jimall.github.io/posts/technology/github-acitons/</link>
+      <link>https://jimall-blog.vercel.app/posts/technology/github-acitons/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/technology/github-acitons/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/technology/github-acitons/</guid>
       <description>使用 hugo 写博客的时候，每次增加文章，需要本地构建之后发布到 github 上通过 github pages 服务展示页面，不难想到可以使用 CI 的方法，将构建的过程自动化，实现写博文 push 到 github 即可自动构建并发布到 github pages。
 搞的过程中坑比较多，记录为一个教程，供各位参考。
 我折腾过程中的参考：https://tianhui.xin/blog/2019/11/17/hugousegithubactionstopages/
@@ -265,9 +265,9 @@ github 创建空仓库 username.github.io.source
     </item>
     <item>
       <title>人生的方程组</title>
-      <link>https://jimall.github.io/posts/thought/equations-of-life/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/equations-of-life/</link>
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/thought/equations-of-life/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/equations-of-life/</guid>
       <description>这篇 Blog 的 Context 今天是 2023-05-26，而这篇 Blog 写于 2020-06-14。
 在全部迁移到 Apple 生态之前，我的很多文件都是通过坚果云、百度云来同步的，最近突然整理到坚果云的文件，发现当时居然写了一些文章，实在是怀念。这篇，就是 2020-06-14 留下的文章。
 在大学，我开始热衷于写作，有很大一部分原因就是当时翻到了初高中留下的文字，尽管觉得以前的自己想法幼稚，但仍旧让人甚是怀念。现如今，也是相同的情感。
@@ -293,9 +293,9 @@ github 创建空仓库 username.github.io.source
     </item>
     <item>
       <title>有梗的线代老师——带带大家刚</title>
-      <link>https://jimall.github.io/posts/misc/linear-algebra-teacher/</link>
+      <link>https://jimall-blog.vercel.app/posts/misc/linear-algebra-teacher/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/misc/linear-algebra-teacher/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/misc/linear-algebra-teacher/</guid>
       <description>搬运提要 这篇记录于大一下学期期末考试周写成，当时有放在坚果云的习惯，后面弃用坚果云，便被遗忘，最近莫名翻到，特搬运到博客上，记录我青春无知而又最好的年华。搬运日期：2023-05-29。
 彼时刚入大学兴致勃勃，扒同年级同学的 GitHub profile，接触了一些同年级同学的 Blog（印象最深的是 gogo），一方面觉得搭 Blog 很酷，觉得他们高中就能搭出自己的 Blog，实在是羡慕；另一方面也被他们留下的一些文字给触动，心想：“我一定要搞一个博客”。这篇文章属于是刚起写 Blog 兴趣之作，心情属于是“想写但写起来让自己有点害羞，让别人看到也有些害羞”这样。另外，文中提到的 Heros in My Heart 里的文字，加上考试周的”百无聊赖“，也是促成我写成这篇文字的因素。
 说起来，我很多对生活的探索，都是在考试周，即“除了复习考试之外干什么效率都很高”，虽然这无疑是拖延症，但是这些探索相比于狗屁的分数GPA而言，是重要百倍千倍的。我的创造力在考试周这样的环境下最容易被激发：没有咄咄逼人的 DDL、没有需要打的卡、时间自由安排。

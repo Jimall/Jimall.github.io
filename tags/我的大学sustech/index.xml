@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>我的大学SUSTech on Jimall&#39;s Blog</title>
-    <link>https://jimall.github.io/tags/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6sustech/</link>
+    <link>https://jimall-blog.vercel.app/tags/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6sustech/</link>
     <description>Recent content in 我的大学SUSTech on Jimall&#39;s Blog</description>
     <image>
       <title>Jimall&#39;s Blog</title>
-      <url>https://jimall.github.io/papermod-cover.png</url>
-      <link>https://jimall.github.io/papermod-cover.png</link>
+      <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
+      <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jimall.github.io/tags/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6sustech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jimall-blog.vercel.app/tags/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6sustech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>有梗的线代老师——带带大家刚</title>
-      <link>https://jimall.github.io/posts/misc/linear-algebra-teacher/</link>
+      <link>https://jimall-blog.vercel.app/posts/misc/linear-algebra-teacher/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/misc/linear-algebra-teacher/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/misc/linear-algebra-teacher/</guid>
       <description>搬运提要 这篇记录于大一下学期期末考试周写成，当时有放在坚果云的习惯，后面弃用坚果云，便被遗忘，最近莫名翻到，特搬运到博客上，记录我青春无知而又最好的年华。搬运日期：2023-05-29。
 彼时刚入大学兴致勃勃，扒同年级同学的 GitHub profile，接触了一些同年级同学的 Blog（印象最深的是 gogo），一方面觉得搭 Blog 很酷，觉得他们高中就能搭出自己的 Blog，实在是羡慕；另一方面也被他们留下的一些文字给触动，心想：“我一定要搞一个博客”。这篇文章属于是刚起写 Blog 兴趣之作，心情属于是“想写但写起来让自己有点害羞，让别人看到也有些害羞”这样。另外，文中提到的 Heros in My Heart 里的文字，加上考试周的”百无聊赖“，也是促成我写成这篇文字的因素。
 说起来，我很多对生活的探索，都是在考试周，即“除了复习考试之外干什么效率都很高”，虽然这无疑是拖延症，但是这些探索相比于狗屁的分数GPA而言，是重要百倍千倍的。我的创造力在考试周这样的环境下最容易被激发：没有咄咄逼人的 DDL、没有需要打的卡、时间自由安排。

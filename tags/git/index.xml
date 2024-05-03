@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Git on Jimall&#39;s Blog</title>
-    <link>https://jimall.github.io/tags/git/</link>
+    <link>https://jimall-blog.vercel.app/tags/git/</link>
     <description>Recent content in Git on Jimall&#39;s Blog</description>
     <image>
       <title>Jimall&#39;s Blog</title>
-      <url>https://jimall.github.io/papermod-cover.png</url>
-      <link>https://jimall.github.io/papermod-cover.png</link>
+      <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
+      <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 06 May 2022 05:27:49 +0000</lastBuildDate>
-    <atom:link href="https://jimall.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jimall-blog.vercel.app/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>git submodule 的使用</title>
-      <link>https://jimall.github.io/posts/technology/git-submodule/</link>
+      <link>https://jimall-blog.vercel.app/posts/technology/git-submodule/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/technology/git-submodule/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/technology/git-submodule/</guid>
       <description>在 hugo blog 中，会用到 git submodule，本文介绍这个特性的使用</description>
     </item>
   </channel>

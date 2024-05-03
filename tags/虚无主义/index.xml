@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>虚无主义 on Jimall&#39;s Blog</title>
-    <link>https://jimall.github.io/tags/%E8%99%9A%E6%97%A0%E4%B8%BB%E4%B9%89/</link>
+    <link>https://jimall-blog.vercel.app/tags/%E8%99%9A%E6%97%A0%E4%B8%BB%E4%B9%89/</link>
     <description>Recent content in 虚无主义 on Jimall&#39;s Blog</description>
     <image>
       <title>Jimall&#39;s Blog</title>
-      <url>https://jimall.github.io/papermod-cover.png</url>
-      <link>https://jimall.github.io/papermod-cover.png</link>
+      <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
+      <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 23 Feb 2023 13:39:35 +0000</lastBuildDate>
-    <atom:link href="https://jimall.github.io/tags/%E8%99%9A%E6%97%A0%E4%B8%BB%E4%B9%89/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jimall-blog.vercel.app/tags/%E8%99%9A%E6%97%A0%E4%B8%BB%E4%B9%89/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>对抗虚无</title>
-      <link>https://jimall.github.io/posts/thought/%E5%AF%B9%E6%8A%97%E8%99%9A%E6%97%A0/</link>
+      <link>https://jimall-blog.vercel.app/posts/thought/%E5%AF%B9%E6%8A%97%E8%99%9A%E6%97%A0/</link>
       <pubDate>Thu, 23 Feb 2023 13:39:35 +0000</pubDate>
-      <guid>https://jimall.github.io/posts/thought/%E5%AF%B9%E6%8A%97%E8%99%9A%E6%97%A0/</guid>
+      <guid>https://jimall-blog.vercel.app/posts/thought/%E5%AF%B9%E6%8A%97%E8%99%9A%E6%97%A0/</guid>
       <description>关于为何工作后开始感到虚无，以及我如何对抗这种虚无</description>
     </item>
   </channel>
