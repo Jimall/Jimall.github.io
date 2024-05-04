@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>爱情 on Jimall&#39;s Blog</title>
-    <link>https://jimall-blog.vercel.app/tags/%E7%88%B1%E6%83%85/</link>
-    <description>Recent content in 爱情 on Jimall&#39;s Blog</description>
+    <title>Thought on Jimall&#39;s Blog</title>
+    <link>https://jimall-blog.vercel.app/categories/thought/</link>
+    <description>Recent content in Thought on Jimall&#39;s Blog</description>
     <image>
       <title>Jimall&#39;s Blog</title>
       <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.125.5</generator>
     <language>en</language>
     <lastBuildDate>Fri, 03 May 2024 23:21:23 +0000</lastBuildDate>
-    <atom:link href="https://jimall-blog.vercel.app/tags/%E7%88%B1%E6%83%85/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jimall-blog.vercel.app/categories/thought/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>再谈爱情</title>
       <link>https://jimall-blog.vercel.app/posts/love/</link>
@@ -54,20 +54,6 @@
 爱情是最辛苦的等待
 爱情是最遥远的未来
 不过我现在倒也不是在那种非常渴望爱情的年龄，感觉更多是被社会影响的，让你觉得自己需要一个女朋友，实际上现在是一个非常自洽和自由的状态，实际上可能并不太需要女朋友。不过还是比一两年前需要，现在越来越能体会到别人说的恋爱是两个完满的灵魂在一起互相扩展彼此的过程，之前是难以想象的，只觉得完满的灵魂应该自给自足，这也是进入社会和别人打交道给我带来的成长吧</description>
-    </item>
-    <item>
-      <title>高中的我是怎样喜欢一个女孩的</title>
-      <link>https://jimall-blog.vercel.app/posts/anime/love-in-high-school/</link>
-      <pubDate>Sat, 22 Jul 2023 08:59:23 +0000</pubDate>
-      <guid>https://jimall-blog.vercel.app/posts/anime/love-in-high-school/</guid>
-      <description>看《言叶之庭》有感</description>
-    </item>
-    <item>
-      <title>爱情，大概是奢侈品罢</title>
-      <link>https://jimall-blog.vercel.app/posts/book/love-is-luxury/</link>
-      <pubDate>Thu, 07 Jul 2022 15:15:01 +0000</pubDate>
-      <guid>https://jimall-blog.vercel.app/posts/book/love-is-luxury/</guid>
-      <description>《我本芬芳》书评</description>
     </item>
   </channel>
 </rss>
