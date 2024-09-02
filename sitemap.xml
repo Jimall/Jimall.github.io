@@ -2,16 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jimall-blog.vercel.app/categories/</loc>
-    <lastmod>2024-06-02T07:30:28+00:00</lastmod>
-  </url><url>
     <loc>https://jimall-blog.vercel.app/</loc>
-    <lastmod>2024-06-02T07:30:28+00:00</lastmod>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jimall-blog.vercel.app/posts/</loc>
-    <lastmod>2024-06-02T07:30:28+00:00</lastmod>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jimall-blog.vercel.app/tags/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall-blog.vercel.app/tags/uncertainty/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall-blog.vercel.app/posts/on-uncertainty/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jimall-blog.vercel.app/categories/</loc>
     <lastmod>2024-06-02T07:30:28+00:00</lastmod>
   </url><url>
     <loc>https://jimall-blog.vercel.app/posts/good-will-hunting/</loc>
