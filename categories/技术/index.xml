@@ -9,7 +9,7 @@
       <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
       <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.134.0</generator>
+    <generator>Hugo -- 0.135.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 06 May 2022 05:28:22 +0000</lastBuildDate>
     <atom:link href="https://jimall-blog.vercel.app/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
@@ -42,7 +42,17 @@
 &lt;p&gt;这个仓库和我们本地直接关联，创建有一些细节需要注意，我下面的过程给各位参考：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;github 创建空仓库 &lt;code&gt;username.github.io.source&lt;/code&gt;&lt;/p&gt;</description>
+&lt;p&gt;github 创建空仓库 &lt;code&gt;username.github.io.source&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;本地找个空文件夹，比如叫 &lt;code&gt;HugoBlog&lt;/code&gt;，进去之后初始化 Hugo Blog：&lt;code&gt;hugo new site .&lt;/code&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/shangjihao/images/blog/20210531130745.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;初始化 git 仓库：&lt;code&gt;git init&lt;/code&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/shangjihao/images/blog/20210531130806.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

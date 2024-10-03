@@ -6,6 +6,9 @@ git add submodule git@github.com/example/example.git submodule 上面的命令�
 查看子模块 使用 git submodule 命令查看当前项目的子模块。
 更新子模块 在项目中使用 git update 父模块并不会更新子模块。（别的操作同理，我们在项目中使用的各种以前使用的 git 操作都只会对父模块产生作用）
 使用 git submodule add 添加子项目。
+操作子模块 在子模块的文件夹内部，我们的各种操作都是对子模块的项目产生作用，比如 push 就是将子模块 push 到子模块的 remote repository。
+所以需要单独修改子模块，只需要 cd 到子模块内，把子模块当成一个普通的 git 项目即可。
+克隆含有子模块的项目 克隆包含子模块的项目有两种方法：
 ...</p></div><footer class=entry-footer><span title='2021-05-31 00:00:00 +0000 UTC'>May 31, 2021</span></footer><a class=entry-link aria-label="post link to git submodule 的使用" href=https://jimall-blog.vercel.app/posts/technology/git-submodule/></a></article></main><footer class=footer><span>&copy; 2024 <a href=https://jimall-blog.vercel.app/>Jimall's Blog</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &

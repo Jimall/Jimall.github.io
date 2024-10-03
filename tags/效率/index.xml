@@ -9,7 +9,7 @@
       <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
       <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.134.0</generator>
+    <generator>Hugo -- 0.135.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 20 Feb 2024 12:52:24 +0000</lastBuildDate>
     <atom:link href="https://jimall-blog.vercel.app/tags/%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml" />
@@ -51,7 +51,15 @@
 &lt;/ul&gt;
 &lt;p&gt;重点在于：在不预估待办的番茄时之前，我们只知道我们一天大概工作多久，安排工作很容易就安排多，预估番茄时之后，我们还能知道我们的待办需要做多久，这样就把根据优先级填充到一天的工作时间即可，同时不断调整预测能力，随着练习的增多预测越来越准，Plan、Predict、Prioritize 的效果也越来越好&lt;/p&gt;
 &lt;h2 id=&#34;番茄工作法是渐进式的&#34;&gt;番茄工作法是渐进式的&lt;/h2&gt;
-&lt;p&gt;需要强调：番茄工作法是渐进式的&lt;/p&gt;</description>
+&lt;p&gt;需要强调：番茄工作法是渐进式的&lt;/p&gt;
+&lt;p&gt;所谓渐进式，就是易于上手，上手之后也可以选择挖深，探索一些高级玩法&lt;/p&gt;
+&lt;p&gt;对于我上面不常被介绍的流程，其实就属于高级玩法，我们不一定非要用上。很多效率工具学起来难度大就在于没有渐进式地让人掌握，非要让人把一个很复杂的系统全掌握，让人摸不清头脑。&lt;/p&gt;
+&lt;p&gt;所以，学习效率工具，一定要力求理解，把握主要的思想，然后结合自己当前的工作流应用其中的核心。&lt;/p&gt;
+&lt;h2 id=&#34;番茄工作法的核心&#34;&gt;番茄工作法的核心&lt;/h2&gt;
+&lt;p&gt;我认为番茄工作法的核心在 Focus 功能上，别的功能相对次要&lt;/p&gt;
+&lt;p&gt;之所以说是核心，是因为人确实需要这么一个功能，而别的效率工具并不能够提供这个功能。像 Plan 这些功能，比如 GTD 就能提供非常不错的帮助，以 GTD 为主辅助上番茄工作法的预估番茄时思想，效果则更佳，然而这并不代表一定需要用番茄工作法&lt;/p&gt;
+&lt;p&gt;大概的原理要我胡说的话，就是人脑是善于发散的，番茄工作法限制了人脑的发散，减少发散使得我们能专注地完成当前的工作、提高工作效率&lt;/p&gt;
+&lt;p&gt;别的效率工具不能提供这个功能，主要也是因为即使提供这个功能，原理也差不多，所以就等于用番茄工作法了&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

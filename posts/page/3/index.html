@@ -13,6 +13,8 @@ Atomic Habits 说要用复利思维去思考习惯，习惯是自我提高的复
 养成习惯的方法和误解 Atomic Habits 还介绍了培养习惯的方法。这一部分主要是给我解开了一些误解，至于方法本身，印象倒是不深。
 首先是：不要将习惯理解成 repeated task，理解成 trigger 会比较好。
 目前有大量的 habit tracker app，这些 app 大同小异，都是添加一些习惯，然后每天可以记录自己有没有做这些习惯，通过连续打卡获得成就感。这些 app 误导我们去认为习惯就是这种需要连续坚持做的事情，没有坚持做就是没有培养习惯。
+然而，每天做的事情并不一定是习惯，习惯其实不需要这样强迫自己坚持做，习惯往往是一些 trigger，会被我们遇到的事情触发。比如，坐地铁时主要干啥、睡前干啥、早上醒来干啥，这些事情都是习惯，留心会发现我们做这些事是有倾向性的。把习惯理解成这样一个个被触发的事情，去设计和优化触发流程，才是培养习惯的正确打开方式。比如我使用滴答清单实践我的 GTD 流程，养成用 GTD 管理事务的习惯，最关键的 trigger 就是我每次打开手机看到有待办，就会优先处理待办；比如养成 RSS 阅读的习惯，最关键的 trigger 就是 inoreader 插件提示未读，每次打开浏览器都会去清理这个未读。
+然后是：不要高估原动力，环境往往更重要。
 ...</p></div><footer class=entry-footer><span title='2022-05-21 21:13:04.827 +0000 UTC'>May 21, 2022</span></footer><a class=entry-link aria-label="post link to Atomic Habits: 不止于习惯" href=https://jimall-blog.vercel.app/posts/book/atomic-habits/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>做自己的观察者</h2></header><div class=entry-content><p>人，终究是本能地活着，我们不论如何设想自己会遇到什么情况要怎么做，最终靠的都是本能。
 我们的未雨绸缪，我们的各种准备，都是为了自己产生本能服务。
 本能是个不便于分析的东西。比如明明如何分析来分析去，都应该在女朋友生气的时候示下弱，可是你就是说那就算了吧，我们不合适。
@@ -42,6 +44,9 @@ git add submodule git@github.com/example/example.git submodule 上面的命令�
 查看子模块 使用 git submodule 命令查看当前项目的子模块。
 更新子模块 在项目中使用 git update 父模块并不会更新子模块。（别的操作同理，我们在项目中使用的各种以前使用的 git 操作都只会对父模块产生作用）
 使用 git submodule add 添加子项目。
+操作子模块 在子模块的文件夹内部，我们的各种操作都是对子模块的项目产生作用，比如 push 就是将子模块 push 到子模块的 remote repository。
+所以需要单独修改子模块，只需要 cd 到子模块内，把子模块当成一个普通的 git 项目即可。
+克隆含有子模块的项目 克隆包含子模块的项目有两种方法：
 ...</p></div><footer class=entry-footer><span title='2021-05-31 00:00:00 +0000 UTC'>May 31, 2021</span></footer><a class=entry-link aria-label="post link to git submodule 的使用" href=https://jimall-blog.vercel.app/posts/technology/git-submodule/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>使用 Github actions 自动发布 Hugo 博客</h2></header><div class=entry-content><p>使用 hugo 写博客的时候，每次增加文章，需要本地构建之后发布到 github 上通过 github pages 服务展示页面，不难想到可以使用 CI 的方法，将构建的过程自动化，实现写博文 push 到 github 即可自动构建并发布到 github pages。
 搞的过程中坑比较多，记录为一个教程，供各位参考。
 我折腾过程中的参考：https://tianhui.xin/blog/2019/11/17/hugousegithubactionstopages/
@@ -50,7 +55,7 @@ git add submodule git@github.com/example/example.git submodule 上面的命令�
 创建 github pages 仓库 没啥特别，github 上创建一个空仓库 username.github.io
 创建代码仓库 这个仓库和我们本地直接关联，创建有一些细节需要注意，我下面的过程给各位参考：
 github 创建空仓库 username.github.io.source
-...</p></div><footer class=entry-footer><span title='2021-05-31 00:00:00 +0000 UTC'>May 31, 2021</span></footer><a class=entry-link aria-label="post link to 使用 Github actions 自动发布 Hugo 博客" href=https://jimall-blog.vercel.app/posts/technology/github-acitons/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>人生的方程组</h2></header><div class=entry-content><p>这篇 Blog 的 Context 今天是 2023-05-26，而这篇 Blog 写于 2020-06-14。
+本地找个空文件夹，比如叫 HugoBlog，进去之后初始化 Hugo Blog：hugo new site . 初始化 git 仓库：git init ...</p></div><footer class=entry-footer><span title='2021-05-31 00:00:00 +0000 UTC'>May 31, 2021</span></footer><a class=entry-link aria-label="post link to 使用 Github actions 自动发布 Hugo 博客" href=https://jimall-blog.vercel.app/posts/technology/github-acitons/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>人生的方程组</h2></header><div class=entry-content><p>这篇 Blog 的 Context 今天是 2023-05-26，而这篇 Blog 写于 2020-06-14。
 在全部迁移到 Apple 生态之前，我的很多文件都是通过坚果云、百度云来同步的，最近突然整理到坚果云的文件，发现当时居然写了一些文章，实在是怀念。这篇，就是 2020-06-14 留下的文章。
 在大学，我开始热衷于写作，有很大一部分原因就是当时翻到了初高中留下的文字，尽管觉得以前的自己想法幼稚，但仍旧让人甚是怀念。现如今，也是相同的情感。
 时间过得真是快啊，三年了！大脑偏偏只能在一定时间范围内对记忆进行 random pick，无法对记忆进行遍历，于是很多事情压根想不起来，以至于时常觉得大学的时光尽管忙但仿佛什么也没做。幸好，留下了一些文章，它们是记忆的索引，唤起那段时间的记忆，多么宝贵。
@@ -67,7 +72,11 @@ github 创建空仓库 username.github.io.source
 我应该住在大城市，有房，不差钱。 有房是基本条件吧，我相信我能够做到
 不差钱的标准应该是自己的冲动消费不会让自己的觉得心疼，主要是为了家庭考虑才不乱花。也就是自己的大部分决策，虽然不一定会做，但是做决策时候钱一定是不纳入考虑因素的，一定考虑别的因素。比如考虑要捐钱，因为足够不差钱，就只会考虑捐给哪，捐的方式的问题，而不会因为说缺钱而在纠结捐不捐。
 我应该有老婆，小孩我现在不够成熟，不做深入思考。 关于老婆，我觉得在知乎上看到的一句话很有道理：我们不愿意娶一个不够漂亮学历不够高的女孩，其实和女孩不愿意和穷小子结婚是一个道理，根本原因是我们没有耐心去等待。
-...</p></div><footer class=entry-footer><span title='2020-06-14 00:00:00 +0000 UTC'>June 14, 2020</span></footer><a class=entry-link aria-label="post link to 人生的方程组" href=https://jimall-blog.vercel.app/posts/thought/equations-of-life/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>有梗的线代老师——带带大家刚</h2></header><div class=entry-content><p>搬运提要 这篇记录于大一下学期期末考试周写成，当时有放在坚果云的习惯，后面弃用坚果云，便被遗忘，最近莫名翻到，特搬运到博客上，记录我青春无知而又最好的年华。搬运日期：2023-05-29。
+所以，我觉得女孩子不用太优秀，我有耐心去影响她，去和她一起成长。至少我看的顺眼就行，希望是能够相处比较轻松的，两个人都有足够的空间做自己的事情。
+关于婚姻和恋爱，我想我需要更多的经历，晚点再思考罢。
+我应该有收入不错的工作。 搬运后记 写的挺不错的，我依旧认为人生是一个不断变化的方程组，随着时间变化，解也会变化。
+上面写的三个变量的解，对于现在的我，也已经完全改变了，这符合我在之前想的要不断去优化自己的解。
+房，狗都不买 marriage is an option 希望以后可以不工作，或者有一份相对自由的工作，收入真无所谓</p></div><footer class=entry-footer><span title='2020-06-14 00:00:00 +0000 UTC'>June 14, 2020</span></footer><a class=entry-link aria-label="post link to 人生的方程组" href=https://jimall-blog.vercel.app/posts/thought/equations-of-life/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>有梗的线代老师——带带大家刚</h2></header><div class=entry-content><p>搬运提要 这篇记录于大一下学期期末考试周写成，当时有放在坚果云的习惯，后面弃用坚果云，便被遗忘，最近莫名翻到，特搬运到博客上，记录我青春无知而又最好的年华。搬运日期：2023-05-29。
 彼时刚入大学兴致勃勃，扒同年级同学的 GitHub profile，接触了一些同年级同学的 Blog（印象最深的是 gogo），一方面觉得搭 Blog 很酷，觉得他们高中就能搭出自己的 Blog，实在是羡慕；另一方面也被他们留下的一些文字给触动，心想：“我一定要搞一个博客”。这篇文章属于是刚起写 Blog 兴趣之作，心情属于是“想写但写起来让自己有点害羞，让别人看到也有些害羞”这样。另外，文中提到的 Heros in My Heart 里的文字，加上考试周的”百无聊赖“，也是促成我写成这篇文字的因素。
 说起来，我很多对生活的探索，都是在考试周，即“除了复习考试之外干什么效率都很高”，虽然这无疑是拖延症，但是这些探索相比于狗屁的分数GPA而言，是重要百倍千倍的。我的创造力在考试周这样的环境下最容易被激发：没有咄咄逼人的 DDL、没有需要打的卡、时间自由安排。
 以下是正文。
@@ -77,6 +86,13 @@ Java 老师何明昕：Java 老学究，喜欢教：“代码要优雅”，因�
 一、吹那个写《heroes in my heart》的北大校友 他说他们当年的北大 bbs 上，有一个数学系的人发表了一系列帖子，关于数学家的。我听上去老有种传奇的感觉，幻想我们这辈也能有这样的传奇人物搞出点让人兴奋的东西来。
 我当时兴高采烈地去搜了这个看了看，对里面的第一段话印象深刻：
 最触动我的是”去真实的记录北大数学的这群烂人“这句话，实际上，我也是因为看到这句话觉得有趣才写这篇文章的，并且我尽力用诙谐而嘲讽的笔风去写，显得更像一部史诗。（于是我室友在路过我的位置看到我写这些的时候问我：”你在干嘛“，我连忙 alt + tab，有点羞耻的说）
+二、讲述他在北大的艰苦奋斗 他多次提到：当时北大会断电还是因为什么原因，导致他们要跑到路灯下面刷《吉米多维奇》，路灯很暗，而且外面很冷，常常要刷到很晚，总之是十分艰苦。
+然而在我们都要开始同情他艰苦奋斗的时候，他都会重点强调：”那个时候刷题到很晚，在路灯下吃泡面，被一个同学过来把泡面抢走了”（带着浓重的怨妇口吻），然后大家就会顾不上想象他的艰苦，只觉得他的怨妇语调过于有趣，然后满堂哄笑。
+三、吐槽中国数学教育 四、表示自己不归中国教育部管，可以为所欲为 他其实是南科大的访问学者，本身是巴西一个大学的教授，感觉这个人估计人生是有点传奇成分的，居然跑去巴西当教授了。
+五、每次上课一瓶可乐 他的身材微胖，行动起来特别慵懒，关键还每次上课必带一瓶可乐，讲着讲着不时喝一口可乐。这简直是典型的肥宅形象，没有一点老师的样子，关键经常喝完一口可乐，就会开始说：”我不归中国教育部管“。然后整个教室就都笑得很开心。
+我非常喜欢这种有个性、有棱角的老师，能够让人感受到他们身上的一些东西，能够被感染、被影响到。
+六、多次谈到陪老婆逛街过程中想出问题的解法 记得第一次他说陪老婆逛街的时候想出问题的时候，我很惊讶：这个 b 这样子竟然有老婆（开玩笑，别当真）。
+带带大家刚 我们现在特别爱玩梗，纯纯的梗小鬼，常常因为单纯的玩梗让教室内充满活跃的气氛。而杨佳刚，和现在非常火的一位抽象明星神似——那就是当代 Hape 大王、抽象教主带带大师兄孙笑川。于是我们称他为带带大佳刚。
 ...</p></div><footer class=entry-footer><span title='2019-06-01 00:00:00 +0000 UTC'>June 1, 2019</span></footer><a class=entry-link aria-label="post link to 有梗的线代老师——带带大家刚" href=https://jimall-blog.vercel.app/posts/misc/linear-algebra-teacher/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://jimall-blog.vercel.app/posts/page/2/>«&nbsp;Prev&nbsp;</a></nav></footer></main><footer class=footer><span>&copy; 2024 <a href=https://jimall-blog.vercel.app/>Jimall's Blog</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
