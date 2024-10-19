@@ -1,24 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Git on Jimall&#39;s Blog</title>
-    <link>https://jimall-blog.vercel.app/tags/git/</link>
-    <description>Recent content in Git on Jimall&#39;s Blog</description>
-    <image>
-      <title>Jimall&#39;s Blog</title>
-      <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
-      <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.135.0</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 06 May 2022 05:27:49 +0000</lastBuildDate>
-    <atom:link href="https://jimall-blog.vercel.app/tags/git/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>git submodule 的使用</title>
-      <link>https://jimall-blog.vercel.app/posts/technology/git-submodule/</link>
-      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://jimall-blog.vercel.app/posts/technology/git-submodule/</guid>
-      <description>在 hugo blog 中，会用到 git submodule，本文介绍这个特性的使用</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on</title><link>/tags/git/</link><description>Recent content in Git on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 06 May 2022 05:27:49 +0000</lastBuildDate><atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>git submodule 的使用</title><link>/posts/technology/git-submodule/</link><pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate><guid>/posts/technology/git-submodule/</guid><description>&lt;p>在 Git 项目中，需要包含别的 Git 项目，我们希望能够独立的使用这两个项目。比如我们的博客是一个 Git 项目，而我们需要在博客中包含别人的项目作为博客主题，我们希望能够在自己写博文后 push 不影响博客主题仓库，同时希望能够独立使用主题仓库，这样我们就可以获取最新的主题。&lt;/p>
+&lt;p>这个时候需要用到 git submodule。在使用 submodule 之后，两个项目便相对独立（或者多个 submodule，那么就是多个项目相对独立）。下面介绍子模块常用的用法：&lt;/p>
+&lt;h2 id="使用子模块">使用子模块&lt;/h2>
+&lt;h3 id="添加子模块">添加子模块&lt;/h3>
+&lt;p>在 Git 项目中包含别的 Git 项目，不能够直接到相应文件夹 clone，而需要使用 &lt;code>git add submodule&lt;/code> 命令，可以将这个命令视为子模块版本的 &lt;code>git clone&lt;/code>。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git add submodule git@github.com/example/example.git submodule
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>上面的命令将项目克隆到 submodule 目录。会发现根目录生成了一个 .gitmodule 文件，这个文件用于保存子模块信息。&lt;/p>
+&lt;h3 id="查看子模块">查看子模块&lt;/h3>
+&lt;p>使用 &lt;code>git submodule&lt;/code> 命令查看当前项目的子模块。&lt;/p>
+&lt;h3 id="更新子模块">更新子模块&lt;/h3>
+&lt;p>在项目中使用 &lt;code>git update&lt;/code> 父模块并不会更新子模块。（别的操作同理，我们在项目中使用的各种以前使用的 git 操作都只会对父模块产生作用）&lt;/p>
+&lt;p>使用 &lt;code>git submodule add&lt;/code> 添加子项目。&lt;/p>
+&lt;h3 id="操作子模块">操作子模块&lt;/h3>
+&lt;p>在子模块的文件夹内部，我们的各种操作都是对子模块的项目产生作用，比如 push 就是将子模块 push 到子模块的 remote repository。&lt;/p>
+&lt;p>所以需要单独修改子模块，只需要 cd 到子模块内，把子模块当成一个普通的 git 项目即可。&lt;/p>
+&lt;h2 id="克隆含有子模块的项目">克隆含有子模块的项目&lt;/h2>
+&lt;p>克隆包含子模块的项目有两种方法：&lt;/p></description></item></channel></rss>

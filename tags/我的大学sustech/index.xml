@@ -1,60 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>我的大学SUSTech on Jimall&#39;s Blog</title>
-    <link>https://jimall-blog.vercel.app/tags/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6sustech/</link>
-    <description>Recent content in 我的大学SUSTech on Jimall&#39;s Blog</description>
-    <image>
-      <title>Jimall&#39;s Blog</title>
-      <url>https://jimall-blog.vercel.app/papermod-cover.png</url>
-      <link>https://jimall-blog.vercel.app/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.135.0</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jimall-blog.vercel.app/tags/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6sustech/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>有梗的线代老师——带带大家刚</title>
-      <link>https://jimall-blog.vercel.app/posts/misc/linear-algebra-teacher/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://jimall-blog.vercel.app/posts/misc/linear-algebra-teacher/</guid>
-      <description>&lt;h1 id=&#34;搬运提要&#34;&gt;搬运提要&lt;/h1&gt;
-&lt;p&gt;这篇记录于大一下学期期末考试周写成，当时有放在坚果云的习惯，后面弃用坚果云，便被遗忘，最近莫名翻到，特搬运到博客上，记录我青春无知而又最好的年华。搬运日期：2023-05-29。&lt;/p&gt;
-&lt;p&gt;彼时刚入大学兴致勃勃，扒同年级同学的 GitHub profile，接触了一些同年级同学的 Blog（印象最深的是 gogo），一方面觉得搭 Blog 很酷，觉得他们高中就能搭出自己的 Blog，实在是羡慕；另一方面也被他们留下的一些文字给触动，心想：“我一定要搞一个博客”。这篇文章属于是刚起写 Blog 兴趣之作，心情属于是“想写但写起来让自己有点害羞，让别人看到也有些害羞”这样。另外，文中提到的 Heros in My Heart 里的文字，加上考试周的”百无聊赖“，也是促成我写成这篇文字的因素。&lt;/p&gt;
-&lt;p&gt;说起来，我很多对生活的探索，都是在考试周，即“除了复习考试之外干什么效率都很高”，虽然这无疑是拖延症，但是这些探索相比于狗屁的分数GPA而言，是重要百倍千倍的。我的创造力在考试周这样的环境下最容易被激发：没有咄咄逼人的 DDL、没有需要打的卡、时间自由安排。&lt;/p&gt;
-&lt;p&gt;以下是正文。&lt;/p&gt;
-&lt;h1 id=&#34;正文&#34;&gt;正文&lt;/h1&gt;
-&lt;p&gt;我想估计也不会有人有机会看看这个，但是其实这就像嵌在 Linux 内核代码中的句子一样，充满着浪漫主义情怀，或者更准确的说，是一种得意，或者又是一种想他人知又不想他人知的纯美小心思。&lt;/p&gt;
-&lt;h2 id=&#34;我的线代老师杨佳刚&#34;&gt;我的线代老师——杨佳刚&lt;/h2&gt;
-&lt;p&gt;如果让我来回忆我的大一（事实上我还没结束大一，这让这份回忆比较准确但是很做作），我一定会觉得最秀的老师是杨佳刚，他的主要竞争对手有：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Java 老师何明昕：Java 老学究，喜欢教：“代码要优雅”，因而衍生出同学们的口头禅梗“这不优雅”&lt;/li&gt;
-&lt;li&gt;大学物理老师鲁大为：资深游戏爱好者，很年轻很有活力，喜欢在群里聊 3DM 之类的话题，很合年轻人的胃口，受到大家的追捧，选他的课起码要投 60/100 分&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;与这些竞争对手相比，他绝对算是奇葩一朵了，比较搞耍的行为包括但不限于以下几个：&lt;/p&gt;
-&lt;h3 id=&#34;一吹那个写heroes-in-my-hearthttpsyihuiorgcn20060316-33-00的北大校友&#34;&gt;一、吹那个写&lt;a href=&#34;https://yihui.org/cn/2006/03/16-33-00/&#34;&gt;《heroes in my heart》&lt;/a&gt;的北大校友&lt;/h3&gt;
-&lt;p&gt;他说他们当年的北大 bbs 上，有一个数学系的人发表了一系列帖子，关于数学家的。我听上去老有种传奇的感觉，幻想我们这辈也能有这样的传奇人物搞出点让人兴奋的东西来。&lt;/p&gt;
-&lt;p&gt;我当时兴高采烈地去搜了这个看了看，对里面的第一段话印象深刻：&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://jimall-blog.vercel.app/img/heros-in-my-heart.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;最触动我的是”去真实的记录北大数学的这群烂人“这句话，实际上，我也是因为看到这句话觉得有趣才写这篇文章的，并且我尽力用诙谐而嘲讽的笔风去写，显得更像一部史诗。（于是我室友在路过我的位置看到我写这些的时候问我：”你在干嘛“，我连忙 alt + tab，有点羞耻的说）&lt;/p&gt;
-&lt;h3 id=&#34;二讲述他在北大的艰苦奋斗&#34;&gt;二、讲述他在北大的艰苦奋斗&lt;/h3&gt;
-&lt;p&gt;他多次提到：当时北大会断电还是因为什么原因，导致他们要跑到路灯下面刷《吉米多维奇》，路灯很暗，而且外面很冷，常常要刷到很晚，总之是十分艰苦。&lt;/p&gt;
-&lt;p&gt;然而在我们都要开始同情他艰苦奋斗的时候，他都会重点强调：”那个时候刷题到很晚，在路灯下吃泡面，被一个同学过来把泡面抢走了”（带着浓重的怨妇口吻），然后大家就会顾不上想象他的艰苦，只觉得他的怨妇语调过于有趣，然后满堂哄笑。&lt;/p&gt;
-&lt;h3 id=&#34;三吐槽中国数学教育&#34;&gt;三、吐槽中国数学教育&lt;/h3&gt;
-&lt;h3 id=&#34;四表示自己不归中国教育部管可以为所欲为&#34;&gt;四、表示自己不归中国教育部管，可以为所欲为&lt;/h3&gt;
-&lt;p&gt;他其实是南科大的访问学者，本身是巴西一个大学的教授，感觉这个人估计人生是有点传奇成分的，居然跑去巴西当教授了。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://jimall-blog.vercel.app/img/yang-jia-gang-profile.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
-&lt;h3 id=&#34;五每次上课一瓶可乐&#34;&gt;五、每次上课一瓶可乐&lt;/h3&gt;
-&lt;p&gt;他的身材微胖，行动起来特别慵懒，关键还每次上课必带一瓶可乐，讲着讲着不时喝一口可乐。这简直是典型的肥宅形象，没有一点老师的样子，关键经常喝完一口可乐，就会开始说：”我不归中国教育部管“。然后整个教室就都笑得很开心。&lt;/p&gt;
-&lt;p&gt;我非常喜欢这种有个性、有棱角的老师，能够让人感受到他们身上的一些东西，能够被感染、被影响到。&lt;/p&gt;
-&lt;h3 id=&#34;六多次谈到陪老婆逛街过程中想出问题的解法&#34;&gt;六、多次谈到陪老婆逛街过程中想出问题的解法&lt;/h3&gt;
-&lt;p&gt;记得第一次他说陪老婆逛街的时候想出问题的时候，我很惊讶：这个 b 这样子竟然有老婆（开玩笑，别当真）。&lt;/p&gt;
-&lt;h2 id=&#34;带带大家刚&#34;&gt;带带大家刚&lt;/h2&gt;
-&lt;p&gt;我们现在特别爱玩梗，纯纯的梗小鬼，常常因为单纯的玩梗让教室内充满活跃的气氛。而杨佳刚，和现在非常火的一位抽象明星神似——那就是当代 Hape 大王、抽象教主带带大师兄孙笑川。于是我们称他为带带大佳刚。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://jimall-blog.vercel.app/img/yang-jia-gang-1.jpg&#34; alt=&#34;杨佳刚老师的梗图&#34;  /&gt;
-&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>我的大学SUSTech on</title><link>/tags/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6sustech/</link><description>Recent content in 我的大学SUSTech on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6sustech/index.xml" rel="self" type="application/rss+xml"/><item><title>有梗的线代老师——带带大家刚</title><link>/posts/misc/linear-algebra-teacher/</link><pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate><guid>/posts/misc/linear-algebra-teacher/</guid><description>&lt;h1 id="搬运提要">搬运提要&lt;/h1>
+&lt;p>这篇记录于大一下学期期末考试周写成，当时有放在坚果云的习惯，后面弃用坚果云，便被遗忘，最近莫名翻到，特搬运到博客上，记录我青春无知而又最好的年华。搬运日期：2023-05-29。&lt;/p>
+&lt;p>彼时刚入大学兴致勃勃，扒同年级同学的 GitHub profile，接触了一些同年级同学的 Blog（印象最深的是 gogo），一方面觉得搭 Blog 很酷，觉得他们高中就能搭出自己的 Blog，实在是羡慕；另一方面也被他们留下的一些文字给触动，心想：“我一定要搞一个博客”。这篇文章属于是刚起写 Blog 兴趣之作，心情属于是“想写但写起来让自己有点害羞，让别人看到也有些害羞”这样。另外，文中提到的 Heros in My Heart 里的文字，加上考试周的”百无聊赖“，也是促成我写成这篇文字的因素。&lt;/p>
+&lt;p>说起来，我很多对生活的探索，都是在考试周，即“除了复习考试之外干什么效率都很高”，虽然这无疑是拖延症，但是这些探索相比于狗屁的分数GPA而言，是重要百倍千倍的。我的创造力在考试周这样的环境下最容易被激发：没有咄咄逼人的 DDL、没有需要打的卡、时间自由安排。&lt;/p>
+&lt;p>以下是正文。&lt;/p>
+&lt;h1 id="正文">正文&lt;/h1>
+&lt;p>我想估计也不会有人有机会看看这个，但是其实这就像嵌在 Linux 内核代码中的句子一样，充满着浪漫主义情怀，或者更准确的说，是一种得意，或者又是一种想他人知又不想他人知的纯美小心思。&lt;/p>
+&lt;h2 id="我的线代老师杨佳刚">我的线代老师——杨佳刚&lt;/h2>
+&lt;p>如果让我来回忆我的大一（事实上我还没结束大一，这让这份回忆比较准确但是很做作），我一定会觉得最秀的老师是杨佳刚，他的主要竞争对手有：&lt;/p>
+&lt;ul>
+&lt;li>Java 老师何明昕：Java 老学究，喜欢教：“代码要优雅”，因而衍生出同学们的口头禅梗“这不优雅”&lt;/li>
+&lt;li>大学物理老师鲁大为：资深游戏爱好者，很年轻很有活力，喜欢在群里聊 3DM 之类的话题，很合年轻人的胃口，受到大家的追捧，选他的课起码要投 60/100 分&lt;/li>
+&lt;/ul>
+&lt;p>与这些竞争对手相比，他绝对算是奇葩一朵了，比较搞耍的行为包括但不限于以下几个：&lt;/p>
+&lt;h3 id="一吹那个写heroes-in-my-hearthttpsyihuiorgcn20060316-33-00的北大校友">一、吹那个写&lt;a href="https://yihui.org/cn/2006/03/16-33-00/">《heroes in my heart》&lt;/a>的北大校友&lt;/h3>
+&lt;p>他说他们当年的北大 bbs 上，有一个数学系的人发表了一系列帖子，关于数学家的。我听上去老有种传奇的感觉，幻想我们这辈也能有这样的传奇人物搞出点让人兴奋的东西来。&lt;/p>
+&lt;p>我当时兴高采烈地去搜了这个看了看，对里面的第一段话印象深刻：&lt;/p>
+&lt;p>&lt;img src="/img/heros-in-my-heart.png" alt="">&lt;/p>
+&lt;p>最触动我的是”去真实的记录北大数学的这群烂人“这句话，实际上，我也是因为看到这句话觉得有趣才写这篇文章的，并且我尽力用诙谐而嘲讽的笔风去写，显得更像一部史诗。（于是我室友在路过我的位置看到我写这些的时候问我：”你在干嘛“，我连忙 alt + tab，有点羞耻的说）&lt;/p>
+&lt;h3 id="二讲述他在北大的艰苦奋斗">二、讲述他在北大的艰苦奋斗&lt;/h3>
+&lt;p>他多次提到：当时北大会断电还是因为什么原因，导致他们要跑到路灯下面刷《吉米多维奇》，路灯很暗，而且外面很冷，常常要刷到很晚，总之是十分艰苦。&lt;/p>
+&lt;p>然而在我们都要开始同情他艰苦奋斗的时候，他都会重点强调：”那个时候刷题到很晚，在路灯下吃泡面，被一个同学过来把泡面抢走了”（带着浓重的怨妇口吻），然后大家就会顾不上想象他的艰苦，只觉得他的怨妇语调过于有趣，然后满堂哄笑。&lt;/p>
+&lt;h3 id="三吐槽中国数学教育">三、吐槽中国数学教育&lt;/h3>
+&lt;h3 id="四表示自己不归中国教育部管可以为所欲为">四、表示自己不归中国教育部管，可以为所欲为&lt;/h3>
+&lt;p>他其实是南科大的访问学者，本身是巴西一个大学的教授，感觉这个人估计人生是有点传奇成分的，居然跑去巴西当教授了。&lt;/p>
+&lt;p>&lt;img src="/img/yang-jia-gang-profile.png" alt="">&lt;/p>
+&lt;h3 id="五每次上课一瓶可乐">五、每次上课一瓶可乐&lt;/h3>
+&lt;p>他的身材微胖，行动起来特别慵懒，关键还每次上课必带一瓶可乐，讲着讲着不时喝一口可乐。这简直是典型的肥宅形象，没有一点老师的样子，关键经常喝完一口可乐，就会开始说：”我不归中国教育部管“。然后整个教室就都笑得很开心。&lt;/p>
+&lt;p>我非常喜欢这种有个性、有棱角的老师，能够让人感受到他们身上的一些东西，能够被感染、被影响到。&lt;/p>
+&lt;h3 id="六多次谈到陪老婆逛街过程中想出问题的解法">六、多次谈到陪老婆逛街过程中想出问题的解法&lt;/h3>
+&lt;p>记得第一次他说陪老婆逛街的时候想出问题的时候，我很惊讶：这个 b 这样子竟然有老婆（开玩笑，别当真）。&lt;/p>
+&lt;h2 id="带带大家刚">带带大家刚&lt;/h2>
+&lt;p>我们现在特别爱玩梗，纯纯的梗小鬼，常常因为单纯的玩梗让教室内充满活跃的气氛。而杨佳刚，和现在非常火的一位抽象明星神似——那就是当代 Hape 大王、抽象教主带带大师兄孙笑川。于是我们称他为带带大佳刚。&lt;/p>
+&lt;p>&lt;img src="/img/yang-jia-gang-1.jpg" alt="杨佳刚老师的梗图">&lt;/p>
+&lt;p>杨佳刚老师的梗图&lt;/p>
+&lt;p>说杨佳刚很像带带大师兄，不仅仅是由于他的体型和长相，更多的还是由于线代这门课和孙笑川名言高度的匹配性以及杨佳刚有些行为和话语表现出其带带大师兄的气质所以我们觉得他像孙笑川。&lt;/p>
+&lt;p>孙笑川有几个名言大家非常爱玩梗：&lt;/p></description></item></channel></rss>
