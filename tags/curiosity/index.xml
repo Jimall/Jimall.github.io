@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Curiosity on paranoidyui&#39;s Blog</title>
+    <link>https://paranoidyui.tech/tags/curiosity/</link>
+    <description>Recent content in Curiosity on paranoidyui&#39;s Blog</description>
+    <image>
+      <title>paranoidyui&#39;s Blog</title>
+      <url>https://paranoidyui.tech/papermod-cover.png</url>
+      <link>https://paranoidyui.tech/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.121.2</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 13 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://paranoidyui.tech/tags/curiosity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我对乔布斯 &#34;Stay hungry. Stay foolish.&#34; 的理解</title>
+      <link>https://paranoidyui.tech/posts/thought/stay-hungry-stay-foolish/</link>
+      <pubDate>Sat, 13 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://paranoidyui.tech/posts/thought/stay-hungry-stay-foolish/</guid>
+      <description>前段时间，看到美团王兴的访谈，在访谈里，有人让他给年轻人建议，他提了一句：
+基本上最牛逼的建议乔布斯已经说了——Stay hungry. Stay foolish.
+乔布斯的这句话我很早就知道，也见过很多次。看王兴访谈的时候，我突然仔细一想：“这句话是啥意思？”，发现我其实压根不知道这句话是啥意思，只是这句话出现太多次以至于我以为自己知道这句话了，所以每次出现我都熟视无睹。
+在接下来的几天，我不断思考：乔布斯说的 Stay hungry. Stay foolish. 是啥意思？最后经过比想象中复杂得多的探索，我得到了到目前为止满意的答案，用这篇 blog 记录一下我的探索过程和我对这句话的理解。
+Stay hungry. Stay foolish. 的来源和上下文 首先，Stay hungry. Stay foolish. 这句话来自于乔布斯在 2005 年 Stanford 毕业典礼的著名演讲（YouTube link），是这个演讲的最后一段内容。
+乔布斯大概是这么讲的：他年轻的时候，有一本杂志——The Whole Earth Catalog，是他们那代人的圣经。在 1974 年，这本杂志要停刊的时候，最后一期的封底上，是这么一句话——Stay hungry. Stay foolish.，这句话影响了他，让他一直希望自己如此。当初他看到这句话的时候，和在座的毕业生是一样的年纪，现在他把这句话送给各位 Stanford 的毕业生。讲完之后演讲就结束了，乔布斯对这句话没有做任何解读。
+《三体》里，章北海在父亲的病榻前，父亲告诉他：“北海，要多想”。究竟怎么理解”要多想“，其实完全取决于字面意思和章北海自己的解读。这里的情景也是类似的——乔布斯说：”毕业生们。Stay hungry. Stay foolish.“。究竟作何理解，也是看我们自己的解读。
+幸运的是，相比于”北海，要多想“这单单一句苍白的话，Stay hungry. Stay foolish. 这句话有演讲里提供的上下文信息帮助我们去理解，于是我把他的演讲内容听了一遍又一遍，最后还是觉得没法理解，就摘抄下来，并且在我在意的地方加粗，如下：
+When I was young, there was a amazing publication called The Whole Earth Catalog, which was one of the bibles of my generation.</description>
+    </item>
+  </channel>
+</rss>
