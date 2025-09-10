@@ -2,14 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://paranoidyui.tech/tags/blogging/</loc>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://paranoidyui.tech/</loc>
-    <lastmod>2024-10-26T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://paranoidyui.tech/posts/</loc>
-    <lastmod>2024-10-26T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://paranoidyui.tech/tags/</loc>
-    <lastmod>2024-10-26T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://paranoidyui.tech/posts/the-way-ahead/</loc>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://paranoidyui.tech/posts/why-climing/</loc>
     <lastmod>2024-10-26T00:00:00+00:00</lastmod>
