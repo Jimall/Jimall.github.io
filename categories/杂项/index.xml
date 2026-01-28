@@ -9,29 +9,29 @@
       <url>https://paranoidyui.tech/papermod-cover.png</url>
       <link>https://paranoidyui.tech/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.152.2</generator>
+    <generator>Hugo -- 0.154.5</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 Oct 2022 22:34:41 +0000</lastBuildDate>
     <atom:link href="https://paranoidyui.tech/categories/%E6%9D%82%E9%A1%B9/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>讨厌刷题</title>
-      <link>https://paranoidyui.tech/posts/misc/i-hate-doing-exercises/</link>
+      <link>https://paranoidyui.tech/posts/i-hate-doing-exercises/</link>
       <pubDate>Sat, 01 Oct 2022 22:34:41 +0000</pubDate>
-      <guid>https://paranoidyui.tech/posts/misc/i-hate-doing-exercises/</guid>
+      <guid>https://paranoidyui.tech/posts/i-hate-doing-exercises/</guid>
       <description>回想自己所受的教育，发现对于刷题这个概念，我一直存在抵触情绪，这影响了我后来的路</description>
     </item>
     <item>
       <title>我的 Journal 记录方案</title>
-      <link>https://paranoidyui.tech/posts/misc/how-do-i-take-journal/</link>
+      <link>https://paranoidyui.tech/posts/how-do-i-take-journal/</link>
       <pubDate>Mon, 20 Jun 2022 12:43:52 +0000</pubDate>
-      <guid>https://paranoidyui.tech/posts/misc/how-do-i-take-journal/</guid>
+      <guid>https://paranoidyui.tech/posts/how-do-i-take-journal/</guid>
       <description>关于 Journal 究竟记什么以及我如何记 Journal</description>
     </item>
     <item>
       <title>北方的空地</title>
-      <link>https://paranoidyui.tech/posts/misc/adventure-in-qiangtang/</link>
+      <link>https://paranoidyui.tech/posts/adventure-in-qiangtang/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://paranoidyui.tech/posts/misc/adventure-in-qiangtang/</guid>
+      <guid>https://paranoidyui.tech/posts/adventure-in-qiangtang/</guid>
       <description>&lt;p&gt;今天，看到&lt;a href=&#34;https://www.zhihu.com/question/460921357&#34;&gt;甘肃马拉松赛的惨剧&lt;/a&gt;，感到不寒而栗——在马拉松比赛中，好几位经验丰富的跑者，因为恶劣天气失温最终去世。&lt;/p&gt;
 &lt;p&gt;我很早就知道失温是一种极其危险的情况，就跑去刷如何处理失温啥的。刷着刷着，大概是因为防止失温是穿越无人区很重要的话题，就刷到了推自行车穿越无人区的话题，又由无人区刷到《北方的空地》这篇帖子。这是一篇作者记录自己穿越大羌塘无人区的帖子，给我带来很大震撼：&lt;a href=&#34;https://bbs.8264.com/forum-viewthread-tid-512349-extra--authorid-33896449-page-1.html&#34;&gt;北方的空地，孤身穿越大羌塘无人区&lt;/a&gt;，推荐大家去看一看✅。阮一峰也有一篇博客讲到这则帖子：&lt;a href=&#34;https://www.ruanyifeng.com/blog/2017/12/qiang-tang.html&#34;&gt;北方的空地 - 阮一峰网络日志&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;穿越无人区，是十分冒险的行为，不仅会遇上恶劣的天气，还可能遭遇野生动物的攻击，即使没有被恶劣环境折磨，由于穿越需要较长的时间，生存所需的水和食物可能在中途就不够了，所以穿越无人区要推自行车，不是为了能骑行，而是为了尽可能多带物资。&lt;/p&gt;
@@ -44,9 +44,9 @@
     </item>
     <item>
       <title>有梗的线代老师——带带大家刚</title>
-      <link>https://paranoidyui.tech/posts/misc/linear-algebra-teacher/</link>
+      <link>https://paranoidyui.tech/posts/linear-algebra-teacher/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://paranoidyui.tech/posts/misc/linear-algebra-teacher/</guid>
+      <guid>https://paranoidyui.tech/posts/linear-algebra-teacher/</guid>
       <description>&lt;h1 id=&#34;搬运提要&#34;&gt;搬运提要&lt;/h1&gt;
 &lt;p&gt;这篇记录于大一下学期期末考试周写成，当时有放在坚果云的习惯，后面弃用坚果云，便被遗忘，最近莫名翻到，特搬运到博客上，记录我青春无知而又最好的年华。搬运日期：2023-05-29。&lt;/p&gt;
 &lt;p&gt;彼时刚入大学兴致勃勃，扒同年级同学的 GitHub profile，接触了一些同年级同学的 Blog（印象最深的是 gogo），一方面觉得搭 Blog 很酷，觉得他们高中就能搭出自己的 Blog，实在是羡慕；另一方面也被他们留下的一些文字给触动，心想：“我一定要搞一个博客”。这篇文章属于是刚起写 Blog 兴趣之作，心情属于是“想写但写起来让自己有点害羞，让别人看到也有些害羞”这样。另外，文中提到的 Heros in My Heart 里的文字，加上考试周的”百无聊赖“，也是促成我写成这篇文字的因素。&lt;/p&gt;

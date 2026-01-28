@@ -9,10 +9,31 @@
       <url>https://paranoidyui.tech/papermod-cover.png</url>
       <link>https://paranoidyui.tech/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.152.2</generator>
+    <generator>Hugo -- 0.154.5</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://paranoidyui.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>City</title>
+      <link>https://paranoidyui.tech/tags/city/</link>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://paranoidyui.tech/tags/city/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Life Planning</title>
+      <link>https://paranoidyui.tech/tags/life-planning/</link>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://paranoidyui.tech/tags/life-planning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>人生大事</title>
+      <link>https://paranoidyui.tech/tags/%E4%BA%BA%E7%94%9F%E5%A4%A7%E4%BA%8B/</link>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://paranoidyui.tech/tags/%E4%BA%BA%E7%94%9F%E5%A4%A7%E4%BA%8B/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Life</title>
       <link>https://paranoidyui.tech/tags/life/</link>
@@ -25,6 +46,13 @@
       <link>https://paranoidyui.tech/tags/blogging/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
       <guid>https://paranoidyui.tech/tags/blogging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Career</title>
+      <link>https://paranoidyui.tech/tags/career/</link>
+      <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://paranoidyui.tech/tags/career/</guid>
       <description></description>
     </item>
     <item>
