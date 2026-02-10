@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021 书单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 60px;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .header-link {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            padding-right: 45px;
+        }
+
+        .header-link::after {
+            content: '🔗';
+            position: absolute;
+            right: 0;
+            opacity: 0.5;
+            font-size: 1.8rem;
+            transition: all 0.3s ease;
+        }
+
+        .header-link:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .header-link:hover::after {
+            opacity: 1;
+            transform: translateX(5px);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .book-card {
+            background: white;
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .book-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .book-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+        }
+
+        .book-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .book-link {
+            color: #2c3e50;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            padding-right: 35px;
+        }
+
+        .book-link::after {
+            content: '🔗';
+            position: absolute;
+            right: 0;
+            opacity: 0.4;
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+        }
+
+        .book-link:hover {
+            color: #667eea;
+        }
+
+        .book-link:hover::after {
+            opacity: 1;
+            transform: translateX(3px);
+        }
+
+        .book-meta {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .book-content {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .section-content {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .section-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .section-content li {
+            margin-bottom: 8px;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .section-content li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #95a5a6;
+        }
+
+        .recommender {
+            display: inline-block;
+            background: #ecf0f1;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .books-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .book-card {
+                padding: 25px;
+            }
+
+            .book-title {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                <a href="https://weread.qq.com/misc/booklist/205643304_7YzheuwJg" class="header-link" target="_blank" title="点击在微信读书中查看完整书单">📚 2021 书单</a>
+            </h1>
+            <p>2021，大三下 → 暑假（实习）→ 大四上</p>
+            <p style="font-size: 1rem; margin-top: 10px;">当时还没怎么喜欢看书，实习的时候受当时主管影响，实习的时候偶尔会翻翻书，发现我确实喜欢这件事</p>
+        </div>
+
+        <div class="books-grid">
+            <div class="book-card">
+                <h2 class="book-title">
+                    <a href="https://weread.qq.com/web/bookDetail/ce032b305a9bc1ce0b0dd2a" class="book-link" target="_blank" title="点击在微信读书中查看">三体</a>
+                </h2>
+                <div class="book-content">
+                    <div class="section">
+                        <div class="section-title">📅 阅读时间</div>
+                        <div class="section-content">
+                            大三的寒假几乎都在看这本书，第二次看
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="section-title">💭 阅读印象</div>
+                        <div class="section-content">
+                            想象力十分丰富的作品，再看一遍仍然震撼
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <h2 class="book-title">
+                    <a href="https://www.bilibili.com/read/cv5648002/?opus_fallback=1" class="book-link" target="_blank" title="点击在 B 站阅读">物理班</a>
+                </h2>
+                <div class="book-content">
+                    <div class="section">
+                        <div class="section-title">📅 阅读时间</div>
+                        <div class="section-content">
+                            2021 年暑假，七八月，在实习期间，坐地铁去公司，在五和换乘的时候，看的这一篇《物理班》，印象很深刻
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="section-title">💭 阅读印象</div>
+                        <div class="section-content">
+                            <ul>
+                                <li>非常喜欢《物理班》这篇文章</li>
+                                <li>现在想来，获奖应该是因为用了一些物理术语的特殊表达，确实是"新概念"</li>
+                                <li>但我喜欢的很多是这篇文章所描述高中生活里的真实和平常，我对高三的记忆就是这样：大部分时候平平无奇，偶尔如果细心会注意到一些有趣的地方，比如喜欢的女孩认真做题的表情</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <h2 class="book-title">
+                    <a href="https://weread.qq.com/web/bookDetail/ada325807168230aada7458" class="book-link" target="_blank" title="点击在微信读书中查看">富爸爸穷爸爸</a>
+                </h2>
+                <div class="book-content">
+                    <div class="section">
+                        <div class="section-title">💭 阅读印象</div>
+                        <div class="section-content">
+                            2021 年其实没怎么好好看这本书，但我多少有听到过讲理财重要的观念，但是当时也没怎么理解究竟哪里重要
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <h2 class="book-title">
+                    <a href="https://weread.qq.com/web/bookDetail/32132730715fc93b3212bb6" class="book-link" target="_blank" title="点击在微信读书中查看">俗世奇人</a>
+                </h2>
+                <div class="book-content">
+                    <div class="section">
+                        <div class="section-title">📅 阅读时间</div>
+                        <div class="section-content">
+                            大四上，实习回来之后看的，当时应该是闲的时候会翻翻书
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="section-title">💭 阅读印象</div>
+                        <div class="section-content">
+                            印象比较深的是大早上起来，坐校巴去校门口的 KFC 吃肯德基的早餐，然后坐校巴回来，校巴上就在看这本书
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <h2 class="book-title">
+                    <a href="https://weread.qq.com/web/bookDetail/27b32c40813ab67ccg019a74" class="book-link" target="_blank" title="点击在微信读书中查看">欢迎来到实力至上主义的教室</a>
+                </h2>
+                <div class="book-content">
+                    <div class="section">
+                        <div class="section-title">📅 阅读时间</div>
+                        <div class="section-content">
+                            大四上在寝室里摆烂的时候看的，一直很喜欢这部番
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="section-title">💭 阅读印象</div>
+                        <div class="section-content">
+                            <ul>
+                                <li>就这本书大体内容而言，就是看个乐子，倒没什么特别</li>
+                                <li>不过第一卷的前半部分倒是有些很有意思的探讨：人是不平等的生物及存在，根本不存在平等的人类</li>
+                                <li>这本书对于这个主题探讨也不错，这本书里学校的环境确实更类似于社会，更加灵活和规则不透明，平等永远不可能存在</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <h2 class="book-title">
+                    <a href="https://weread.qq.com/web/bookDetail/f2732c30724d5dc3f277e75" class="book-link" target="_blank" title="点击在微信读书中查看">拖延心理学</a>
+                </h2>
+                <div class="book-content">
+                    <div class="section">
+                        <div class="section-title">📅 阅读时间</div>
+                        <div class="section-content">
+                            大四上在寝室摆烂看《实教》的时候，突然觉得还是得做点事情，于是看了这本书
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="section-title">✨ 对我的影响</div>
+                        <div class="section-content">
+                            多少有被影响到，提升了一点行动力。拖延症也是我的老问题了，有利有弊，虽然弊大于利，但我不改（
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

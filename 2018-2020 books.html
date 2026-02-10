@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2018-2020 书单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 60px;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .header-link {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            padding-right: 45px;
+        }
+
+        .header-link::after {
+            content: '🔗';
+            position: absolute;
+            right: 0;
+            opacity: 0.5;
+            font-size: 1.8rem;
+            transition: all 0.3s ease;
+        }
+
+        .header-link:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .header-link:hover::after {
+            opacity: 1;
+            transform: translateX(5px);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .book-card {
+            background: white;
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .book-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .book-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+        }
+
+        .book-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .book-link {
+            color: #2c3e50;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            padding-right: 35px;
+        }
+
+        .book-link::after {
+            content: '🔗';
+            position: absolute;
+            right: 0;
+            opacity: 0.4;
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+        }
+
+        .book-link:hover {
+            color: #667eea;
+        }
+
+        .book-link:hover::after {
+            opacity: 1;
+            transform: translateX(3px);
+        }
+
+        .book-meta {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .book-content {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .section-content {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .section-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .section-content li {
+            margin-bottom: 8px;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .section-content li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #95a5a6;
+        }
+
+        .recommender {
+            display: inline-block;
+            background: #ecf0f1;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .books-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .book-card {
+                padding: 25px;
+            }
+
+            .book-title {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                <a href="https://weread.qq.com/misc/booklist/205643304_7YCSwZSdm" class="header-link" target="_blank" title="点击在微信读书中查看完整书单">📚 2018-2020 书单</a>
+            </h1>
+            <p>大一大二没怎么看书的时候看过的书</p>
+        </div>
+
+        <div class="books-grid">
+            <div class="book-card">
+                <h2 class="book-title">
+                    <a href="https://weread.qq.com/book-detail?type=1&senderVid=205643304&v=ce032b305a9bc1ce0b0dd2a" class="book-link" target="_blank" title="点击在微信读书中查看">三体</a>
+                </h2>
+                <div class="book-meta">
+                    <span class="recommender">recommended by @张望</span>
+                </div>
+                <div class="book-content">
+                    <div class="section">
+                        <div class="section-title">📅 阅读时间</div>
+                        <div class="section-content">
+                            大一下学期的期末考试周开看，当时去延安之后都还在看
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="section-title">💭 阅读印象</div>
+                        <div class="section-content">
+                            比较深的印象就是觉得提供了很宏大的世界观，在这之前应该是看过第一部，第一部就足够吸引人了，但是在看完第二部第三部后觉得后两部是真的想象力太丰富了
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="section-title">✨ 对我的影响</div>
+                        <div class="section-content">
+                            这本书对我的真正实质性影响是对 Science 的理解
+                            <ul>
+                                <li>记得和 @吴迪 聊过为什么杨冬会自杀，他其实没懂，这是因为科学的可重复性</li>
+                                <li>刚上班的半年就对科学很感兴趣，现在也对科学很感兴趣</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <h2 class="book-title">
+                    <a href="https://weread.qq.com/book-detail?type=1&senderVid=205643304&v=cbb3285071eb6d2ecbba023" class="book-link" target="_blank" title="点击在微信读书中查看">房思琪的初恋乐园</a>
+                </h2>
+                <div class="book-content">
+                    <div class="section">
+                        <div class="section-title">📅 阅读时间</div>
+                        <div class="section-content">
+                            应该是大一到大二下某个期末考试周看的
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="section-title">💭 阅读印象</div>
+                        <div class="section-content">
+                            对这本书唯一的印象是：房思琪既欣赏老师的文学才能，也因为他的行径觉得他是人渣。那个时候的我知道，这两者是不矛盾的，不过这两者同时出现确实会给人带来痛苦
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <h2 class="book-title">
+                    <a href="https://weread.qq.com/book-detail?type=1&senderVid=205643304&v=ec532880533fbdec57f273d" class="book-link" target="_blank" title="点击在微信读书中查看">三重门</a>
+                </h2>
+                <div class="book-content">
+                    <div class="section">
+                        <div class="section-title">📅 阅读时间</div>
+                        <div class="section-content">
+                            大二下看的应该
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="section-title">👤 作者印象</div>
+                        <div class="section-content">
+                            韩寒我一直很喜欢，但直到大学才读他的成名作
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="section-title">💭 阅读印象</div>
+                        <div class="section-content">
+                            对这本书的内容没啥太多印象了，就记得有点针砭时弊，批判教育体制之类的，我高中看《通稿2003》的时候会觉得很爽，但大学看这本书的时候已经没有愤世嫉俗的感觉了。就记得看完之后，我去这里面提的一首叶培和老狼唱的歌下留了个言，说好久没看书了，看一看书，发现自己果然还是喜欢看书
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
